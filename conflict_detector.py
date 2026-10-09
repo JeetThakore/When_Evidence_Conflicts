@@ -23,7 +23,12 @@ from dataclasses import dataclass
 
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import StratifiedKFold, train_test_split
+from sklearn.model_selection import (
+    GroupShuffleSplit,
+    StratifiedGroupKFold,
+    StratifiedKFold,
+    train_test_split,
+)
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_auc_score
 
@@ -39,6 +44,12 @@ from conflict_features import (
 logger = logging.getLogger(__name__)
 
 TEST_SIZE = 0.2
+
+# "instance": instance-level split and CV (original behaviour).
+# "question": every topic_id goes wholly into train or wholly into test,
+#             in both the 80/20 split and the CV on the train part.
+SPLIT_MODES = ("instance", "question")
+SPLIT_MODE = "instance"
 
 
 @dataclass
@@ -62,6 +73,7 @@ class DetectorMetrics:
     n_total: int
     n_train: int
     n_test: int
+    split_info: dict | None = None
 
 
 @dataclass
@@ -81,6 +93,67 @@ def _describe_label_distribution(y: np.ndarray) -> str:
     return ", ".join(f"{int(cls)}:{int(cnt)}" for cls, cnt in zip(classes, counts))
 
 
+def _resolve_split_mode(split_mode):
+    split_mode = SPLIT_MODE if split_mode is None else split_mode
+    if split_mode not in SPLIT_MODES:
+        raise ValueError(f"split_mode must be one of {SPLIT_MODES}, got {split_mode!r}")
+    return split_mode
+
+
+def _question_train_test_split(all_idx, y, groups, test_size, seed, label_name="target"):
+    """Group-level split: no topic_id appears in both train and test.
+
+    Uses one fold of StratifiedGroupKFold (n_splits = round(1/test_size)) as
+    the test set, falling back to GroupShuffleSplit if stratification fails.
+    """
+    n_splits = int(round(1.0 / test_size))
+    train_idx = test_idx = None
+    method = "StratifiedGroupKFold"
+    if len(np.unique(y)) >= 2:
+        try:
+            sgkf = StratifiedGroupKFold(n_splits=n_splits, shuffle=True, random_state=seed)
+            tr, te = next(sgkf.split(all_idx, y, groups))
+            if len(np.unique(y[te])) >= 2 and len(np.unique(y[tr])) >= 2:
+                train_idx, test_idx = all_idx[tr], all_idx[te]
+        except ValueError as exc:
+            logger.warning("  StratifiedGroupKFold failed for %s: %s", label_name, exc)
+    if train_idx is None:
+        method = "GroupShuffleSplit"
+        logger.warning(
+            "  %s: stratified group split not possible (%s); "
+            "falling back to GroupShuffleSplit.",
+            label_name, _describe_label_distribution(y),
+        )
+        gss = GroupShuffleSplit(n_splits=1, test_size=test_size, random_state=seed)
+        tr, te = next(gss.split(all_idx, y, groups))
+        train_idx, test_idx = all_idx[tr], all_idx[te]
+
+    train_groups = set(groups[train_idx].tolist())
+    test_groups = set(groups[test_idx].tolist())
+    assert not (train_groups & test_groups), "topic_id leaked between train and test"
+    logger.info(
+        "  Question split [%s, %s]: test fraction %.3f (%d/%d instances), "
+        "%d test questions, %d train questions",
+        label_name, method, len(test_idx) / len(all_idx), len(test_idx),
+        len(all_idx), len(test_groups), len(train_groups),
+    )
+    return train_idx, test_idx, method
+
+
+def _split_info(split_mode, method, groups, train_idx, test_idx, y):
+    tr_g, te_g = set(groups[train_idx].tolist()), set(groups[test_idx].tolist())
+    return {
+        "split_mode": split_mode,
+        "split_method": method,
+        "test_fraction": len(test_idx) / (len(train_idx) + len(test_idx)),
+        "n_train_positive_labels": int(y[train_idx].sum()),
+        "n_test_positive_labels": int(y[test_idx].sum()),
+        "n_train_questions": len(tr_g),
+        "n_test_questions": len(te_g),
+        "n_shared_questions": len(tr_g & te_g),
+    }
+
+
 def _safe_train_test_split(all_idx, y, test_size, seed, label_name="target"):
     classes, counts = np.unique(y, return_counts=True)
     can_stratify = len(classes) >= 2 and counts.min() >= 2
@@ -97,8 +170,13 @@ def _safe_train_test_split(all_idx, y, test_size, seed, label_name="target"):
     return train_test_split(all_idx, test_size=test_size, random_state=seed)
 
 
-def _cv_on_train(X_train, y_train, is_wrong_train, n_folds, seed, label_name="target"):
-    """5-fold CV on train split.  Returns fold AUROCs *and* OOF conflict scores."""
+def _cv_on_train(X_train, y_train, is_wrong_train, n_folds, seed, label_name="target",
+                 groups_train=None):
+    """5-fold CV on train split.  Returns fold AUROCs *and* OOF conflict scores.
+
+    If ``groups_train`` is given, folds are built with StratifiedGroupKFold so
+    that no group appears in both the fitting and the validation part.
+    """
     classes, counts = np.unique(y_train, return_counts=True)
     if len(classes) < 2:
         constant_score = float(classes[0]) if len(classes) else 0.0
@@ -110,6 +188,8 @@ def _cv_on_train(X_train, y_train, is_wrong_train, n_folds, seed, label_name="ta
         return [], np.full(len(y_train), constant_score, dtype=float)
 
     n_splits = min(n_folds, int(counts.min()))
+    if groups_train is not None:
+        n_splits = min(n_splits, len(np.unique(groups_train)))
     if n_splits < 2:
         constant_score = float(classes[-1])
         logger.warning(
@@ -127,10 +207,29 @@ def _cv_on_train(X_train, y_train, is_wrong_train, n_folds, seed, label_name="ta
 
     fold_aurocs = []
     oof_scores = np.full(len(y_train), np.nan)
-    skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=seed)
-    for fold_idx, (tr_idx, val_idx) in enumerate(skf.split(X_train, y_train)):
+    if groups_train is None:
+        skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=seed)
+        fold_iter = skf.split(X_train, y_train)
+    else:
+        skf = StratifiedGroupKFold(n_splits=n_splits, shuffle=True, random_state=seed)
+        fold_iter = skf.split(X_train, y_train, groups_train)
+    for fold_idx, (tr_idx, val_idx) in enumerate(fold_iter):
+        if groups_train is not None:
+            assert not (set(groups_train[tr_idx].tolist())
+                        & set(groups_train[val_idx].tolist())), \
+                "topic_id leaked between CV folds"
         X_tr, X_val = X_train[tr_idx], X_train[val_idx]
         y_tr = y_train[tr_idx]
+        if groups_train is not None and len(np.unique(y_tr)) < 2:
+            # Group folds cannot always keep both classes in the fitting part
+            # when positives are rare; score the fold with a constant.
+            logger.warning(
+                "  Fold %d [%s]: fitting part has a single class (%s); "
+                "using constant conflict score %.1f.",
+                fold_idx, label_name, _describe_label_distribution(y_tr), float(y_tr[0]),
+            )
+            oof_scores[val_idx] = float(y_tr[0])
+            continue
         scaler = StandardScaler()
         X_tr_s = scaler.fit_transform(X_tr)
         X_val_s = scaler.transform(X_val)
@@ -224,6 +323,7 @@ def train_conflict_detector(
     samples, model_key, condition,
     n_folds=5, test_size=TEST_SIZE, seed=config.SEED,
     build_features_fn=None, build_labels_fn=None, load_signals_fn=None,
+    split_mode=None,
 ):
     """Train within-condition conflict detector with train/test split.
 
@@ -256,10 +356,19 @@ def train_conflict_detector(
     predicted_labels = unc["predicted_label"]
 
     all_idx = np.arange(len(samples))
-    train_idx, test_idx = _safe_train_test_split(
-        all_idx, y, test_size=test_size, seed=seed,
-        label_name="confidently_wrong",
-    )
+    split_mode = _resolve_split_mode(split_mode)
+    groups = np.array([s.topic_id for s in samples])
+    if split_mode == "question":
+        train_idx, test_idx, split_method = _question_train_test_split(
+            all_idx, y, groups, test_size=test_size, seed=seed,
+            label_name="confidently_wrong",
+        )
+    else:
+        train_idx, test_idx = _safe_train_test_split(
+            all_idx, y, test_size=test_size, seed=seed,
+            label_name="confidently_wrong",
+        )
+        split_method = "train_test_split"
     logger.info("  Train/test split: %d train, %d test", len(train_idx), len(test_idx))
 
     X_train, X_test = X[train_idx], X[test_idx]
@@ -269,6 +378,7 @@ def train_conflict_detector(
     fold_aurocs, oof_scores = _cv_on_train(
         X_train, y_train, is_wrong_train, n_folds, seed,
         label_name="confidently_wrong",
+        groups_train=groups[train_idx] if split_mode == "question" else None,
     )
     test_scores = _train_final_and_predict(X_train, y_train, X_test, seed)
 
@@ -278,6 +388,7 @@ def train_conflict_detector(
         y[test_idx], predicted_labels[test_idx],
         samples, test_idx, n_train=len(train_idx),
     )
+    metrics.split_info = _split_info(split_mode, split_method, groups, train_idx, test_idx, y)
 
     train_info = TrainInfo(
         oof_conflict_scores=oof_scores,
@@ -292,6 +403,7 @@ def train_cross_condition_detector(
     reference_condition="CC", label_type="conflict_susceptible",
     delta_threshold=0.3, n_folds=5, test_size=TEST_SIZE, seed=config.SEED,
     build_features_fn=None, build_cross_labels_fn=None, load_signals_fn=None,
+    split_mode=None,
 ):
     """Train cross-condition conflict detector with train/test split."""
     if build_features_fn is None:
@@ -323,10 +435,19 @@ def train_cross_condition_detector(
                 y.sum(), len(y), 100 * y.mean())
 
     all_idx = np.arange(len(samples))
-    train_idx, test_idx = _safe_train_test_split(
-        all_idx, y, test_size=test_size, seed=seed,
-        label_name=label_type,
-    )
+    split_mode = _resolve_split_mode(split_mode)
+    groups = np.array([s.topic_id for s in samples])
+    if split_mode == "question":
+        train_idx, test_idx, split_method = _question_train_test_split(
+            all_idx, y, groups, test_size=test_size, seed=seed,
+            label_name=label_type,
+        )
+    else:
+        train_idx, test_idx = _safe_train_test_split(
+            all_idx, y, test_size=test_size, seed=seed,
+            label_name=label_type,
+        )
+        split_method = "train_test_split"
     logger.info("  Train/test split: %d train, %d test", len(train_idx), len(test_idx))
 
     X_train, X_test = X[train_idx], X[test_idx]
@@ -336,6 +457,7 @@ def train_cross_condition_detector(
     fold_aurocs, oof_scores = _cv_on_train(
         X_train, y_train, is_wrong_train, n_folds, seed,
         label_name=label_type,
+        groups_train=groups[train_idx] if split_mode == "question" else None,
     )
     test_scores = _train_final_and_predict(X_train, y_train, X_test, seed)
 
@@ -345,6 +467,7 @@ def train_cross_condition_detector(
         y[test_idx], predicted_labels[test_idx],
         samples, test_idx, n_train=len(train_idx),
     )
+    metrics.split_info = _split_info(split_mode, split_method, groups, train_idx, test_idx, y)
 
     train_info = TrainInfo(
         oof_conflict_scores=oof_scores,

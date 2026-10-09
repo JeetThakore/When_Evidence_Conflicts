@@ -13,6 +13,7 @@ The features are combined into a single numpy array per instance.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 from pathlib import Path
@@ -32,6 +33,19 @@ _MODEL: SentenceTransformer | None = None
 EMBED_MODEL_NAME = "all-MiniLM-L6-v2"  # 384-dim, fast, good quality
 EMBED_DIM = 384
 
+# Optional on-disk embedding cache (.npz keyed by sha256 of the text).
+# None keeps the original in-memory-only behaviour.
+EMBED_CACHE_PATH: Path | None = None
+_DISK_CACHE_LOADED = False
+
+# Feature subset passed to the detector (ablations):
+#   full     - uncertainty + document embedding(s) + question embedding
+#   unc      - 3 uncertainty signals only
+#   unc_docs - uncertainty + document embedding(s), no question embedding
+#   question - question embedding only
+FEATURE_SETS = ("full", "unc", "unc_docs", "question")
+FEATURE_SET = "full"
+
 
 def _get_embed_model() -> SentenceTransformer:
     global _MODEL
@@ -41,15 +55,39 @@ def _get_embed_model() -> SentenceTransformer:
     return _MODEL
 
 
+def _text_key(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _load_disk_cache() -> dict[str, np.ndarray]:
+    global _DISK_CACHE_LOADED
+    _DISK_CACHE_LOADED = True
+    if EMBED_CACHE_PATH is None or not Path(EMBED_CACHE_PATH).exists():
+        return {}
+    with np.load(EMBED_CACHE_PATH) as data:
+        cached = {k: data[k] for k in data.files}
+    logger.info("Loaded %d cached embeddings from %s", len(cached), EMBED_CACHE_PATH)
+    return cached
+
+
+_DISK_CACHE: dict[str, np.ndarray] = {}
+
+
 def embed_texts(texts: list[str], batch_size: int = 64) -> np.ndarray:
     """Encode texts to dense vectors, caching results.
 
     Returns array of shape (len(texts), EMBED_DIM).
     """
-    model = _get_embed_model()
+    global _DISK_CACHE
+    if EMBED_CACHE_PATH is not None and not _DISK_CACHE_LOADED:
+        _DISK_CACHE = _load_disk_cache()
+    for t in texts:
+        if t not in _EMBED_CACHE and _text_key(t) in _DISK_CACHE:
+            _EMBED_CACHE[t] = _DISK_CACHE[_text_key(t)]
     # Check cache
     uncached_idx = [i for i, t in enumerate(texts) if t not in _EMBED_CACHE]
     if uncached_idx:
+        model = _get_embed_model()
         uncached_texts = [texts[i] for i in uncached_idx]
         logger.info("  Embedding %d texts ...", len(uncached_texts))
         vecs = model.encode(
@@ -60,6 +98,11 @@ def embed_texts(texts: list[str], batch_size: int = 64) -> np.ndarray:
         )
         for i, idx in enumerate(uncached_idx):
             _EMBED_CACHE[texts[idx]] = vecs[i]
+        if EMBED_CACHE_PATH is not None:
+            for t in uncached_texts:
+                _DISK_CACHE[_text_key(t)] = _EMBED_CACHE[t]
+            Path(EMBED_CACHE_PATH).parent.mkdir(parents=True, exist_ok=True)
+            np.savez(EMBED_CACHE_PATH, **_DISK_CACHE)
 
     return np.array([_EMBED_CACHE[t] for t in texts])
 
@@ -173,11 +216,29 @@ def build_features(
     model_key: str,
     condition: str,
 ) -> np.ndarray:
-    """Build features for any condition (dispatches to appropriate builder)."""
+    """Build features for any condition (dispatches to appropriate builder).
+
+    Column layout is [3 uncertainty | document embedding(s) | question
+    embedding]; ``FEATURE_SET`` selects a subset of these blocks.
+    """
     if condition in ("CIC", "ICC"):
-        return build_features_conflict_context(samples, model_key, condition)
+        X = build_features_conflict_context(samples, model_key, condition)
     else:
-        return build_features_single_context(samples, model_key, condition)
+        X = build_features_single_context(samples, model_key, condition)
+    return select_feature_set(X, FEATURE_SET)
+
+
+def select_feature_set(X: np.ndarray, feature_set: str) -> np.ndarray:
+    """Restrict a full feature matrix to one of FEATURE_SETS."""
+    if feature_set not in FEATURE_SETS:
+        raise ValueError(f"feature_set must be one of {FEATURE_SETS}, got {feature_set!r}")
+    if feature_set == "full":
+        return X
+    if feature_set == "unc":
+        return X[:, :3]
+    if feature_set == "unc_docs":
+        return X[:, :-EMBED_DIM]
+    return X[:, -EMBED_DIM:]  # question
 
 
 # ── Build supervision labels ──────────────────────────────────────────

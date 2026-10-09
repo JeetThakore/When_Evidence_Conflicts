@@ -51,6 +51,13 @@ ECE_NUM_BINS = 10
 # ── Selective prediction ────────────────────────────────────────────────
 TAU_GRID = [i / 100 for i in range(50, 100)]  # confidence thresholds 0.50 … 0.99
 
+# ── Conflict detector ───────────────────────────────────────────────────
+# Referenced by conflict_features.py / run_conflict_prediction.py but missing
+# from the released config. Values match the paper (tau = 0.7) and the
+# delta_threshold recorded in the cached results/*_conflict_prediction.json.
+HC_CONFIDENTLY_WRONG_THRESHOLD = 0.7
+HC_CROSS_CONDITION_DELTA_THRESHOLD = 0.3
+
 # ── Inference ───────────────────────────────────────────────────────────
 BATCH_SIZE = 8
 MAX_NEW_TOKENS = 1  # constrained to single Yes/No token

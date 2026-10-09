@@ -1,0 +1,42 @@
+Question-grouped re-evaluation of the CAS conflict detector
+(Han, Lan, Kilicoglu, BioNLP 2026). Within-condition detector, six models.
+
+What was run
+- Run A: the released pipeline with its instance-level 80/20 split and 5-fold CV.
+- Run B: the same pipeline with one change. Every topic_id is placed wholly in train or wholly in test, in the 80/20 split and in the CV on the train part (StratifiedGroupKFold).
+- Features, labels, tau = 0.7, alpha = 0.5, the classifier and the coverage targets are unchanged.
+- Both modes were run with seeds 0 to 19. Ablations restricted the detector features to uncertainty only, uncertainty plus document embeddings, and question embedding only, for IC and ICC.
+
+Run A reproduces the paper
+- The cached results give a six-model mean detector AUROC of 0.718 (IC) and 0.725 (ICC), and a confidence AUROC of 0.478 and 0.655.
+- The rerun with seed 42 gives 0.718 and 0.725. Per-model detector AUROC differs from the cached value by at most 0.002 in any condition.
+- Selective-prediction accuracy and coverage match exactly in 85 of 90 model, condition and coverage cells. The other 5 differ by 1 to 4 answered test instances at a threshold boundary.
+- Over 20 instance-split seeds, the six-model mean detector AUROC is 0.747 ± 0.015 (IC) and 0.716 ± 0.014 (ICC).
+- The six-model mean CAS lift over confidence at 75/50/25% coverage is +8.5/+21.0/+33.1 pp (IC) and +3.9/+8.7/+11.5 pp (ICC).
+
+Run B (questions unseen in training)
+- In the instance split, about 49 of the 52 test questions also appear in training. In the question split, none do. Test sets hold 15 questions and about 20% of instances on average.
+- The six-model mean detector AUROC falls to 0.524 ± 0.021 (IC) and 0.512 ± 0.024 (ICC).
+- Raw confidence AUROC on the same test sets is 0.461 (IC) and 0.658 (ICC). In ICC, confidence ranks errors better than the detector.
+- The six-model mean CAS lift over confidence at 75/50/25% coverage becomes +0.2/+1.4/+2.9 pp (IC) and -3.1/-1.8/+0.4 pp (ICC).
+- The seed SD of these lifts is 1.4 to 3.2 pp, so no IC or ICC lift in the question split is clearly different from zero.
+- The pattern holds per model. In IC, phi4-14b and qwen3-4b show negative lifts at every coverage level (-6.6 to -14.3 pp). qwen3.5-9b keeps a positive lift (+7.8 to +13.2 pp).
+- The other conditions show the same direction. Detector AUROC drops from 0.904 to 0.656 (NC), 0.714 to 0.494 (CC) and 0.693 to 0.536 (CIC).
+
+Ablations (detector AUROC, six-model mean, instance vs question)
+- Question embedding only: 0.780 vs 0.594 (IC), 0.767 vs 0.450 (ICC). In the instance split this single feature block beats the full detector (0.747, 0.716).
+- Uncertainty plus document embeddings: 0.699 vs 0.533 (IC), 0.673 vs 0.532 (ICC).
+- Uncertainty only: 0.538 vs 0.563 (IC), 0.533 vs 0.499 (ICC). This is the only feature set that does not drop in the question split.
+- In the question split, the uncertainty-only detector gives a larger IC CAS lift (+2.6/+6.3/+13.7 pp) than the full detector (+0.2/+1.4/+2.9 pp).
+
+Answer to the question
+- On questions the detector has never seen, CAS does not beat confidence in IC or ICC by a margin larger than the seed variation.
+- The gains in Run A appear to come mostly from recognising questions that recur in training. The question-embedding-only result supports this.
+- An instance-level split may have been intended, for example if the target use case is a fixed question set. In that case the paper's numbers are correct for that setting. They do not describe transfer to new questions.
+
+Caveats and other observations
+1. The released config.py does not define HC_CONFIDENTLY_WRONG_THRESHOLD or HC_CROSS_CONDITION_DELTA_THRESHOLD. The released code fails at startup without them. They were added with the values 0.7 and 0.3. The value 0.7 matches the paper. The value 0.3 matches delta_threshold in the cached JSONs. With these values Run A matches the cached results.
+2. In the threshold-transfer protocol, the confidence-only baseline keeps every test instance whose confidence is at or above the k-th highest value. Because many confidences are tied near 1.0, the baseline answers more instances than CAS. At the 25% IC target, CAS answers 25.1% of the test set and confidence answers 40.7%. A matched-coverage check using the exact top-k results that the same code writes gives the same conclusion: IC lift +8.5/+21.0/+33.3 pp (instance) vs +2.4/+0.9/+2.0 pp (question), ICC lift +3.6/+8.4/+10.9 pp vs -4.2/-0.5/+1.8 pp.
+3. With question groups, the cross-condition detector (out of scope here) sometimes had too few positives for a stratified group split. It fell back to GroupShuffleSplit, and some CV folds had a single class. A guard now gives such folds a constant score in question mode only. The within-condition detector produced no degenerate splits in any of the 600 model, condition and seed combinations per mode.
+4. Question-split test sets hold about 15 questions, so results vary more across seeds. Topic 154 alone holds 77 of the 920 instances. All values are reported as mean ± SD over 20 seeds.
+5. Library versions: Python 3.11, scikit-learn 1.9.1, sentence-transformers 6.1.0, torch 2.14.1 (CPU).

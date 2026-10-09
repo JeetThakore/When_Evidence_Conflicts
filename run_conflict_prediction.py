@@ -32,6 +32,8 @@ import numpy as np
 from sklearn.metrics import roc_auc_score
 
 import config
+import conflict_detector
+import conflict_features
 from calibration import auroc_error_detection
 from conflict_detector import (
     COVERAGE_TARGETS,
@@ -133,6 +135,8 @@ def run_condition(
     reference_condition: str = "CC",
     coverage_targets: list[float] | None = None,
     confidently_wrong_threshold: float = config.HC_CONFIDENTLY_WRONG_THRESHOLD,
+    seed: int = config.SEED,
+    split_mode: str = "instance",
 ) -> dict:
     """Train both detector variants and evaluate for one condition."""
     logger.info("=" * 50)
@@ -153,6 +157,8 @@ def run_condition(
             condition_,
             confidently_wrong_threshold=confidently_wrong_threshold,
         ),
+        seed=seed,
+        split_mode=split_mode,
     )
     within_eval = _evaluate_detector_results(within_results, alpha)
     correct = np.array([1 - r.is_wrong for r in within_results])
@@ -196,6 +202,8 @@ def run_condition(
                 delta_threshold=delta_threshold,
                 confidently_wrong_threshold=confidently_wrong_threshold,
             ),
+            seed=seed,
+            split_mode=split_mode,
         )
         cross_eval = _evaluate_detector_results(cross_results, alpha)
         _log_signal_comparison("Cross-condition", cross_metrics, cross_eval)
@@ -220,6 +228,7 @@ def run_condition(
         "n_train": within_metrics.n_train,
         "within_condition": {
             "n_positive_labels": within_metrics.n_confidently_wrong,
+            "split_info": within_metrics.split_info,
             "detector_metrics": {
                 "auroc_conflict_score": within_metrics.auroc_conflict_score,
                 "auroc_confidence": within_metrics.auroc_confidence,
@@ -241,6 +250,7 @@ def run_condition(
         output["cross_condition"] = {
             "reference": reference_condition,
             "cross_info": cross_info,
+            "split_info": cross_metrics.split_info,
             "detector_metrics": {
                 "auroc_conflict_score": cross_metrics.auroc_conflict_score,
                 "auroc_confidence": cross_metrics.auroc_confidence,
@@ -279,6 +289,8 @@ def run_conflict_prediction_for_model(
     coverage_targets: list[float] | None = None,
     generate_figures: bool = True,
     confidently_wrong_threshold: float = config.HC_CONFIDENTLY_WRONG_THRESHOLD,
+    seed: int = config.SEED,
+    split_mode: str = "instance",
 ) -> dict:
     """Run conflict-aware selective prediction for one model."""
     logger.info("Loading dataset ...")
@@ -334,6 +346,8 @@ def run_conflict_prediction_for_model(
             reference_condition=reference_condition or cond,
             coverage_targets=coverage_targets,
             confidently_wrong_threshold=confidently_wrong_threshold,
+            seed=seed,
+            split_mode=split_mode,
         )
         condition_results[cond] = result
 
@@ -445,6 +459,9 @@ def run_conflict_prediction_for_model(
         "reference_condition": reference_condition,
         "confidently_wrong_threshold": confidently_wrong_threshold,
         "coverage_targets": coverage_targets or COVERAGE_TARGETS,
+        "seed": seed,
+        "split_mode": split_mode,
+        "feature_set": conflict_features.FEATURE_SET,
         "conditions": {},
     }
     for cond, res in condition_results.items():
@@ -497,6 +514,25 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Skip per-model figure generation. Useful for parameter sweeps.",
     )
+    p.add_argument(
+        "--split", choices=conflict_detector.SPLIT_MODES, default="instance",
+        help=(
+            "Train/test split and CV unit: 'instance' (original) or 'question' "
+            "(every topic_id wholly in train or wholly in test)."
+        ),
+    )
+    p.add_argument(
+        "--seed", type=int, default=config.SEED,
+        help=f"Seed for the detector split and CV (default: {config.SEED})",
+    )
+    p.add_argument(
+        "--feature-set", choices=conflict_features.FEATURE_SETS, default="full",
+        help="Detector feature subset (default: full). Used for ablations.",
+    )
+    p.add_argument(
+        "--embed-cache", type=str, default=None,
+        help="Optional .npz file for caching sentence embeddings across runs.",
+    )
     return p.parse_args()
 
 
@@ -504,6 +540,9 @@ def main() -> None:
     args = parse_args()
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    conflict_features.FEATURE_SET = args.feature_set
+    if args.embed_cache:
+        conflict_features.EMBED_CACHE_PATH = Path(args.embed_cache)
 
     # Auto-detect models
     if args.models:
@@ -531,6 +570,8 @@ def main() -> None:
             coverage_targets=args.coverage_targets,
             generate_figures=not args.skip_figures,
             confidently_wrong_threshold=args.confidently_wrong_threshold,
+            seed=args.seed,
+            split_mode=args.split,
         )
         all_results[model_key] = result
 

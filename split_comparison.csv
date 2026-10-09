@@ -1,0 +1,1941 @@
+section,condition,model,split,feature_set,metric,coverage,mean,sd,n_seeds
+auroc,NC,llama3.1-8b,instance,full,detector,,0.878624010337829,0.020105475694547254,20
+auroc,NC,llama3.1-8b,question,full,detector,,0.7570421257934873,0.1287825402395277,20
+auroc,NC,llama3.1-8b,instance,full,confidence,,0.5898779067541581,0.04023984544605706,20
+auroc,NC,llama3.1-8b,question,full,confidence,,0.24361024543480725,0.1001138639234794,20
+auroc,NC,meditron3-8b,instance,full,detector,,0.8110314591550354,0.02983527787527,20
+auroc,NC,meditron3-8b,question,full,detector,,0.4215410215286869,0.22117639519208873,20
+auroc,NC,meditron3-8b,instance,full,confidence,,0.6910059159717933,0.045514118177824914,20
+auroc,NC,meditron3-8b,question,full,confidence,,0.46385951960996036,0.21223241880248775,20
+auroc,NC,phi4-14b,instance,full,detector,,0.9924607269076411,0.018307294196690926,20
+auroc,NC,phi4-14b,question,full,detector,,0.8189361386331908,0.0828883927079543,20
+auroc,NC,phi4-14b,instance,full,confidence,,0.7505905489651382,0.044574715080800284,20
+auroc,NC,phi4-14b,question,full,confidence,,0.5667547493921394,0.18580652010324059,20
+auroc,NC,qwen3-4b,instance,full,detector,,0.9857281322195506,0.011175030919303565,20
+auroc,NC,qwen3-4b,question,full,detector,,0.7988792648067535,0.03693893260232223,20
+auroc,NC,qwen3-4b,instance,full,confidence,,0.6616808704337735,0.04509742197617936,20
+auroc,NC,qwen3-4b,question,full,confidence,,0.6412724879782438,0.00913995763051945,20
+auroc,NC,qwen3-8b,instance,full,detector,,0.993182354328851,0.012868311165735207,20
+auroc,NC,qwen3-8b,question,full,detector,,0.5295451162559925,0.16691451016429373,20
+auroc,NC,qwen3-8b,instance,full,confidence,,0.4615239443264921,0.04442348777147512,20
+auroc,NC,qwen3-8b,question,full,confidence,,0.37806121657911546,0.1967071662568201,20
+auroc,NC,qwen3.5-9b,instance,full,detector,,0.7641530794599688,0.059203203769096074,20
+auroc,NC,qwen3.5-9b,question,full,detector,,0.6094436741440089,0.08789542913714382,20
+auroc,NC,qwen3.5-9b,instance,full,confidence,,0.8761833134293786,0.024646361902485772,20
+auroc,NC,qwen3.5-9b,question,full,confidence,,0.5077594214121219,0.17774169796271963,20
+auroc,NC,6-model mean,instance,full,detector,,0.9041966270681462,0.012866904662635952,20
+auroc,NC,6-model mean,question,full,detector,,0.6558978901936867,0.055989325360012596,20
+auroc,NC,6-model mean,instance,full,confidence,,0.671810416646789,0.016174339981327567,20
+auroc,NC,6-model mean,question,full,confidence,,0.46688627340106476,0.0556470714746088,20
+auroc,CC,llama3.1-8b,instance,full,detector,,0.7021787988483428,0.039819859166872466,20
+auroc,CC,llama3.1-8b,question,full,detector,,0.41956766919597327,0.03683890726600075,20
+auroc,CC,llama3.1-8b,instance,full,confidence,,0.7876898718707379,0.045634471053855416,20
+auroc,CC,llama3.1-8b,question,full,confidence,,0.791272655725344,0.020905800323567883,20
+auroc,CC,meditron3-8b,instance,full,detector,,0.6653515794327478,0.08401043412923857,20
+auroc,CC,meditron3-8b,question,full,detector,,0.4154120196664894,0.06118344527442273,20
+auroc,CC,meditron3-8b,instance,full,confidence,,0.7781228520978856,0.04780098916393331,20
+auroc,CC,meditron3-8b,question,full,confidence,,0.9010146617704187,0.010991577343952705,20
+auroc,CC,phi4-14b,instance,full,detector,,0.7870902057476499,0.05858092303988822,20
+auroc,CC,phi4-14b,question,full,detector,,0.5465275258503866,0.06877650540113305,20
+auroc,CC,phi4-14b,instance,full,confidence,,0.8416119919237731,0.04998142501847469,20
+auroc,CC,phi4-14b,question,full,confidence,,0.7812691127950682,0.027973579084517492,20
+auroc,CC,qwen3-4b,instance,full,detector,,0.6743280885393702,0.08929760381725389,20
+auroc,CC,qwen3-4b,question,full,detector,,0.4548780892823947,0.05921260126115658,20
+auroc,CC,qwen3-4b,instance,full,confidence,,0.703059156875282,0.07945462199589823,20
+auroc,CC,qwen3-4b,question,full,confidence,,0.6488461204727399,0.02993883301728572,20
+auroc,CC,qwen3-8b,instance,full,detector,,0.7407393609742747,0.08981495686855887,20
+auroc,CC,qwen3-8b,question,full,detector,,0.5625509284486275,0.14090642837371029,20
+auroc,CC,qwen3-8b,instance,full,confidence,,0.8385821399027218,0.07387440417854987,20
+auroc,CC,qwen3-8b,question,full,confidence,,0.75008958419694,0.10363874044623832,20
+auroc,CC,qwen3.5-9b,instance,full,detector,,0.7128981846699181,0.07907032139933157,20
+auroc,CC,qwen3.5-9b,question,full,detector,,0.5637223224697656,0.06497632204775161,20
+auroc,CC,qwen3.5-9b,instance,full,confidence,,0.917746205088213,0.03838683064105941,20
+auroc,CC,qwen3.5-9b,question,full,confidence,,0.9301616873851181,0.014232350751689537,20
+auroc,CC,6-model mean,instance,full,detector,,0.7137643697020506,0.028551271329530073,20
+auroc,CC,6-model mean,question,full,detector,,0.49377642581893966,0.03276844788572029,20
+auroc,CC,6-model mean,instance,full,confidence,,0.8111353696264356,0.021923000065001447,20
+auroc,CC,6-model mean,question,full,confidence,,0.8004423037242715,0.01809559430729169,20
+auroc,IC,llama3.1-8b,instance,full,detector,,0.7606406169371257,0.031992171593159056,20
+auroc,IC,llama3.1-8b,question,full,detector,,0.5441107420634747,0.055381439783055965,20
+auroc,IC,llama3.1-8b,instance,full,confidence,,0.42523410840497355,0.03246539078916489,20
+auroc,IC,llama3.1-8b,question,full,confidence,,0.4009648611856564,0.030374270966312643,20
+auroc,IC,meditron3-8b,instance,full,detector,,0.7255561124912088,0.034836323231681524,20
+auroc,IC,meditron3-8b,question,full,detector,,0.6021729095973736,0.038928769034945965,20
+auroc,IC,meditron3-8b,instance,full,confidence,,0.48554393024389136,0.03630045159860045,20
+auroc,IC,meditron3-8b,question,full,confidence,,0.4556444824902341,0.03372773617613558,20
+auroc,IC,phi4-14b,instance,full,detector,,0.7439851032538496,0.027661560162153466,20
+auroc,IC,phi4-14b,question,full,detector,,0.33620976538786385,0.07528722300977961,20
+auroc,IC,phi4-14b,instance,full,confidence,,0.4402555094241703,0.02994156998526741,20
+auroc,IC,phi4-14b,question,full,confidence,,0.44218733092357587,0.03526136798055221,20
+auroc,IC,qwen3-4b,instance,full,detector,,0.7557957122948761,0.0316695755396335,20
+auroc,IC,qwen3-4b,question,full,detector,,0.3696959276749965,0.0480575667471638,20
+auroc,IC,qwen3-4b,instance,full,confidence,,0.4614438730036861,0.027698605542183275,20
+auroc,IC,qwen3-4b,question,full,confidence,,0.46461897001077557,0.03993618568858074,20
+auroc,IC,qwen3-8b,instance,full,detector,,0.757948162016431,0.030387780382989223,20
+auroc,IC,qwen3-8b,question,full,detector,,0.6324867427372861,0.07604971522811432,20
+auroc,IC,qwen3-8b,instance,full,confidence,,0.5421235791498182,0.03573881157495531,20
+auroc,IC,qwen3-8b,question,full,confidence,,0.5729200067227298,0.04029499305292883,20
+auroc,IC,qwen3.5-9b,instance,full,detector,,0.7409402668399767,0.036252453879143644,20
+auroc,IC,qwen3.5-9b,question,full,detector,,0.6594795133995244,0.017813724836098572,20
+auroc,IC,qwen3.5-9b,instance,full,confidence,,0.5117886736344329,0.03111342692335507,20
+auroc,IC,qwen3.5-9b,question,full,confidence,,0.4299440243168591,0.034145734011126076,20
+auroc,IC,6-model mean,instance,full,detector,,0.747477662305578,0.015040629274297439,20
+auroc,IC,6-model mean,question,full,detector,,0.5240259334767531,0.021316092173204175,20
+auroc,IC,6-model mean,instance,full,confidence,,0.47773161231016203,0.015969516031499553,20
+auroc,IC,6-model mean,question,full,confidence,,0.46104661260830515,0.014152935671817033,20
+auroc,CIC,llama3.1-8b,instance,full,detector,,0.6537371885877781,0.03845998743408679,20
+auroc,CIC,llama3.1-8b,question,full,detector,,0.497695778736584,0.050487142023375634,20
+auroc,CIC,llama3.1-8b,instance,full,confidence,,0.6941006998865974,0.03903663508884572,20
+auroc,CIC,llama3.1-8b,question,full,confidence,,0.6761103825305578,0.03304729249505766,20
+auroc,CIC,meditron3-8b,instance,full,detector,,0.5681093784925242,0.06005071051633747,20
+auroc,CIC,meditron3-8b,question,full,detector,,0.5594937506775562,0.03661403492468946,20
+auroc,CIC,meditron3-8b,instance,full,confidence,,0.7801250236381341,0.025733906455446445,20
+auroc,CIC,meditron3-8b,question,full,confidence,,0.7847974053262129,0.03430509398969126,20
+auroc,CIC,phi4-14b,instance,full,detector,,0.7334982148453801,0.04905582323775121,20
+auroc,CIC,phi4-14b,question,full,detector,,0.692532910496592,0.03289327796900525,20
+auroc,CIC,phi4-14b,instance,full,confidence,,0.7917534332177707,0.04100950628180122,20
+auroc,CIC,phi4-14b,question,full,confidence,,0.7932843363330463,0.014676439988864712,20
+auroc,CIC,qwen3-4b,instance,full,detector,,0.7033136820710599,0.04578515837797127,20
+auroc,CIC,qwen3-4b,question,full,detector,,0.4955559801166854,0.07246247512762698,20
+auroc,CIC,qwen3-4b,instance,full,confidence,,0.6670128863273566,0.04080134330547307,20
+auroc,CIC,qwen3-4b,question,full,confidence,,0.7014239641159083,0.03728149309241639,20
+auroc,CIC,qwen3-8b,instance,full,detector,,0.8513115029946515,0.02990468817815081,20
+auroc,CIC,qwen3-8b,question,full,detector,,0.5560903465710234,0.11674451933413436,20
+auroc,CIC,qwen3-8b,instance,full,confidence,,0.8039452086818912,0.04804655413817466,20
+auroc,CIC,qwen3-8b,question,full,confidence,,0.8219115826468351,0.04590040700280593,20
+auroc,CIC,qwen3.5-9b,instance,full,detector,,0.6455517779078949,0.04508528155002012,20
+auroc,CIC,qwen3.5-9b,question,full,detector,,0.4131531966796378,0.04026474901460467,20
+auroc,CIC,qwen3.5-9b,instance,full,confidence,,0.7707490298162643,0.042527754518664494,20
+auroc,CIC,qwen3.5-9b,question,full,confidence,,0.7358015836723366,0.019467954476548192,20
+auroc,CIC,6-model mean,instance,full,detector,,0.6925869574832147,0.017326151154352928,20
+auroc,CIC,6-model mean,question,full,detector,,0.5357536605463465,0.027784956983611976,20
+auroc,CIC,6-model mean,instance,full,confidence,,0.7512810469280022,0.016845147184183017,20
+auroc,CIC,6-model mean,question,full,confidence,,0.7522215424374827,0.01334529317180169,20
+auroc,ICC,llama3.1-8b,instance,full,detector,,0.6591408884780499,0.037628677666318416,20
+auroc,ICC,llama3.1-8b,question,full,detector,,0.4562374514520154,0.05720645682290108,20
+auroc,ICC,llama3.1-8b,instance,full,confidence,,0.6086656256929632,0.028417464240613373,20
+auroc,ICC,llama3.1-8b,question,full,confidence,,0.6624189466260785,0.030971907030915267,20
+auroc,ICC,meditron3-8b,instance,full,detector,,0.684840665855457,0.04491618681689441,20
+auroc,ICC,meditron3-8b,question,full,detector,,0.42040938785636967,0.10237282088173585,20
+auroc,ICC,meditron3-8b,instance,full,confidence,,0.6439931217779011,0.033762214502209335,20
+auroc,ICC,meditron3-8b,question,full,confidence,,0.6567843059860734,0.03728657133198465,20
+auroc,ICC,phi4-14b,instance,full,detector,,0.7219110830218824,0.043087666385446706,20
+auroc,ICC,phi4-14b,question,full,detector,,0.5129802582925092,0.042552000584874336,20
+auroc,ICC,phi4-14b,instance,full,confidence,,0.5706409767349132,0.04449374924533271,20
+auroc,ICC,phi4-14b,question,full,confidence,,0.6054891654632537,0.023017851950208074,20
+auroc,ICC,qwen3-4b,instance,full,detector,,0.7405547441068946,0.034462554939665435,20
+auroc,ICC,qwen3-4b,question,full,detector,,0.5727075297677122,0.04902660177025861,20
+auroc,ICC,qwen3-4b,instance,full,confidence,,0.6187434965928194,0.04311487321859046,20
+auroc,ICC,qwen3-4b,question,full,confidence,,0.6316548072952581,0.040513161615930895,20
+auroc,ICC,qwen3-8b,instance,full,detector,,0.8208051327611082,0.03113185468510414,20
+auroc,ICC,qwen3-8b,question,full,detector,,0.6466829609752842,0.04918495859560947,20
+auroc,ICC,qwen3-8b,instance,full,confidence,,0.6462414062754865,0.039784024610059865,20
+auroc,ICC,qwen3-8b,question,full,confidence,,0.6350887992595575,0.02313235143535866,20
+auroc,ICC,qwen3.5-9b,instance,full,detector,,0.6685308685700369,0.045157072411699806,20
+auroc,ICC,qwen3.5-9b,question,full,detector,,0.46190318847902934,0.05343688743898046,20
+auroc,ICC,qwen3.5-9b,instance,full,confidence,,0.8026056421395034,0.03498210056739639,20
+auroc,ICC,qwen3.5-9b,question,full,confidence,,0.7561716692015485,0.028133121763302446,20
+auroc,ICC,6-model mean,instance,full,detector,,0.7159638971322382,0.01406613960835557,20
+auroc,ICC,6-model mean,question,full,detector,,0.5118201294704867,0.02383297910470677,20
+auroc,ICC,6-model mean,instance,full,confidence,,0.6484817115355976,0.014733310885813335,20
+auroc,ICC,6-model mean,question,full,confidence,,0.6579346156386283,0.015799468237517135,20
+selective,NC,llama3.1-8b,instance,full,acc_cas,0.75,0.9161049976461477,0.0189771895780166,20
+selective,NC,llama3.1-8b,instance,full,acc_conf,0.75,0.7852836124861945,0.010131059526915042,20
+selective,NC,llama3.1-8b,instance,full,lift,0.75,0.13082138515995329,0.019293296820944553,20
+selective,NC,llama3.1-8b,question,full,acc_cas,0.75,0.866078401082803,0.05355321861545801,20
+selective,NC,llama3.1-8b,question,full,acc_conf,0.75,0.8160754055619088,0.01164018018300504,20
+selective,NC,llama3.1-8b,question,full,lift,0.75,0.05000299552089378,0.05793550498424827,20
+selective,NC,llama3.1-8b,instance,full,acc_cas,0.5,0.9984536082474227,0.006915674157215844,20
+selective,NC,llama3.1-8b,instance,full,acc_conf,0.5,0.78823482194909,0.023076091872221743,20
+selective,NC,llama3.1-8b,instance,full,lift,0.5,0.21021878629833274,0.025918851299916355,20
+selective,NC,llama3.1-8b,question,full,acc_cas,0.5,0.7816466941479953,0.1875444026770092,20
+selective,NC,llama3.1-8b,question,full,acc_conf,0.5,0.749916280756904,0.17176329649716313,20
+selective,NC,llama3.1-8b,question,full,lift,0.5,0.031730413391091374,0.2513635245030436,20
+selective,NC,llama3.1-8b,instance,full,acc_cas,0.25,1.0,0.0,20
+selective,NC,llama3.1-8b,instance,full,acc_conf,0.25,0.8742795965109895,0.045269549259984415,20
+selective,NC,llama3.1-8b,instance,full,lift,0.25,0.12572040348901045,0.045269549259984415,20
+selective,NC,llama3.1-8b,question,full,acc_cas,0.25,0.694004185504775,0.2707872982475216,20
+selective,NC,llama3.1-8b,question,full,acc_conf,0.25,0.7129336900274266,0.2596508256230294,20
+selective,NC,llama3.1-8b,question,full,lift,0.25,-0.01892950452265172,0.08578436543761338,20
+selective,NC,meditron3-8b,instance,full,acc_cas,0.75,0.9682190404591073,0.015279304640906505,20
+selective,NC,meditron3-8b,instance,full,acc_conf,0.75,0.898794740657703,0.01660376444654116,20
+selective,NC,meditron3-8b,instance,full,lift,0.75,0.06942429980140455,0.005646759372605178,20
+selective,NC,meditron3-8b,question,full,acc_cas,0.75,0.9189101423786727,0.0824586886124336,20
+selective,NC,meditron3-8b,question,full,acc_conf,0.75,0.9215483018972218,0.08318341118361199,20
+selective,NC,meditron3-8b,question,full,lift,0.75,-0.0026381595185491435,0.008030335204940928,20
+selective,NC,meditron3-8b,instance,full,acc_cas,0.5,0.9629980853948987,0.02023673644679694,20
+selective,NC,meditron3-8b,instance,full,acc_conf,0.5,0.8640930088609228,0.022240626404398802,20
+selective,NC,meditron3-8b,instance,full,lift,0.5,0.09890507653397587,0.017240570011724493,20
+selective,NC,meditron3-8b,question,full,acc_cas,0.5,0.8168664404933722,0.15195363283619195,20
+selective,NC,meditron3-8b,question,full,acc_conf,0.5,0.8113620774230285,0.14930835379926943,20
+selective,NC,meditron3-8b,question,full,lift,0.5,0.005504363070343699,0.010381699088912554,20
+selective,NC,meditron3-8b,instance,full,acc_cas,0.25,0.9975609756097562,0.01090764867073069,20
+selective,NC,meditron3-8b,instance,full,acc_conf,0.25,0.9829330648926236,0.019872650086974333,20
+selective,NC,meditron3-8b,instance,full,lift,0.25,0.014627910717132386,0.015321995066993197,20
+selective,NC,meditron3-8b,question,full,acc_cas,0.25,0.9706555944055945,0.04553400150731826,20
+selective,NC,meditron3-8b,question,full,acc_conf,0.25,0.9640964546206481,0.045561368273137254,20
+selective,NC,meditron3-8b,question,full,lift,0.25,0.0065591397849462385,0.020191620272544706,20
+selective,NC,phi4-14b,instance,full,acc_cas,0.75,1.0,0.0,20
+selective,NC,phi4-14b,instance,full,acc_conf,0.75,0.8863285670036785,0.01755287245841982,20
+selective,NC,phi4-14b,instance,full,lift,0.75,0.1136714329963215,0.01755287245841982,20
+selective,NC,phi4-14b,question,full,acc_cas,0.75,0.9236690016989086,0.05749723101853321,20
+selective,NC,phi4-14b,question,full,acc_conf,0.75,0.8549318686985025,0.059158555648746745,20
+selective,NC,phi4-14b,question,full,lift,0.75,0.06873713300040643,0.0806742721559246,20
+selective,NC,phi4-14b,instance,full,acc_cas,0.5,1.0,0.0,20
+selective,NC,phi4-14b,instance,full,acc_conf,0.5,0.9213365037901367,0.02629729180172001,20
+selective,NC,phi4-14b,instance,full,lift,0.5,0.07866349620986342,0.026297291801720014,20
+selective,NC,phi4-14b,question,full,acc_cas,0.5,0.9921680634371828,0.02260005585207819,20
+selective,NC,phi4-14b,question,full,acc_conf,0.5,0.9757863326247577,0.0535502261507987,20
+selective,NC,phi4-14b,question,full,lift,0.5,0.016381730812425242,0.05706089303661123,20
+selective,NC,phi4-14b,instance,full,acc_cas,0.25,1.0,0.0,20
+selective,NC,phi4-14b,instance,full,acc_conf,0.25,0.946711580830921,0.027379829491483994,20
+selective,NC,phi4-14b,instance,full,lift,0.25,0.053288419169078796,0.02737982949148399,20
+selective,NC,phi4-14b,question,full,acc_cas,0.25,0.9944444444444445,0.024845199749997673,20
+selective,NC,phi4-14b,question,full,acc_conf,0.25,0.997872340425532,0.009515182882977818,20
+selective,NC,phi4-14b,question,full,lift,0.25,-0.0034278959810874754,0.02706857150308303,20
+selective,NC,qwen3-4b,instance,full,acc_cas,0.75,0.9978217617337346,0.005871444714390398,20
+selective,NC,qwen3-4b,instance,full,acc_conf,0.75,0.874274573307722,0.01554664376255288,20
+selective,NC,qwen3-4b,instance,full,lift,0.75,0.1235471884260129,0.01765589185469137,20
+selective,NC,qwen3-4b,question,full,acc_cas,0.75,0.7709195315190955,0.01487767081657947,20
+selective,NC,qwen3-4b,question,full,acc_conf,0.75,0.8619065023196523,0.013330418750816047,20
+selective,NC,qwen3-4b,question,full,lift,0.75,-0.09098697080055679,0.02396156772965256,20
+selective,NC,qwen3-4b,instance,full,acc_cas,0.5,1.0,0.0,20
+selective,NC,qwen3-4b,instance,full,acc_conf,0.5,0.867264056541363,0.017825452859768817,20
+selective,NC,qwen3-4b,instance,full,lift,0.5,0.13273594345863698,0.017825452859768817,20
+selective,NC,qwen3-4b,question,full,acc_cas,0.5,0.839629871148564,0.0857722844226351,20
+selective,NC,qwen3-4b,question,full,acc_conf,0.5,0.8649668150523402,0.0020149420578762216,20
+selective,NC,qwen3-4b,question,full,lift,0.5,-0.025336943903776193,0.08608628978401314,20
+selective,NC,qwen3-4b,instance,full,acc_cas,0.25,1.0,0.0,20
+selective,NC,qwen3-4b,instance,full,acc_conf,0.25,0.867264056541363,0.017825452859768817,20
+selective,NC,qwen3-4b,instance,full,lift,0.25,0.13273594345863698,0.017825452859768817,20
+selective,NC,qwen3-4b,question,full,acc_cas,0.25,0.9389996594234251,0.07676956708687936,20
+selective,NC,qwen3-4b,question,full,acc_conf,0.25,0.8490893333158583,0.04895985399531306,20
+selective,NC,qwen3-4b,question,full,lift,0.25,0.08991032610756675,0.08697129823065824,20
+selective,NC,qwen3-8b,instance,full,acc_cas,0.75,0.997531028206071,0.00410121242872504,20
+selective,NC,qwen3-8b,instance,full,acc_conf,0.75,0.8272539215500243,0.012876158857749828,20
+selective,NC,qwen3-8b,instance,full,lift,0.75,0.17027710665604667,0.013007856227521222,20
+selective,NC,qwen3-8b,question,full,acc_cas,0.75,0.854053845776777,0.049950402366641396,20
+selective,NC,qwen3-8b,question,full,acc_conf,0.75,0.8522669275173212,0.03141095788229333,20
+selective,NC,qwen3-8b,question,full,lift,0.75,0.0017869182594557609,0.0570074208737866,20
+selective,NC,qwen3-8b,instance,full,acc_cas,0.5,0.9963208061758593,0.0061230295894345085,20
+selective,NC,qwen3-8b,instance,full,acc_conf,0.5,0.8462383183764443,0.024390804963306204,20
+selective,NC,qwen3-8b,instance,full,lift,0.5,0.15008248779941505,0.025891742621143615,20
+selective,NC,qwen3-8b,question,full,acc_cas,0.5,0.8822897324505734,0.0671405105457342,20
+selective,NC,qwen3-8b,question,full,acc_conf,0.5,0.8644423154731532,0.03857269820159937,20
+selective,NC,qwen3-8b,question,full,lift,0.5,0.017847416977420323,0.08078304899080013,20
+selective,NC,qwen3-8b,instance,full,acc_cas,0.25,0.9979591836734695,0.009126808071427722,20
+selective,NC,qwen3-8b,instance,full,acc_conf,0.25,0.8495470863857622,0.02171380973725934,20
+selective,NC,qwen3-8b,instance,full,lift,0.25,0.14841209728770718,0.0231420477096393,20
+selective,NC,qwen3-8b,question,full,acc_cas,0.25,0.7931392098178791,0.25472195552766047,20
+selective,NC,qwen3-8b,question,full,acc_conf,0.25,0.8170281256691526,0.1058317591600066,20
+selective,NC,qwen3-8b,question,full,lift,0.25,-0.023888915851273472,0.22062889514393458,20
+selective,NC,qwen3.5-9b,instance,full,acc_cas,0.75,0.9992537313432835,0.0033374148917907406,20
+selective,NC,qwen3.5-9b,instance,full,acc_conf,0.75,0.9732003060545885,0.006993498047533784,20
+selective,NC,qwen3.5-9b,instance,full,lift,0.75,0.026053425288694892,0.00743329465864197,20
+selective,NC,qwen3.5-9b,question,full,acc_cas,0.75,0.873775748126746,0.0048130237734772124,20
+selective,NC,qwen3.5-9b,question,full,acc_conf,0.75,0.873775748126746,0.0048130237734772124,20
+selective,NC,qwen3.5-9b,question,full,lift,0.75,0.0,0.0,20
+selective,NC,qwen3.5-9b,instance,full,acc_cas,0.5,1.0,0.0,20
+selective,NC,qwen3.5-9b,instance,full,acc_conf,0.5,0.9636819295414828,0.010404697717346796,20
+selective,NC,qwen3.5-9b,instance,full,lift,0.5,0.03631807045851727,0.010404697717346796,20
+selective,NC,qwen3.5-9b,question,full,acc_cas,0.5,0.705392783820521,0.03264676666974229,20
+selective,NC,qwen3.5-9b,question,full,acc_conf,0.5,0.705392783820521,0.03264676666974229,20
+selective,NC,qwen3.5-9b,question,full,lift,0.5,0.0,0.0,20
+selective,NC,qwen3.5-9b,instance,full,acc_cas,0.25,1.0,0.0,20
+selective,NC,qwen3.5-9b,instance,full,acc_conf,0.25,1.0,0.0,20
+selective,NC,qwen3.5-9b,instance,full,lift,0.25,0.0,0.0,20
+selective,NC,qwen3.5-9b,question,full,acc_cas,0.25,1.0,0.0,20
+selective,NC,qwen3.5-9b,question,full,acc_conf,0.25,1.0,0.0,20
+selective,NC,qwen3.5-9b,question,full,lift,0.25,0.0,0.0,20
+selective,NC,6-model mean,instance,full,acc_cas,0.75,0.9798217598980574,0.004562855218587256,20
+selective,NC,6-model mean,instance,full,acc_conf,0.75,0.8741892868433183,0.0051095274156569845,20
+selective,NC,6-model mean,instance,full,lift,0.75,0.10563247305473895,0.004962190146245962,20
+selective,NC,6-model mean,question,full,acc_cas,0.75,0.8679011117638338,0.022552091454659272,20
+selective,NC,6-model mean,question,full,acc_conf,0.75,0.8634174590202253,0.019281290669349666,20
+selective,NC,6-model mean,question,full,lift,0.75,0.00448365274360834,0.02319774674083034,20
+selective,NC,6-model mean,instance,full,acc_cas,0.5,0.99296208330303,0.003042868360977693,20
+selective,NC,6-model mean,instance,full,acc_conf,0.5,0.8751414398432399,0.008227876698487069,20
+selective,NC,6-model mean,instance,full,lift,0.5,0.11782064345979022,0.008530943524172843,20
+selective,NC,6-model mean,question,full,acc_cas,0.5,0.8363322642497014,0.04982517548122724,20
+selective,NC,6-model mean,question,full,acc_conf,0.5,0.8286444341917841,0.041761672366820796,20
+selective,NC,6-model mean,question,full,lift,0.5,0.007687830057917407,0.042096987108769184,20
+selective,NC,6-model mean,instance,full,acc_cas,0.25,0.9992533598805377,0.0023081754791114376,20
+selective,NC,6-model mean,instance,full,acc_conf,0.25,0.9201225641936099,0.010607899103236512,20
+selective,NC,6-model mean,instance,full,lift,0.25,0.07913079568692764,0.0108054109347111,20
+selective,NC,6-model mean,question,full,acc_cas,0.25,0.8985405155993531,0.055246786825225644,20
+selective,NC,6-model mean,question,full,acc_conf,0.25,0.8901699906764362,0.04703778543107587,20
+selective,NC,6-model mean,question,full,lift,0.25,0.008370524922916718,0.03456255392457226,20
+selective,CC,llama3.1-8b,instance,full,acc_cas,0.75,0.9015162106477946,0.013746604007649347,20
+selective,CC,llama3.1-8b,instance,full,acc_conf,0.75,0.9030061778604013,0.015779678178727594,20
+selective,CC,llama3.1-8b,instance,full,lift,0.75,-0.0014899672126067408,0.019356042635639076,20
+selective,CC,llama3.1-8b,question,full,acc_cas,0.75,0.8585162685682176,0.01999398943143539,20
+selective,CC,llama3.1-8b,question,full,acc_conf,0.75,0.9049678841413394,0.02354298530578266,20
+selective,CC,llama3.1-8b,question,full,lift,0.75,-0.04645161557312188,0.020235089561719096,20
+selective,CC,llama3.1-8b,instance,full,acc_cas,0.5,0.9641298359848273,0.015561877998205872,20
+selective,CC,llama3.1-8b,instance,full,acc_conf,0.5,0.9470732370670844,0.0237938025661164,20
+selective,CC,llama3.1-8b,instance,full,lift,0.5,0.017056598917742877,0.024633596564148524,20
+selective,CC,llama3.1-8b,question,full,acc_cas,0.5,0.9309799413541503,0.016451460428598876,20
+selective,CC,llama3.1-8b,question,full,acc_conf,0.5,0.9572522798498021,0.016045014114329192,20
+selective,CC,llama3.1-8b,question,full,lift,0.5,-0.026272338495651824,0.014876281441336563,20
+selective,CC,llama3.1-8b,instance,full,acc_cas,0.25,0.9843248462637006,0.015144560826933346,20
+selective,CC,llama3.1-8b,instance,full,acc_conf,0.25,0.9789213794258238,0.024476607407070763,20
+selective,CC,llama3.1-8b,instance,full,lift,0.25,0.005403466837876935,0.028231818286720493,20
+selective,CC,llama3.1-8b,question,full,acc_cas,0.25,0.9641011756737585,0.020388559935499824,20
+selective,CC,llama3.1-8b,question,full,acc_conf,0.25,0.9741078478783596,0.02571189774255972,20
+selective,CC,llama3.1-8b,question,full,lift,0.25,-0.010006672204601042,0.0176411608812523,20
+selective,CC,meditron3-8b,instance,full,acc_cas,0.75,0.9703773353131974,0.009470101764181376,20
+selective,CC,meditron3-8b,instance,full,acc_conf,0.75,0.9530649281679127,0.004410228839082846,20
+selective,CC,meditron3-8b,instance,full,lift,0.75,0.017312407145284404,0.008806628238957583,20
+selective,CC,meditron3-8b,question,full,acc_cas,0.75,0.9569658782142272,0.003750825791297214,20
+selective,CC,meditron3-8b,question,full,acc_conf,0.75,0.9764604886077392,0.004890709105767474,20
+selective,CC,meditron3-8b,question,full,lift,0.75,-0.019494610393512003,0.005500451698831346,20
+selective,CC,meditron3-8b,instance,full,acc_cas,0.5,0.9781488169665413,0.01259170300232116,20
+selective,CC,meditron3-8b,instance,full,acc_conf,0.5,0.9665135845361746,0.010880823328687051,20
+selective,CC,meditron3-8b,instance,full,lift,0.5,0.011635232430366776,0.010724873537696963,20
+selective,CC,meditron3-8b,question,full,acc_cas,0.5,0.9896943807866163,0.0006906434486932093,20
+selective,CC,meditron3-8b,question,full,acc_conf,0.5,0.995038204914391,0.005107066017817946,20
+selective,CC,meditron3-8b,question,full,lift,0.5,-0.00534382412777466,0.0054689619880648535,20
+selective,CC,meditron3-8b,instance,full,acc_cas,0.25,0.9873630180334756,0.01618824086427396,20
+selective,CC,meditron3-8b,instance,full,acc_conf,0.25,0.9876558039825435,0.013867010572276704,20
+selective,CC,meditron3-8b,instance,full,lift,0.25,-0.0002927859490679807,0.007296229846150903,20
+selective,CC,meditron3-8b,question,full,acc_cas,0.25,1.0,0.0,20
+selective,CC,meditron3-8b,question,full,acc_conf,0.25,1.0,0.0,20
+selective,CC,meditron3-8b,question,full,lift,0.25,0.0,0.0,20
+selective,CC,phi4-14b,instance,full,acc_cas,0.75,0.9816939755267555,0.009699430067850037,20
+selective,CC,phi4-14b,instance,full,acc_conf,0.75,0.9756422350109764,0.00908043853990086,20
+selective,CC,phi4-14b,instance,full,lift,0.75,0.00605174051577913,0.01044830438336476,20
+selective,CC,phi4-14b,question,full,acc_cas,0.75,0.9607670162828275,0.021821138835140853,20
+selective,CC,phi4-14b,question,full,acc_conf,0.75,0.9643036546934256,0.013375260970054615,20
+selective,CC,phi4-14b,question,full,lift,0.75,-0.0035366384105984415,0.011876809824157019,20
+selective,CC,phi4-14b,instance,full,acc_cas,0.5,0.9953490038714186,0.005308987112576213,20
+selective,CC,phi4-14b,instance,full,acc_conf,0.5,0.981961014372667,0.010859222321854479,20
+selective,CC,phi4-14b,instance,full,lift,0.5,0.013387989498751585,0.011600473681498755,20
+selective,CC,phi4-14b,question,full,acc_cas,0.5,0.9725039877670196,0.03551215900583383,20
+selective,CC,phi4-14b,question,full,acc_conf,0.5,0.9639286654651809,0.0116194335456234,20
+selective,CC,phi4-14b,question,full,lift,0.5,0.008575322301838606,0.024488253267667147,20
+selective,CC,phi4-14b,instance,full,acc_cas,0.25,0.9951943735827665,0.008619004580263216,20
+selective,CC,phi4-14b,instance,full,acc_conf,0.25,0.981961014372667,0.010859222321854479,20
+selective,CC,phi4-14b,instance,full,lift,0.25,0.013233359210099521,0.014462343645934043,20
+selective,CC,phi4-14b,question,full,acc_cas,0.25,0.9904471544715449,0.021034977202678263,20
+selective,CC,phi4-14b,question,full,acc_conf,0.25,0.9639286654651809,0.0116194335456234,20
+selective,CC,phi4-14b,question,full,lift,0.25,0.02651848900636375,0.023780087281807732,20
+selective,CC,qwen3-4b,instance,full,acc_cas,0.75,0.9681487472146385,0.008479039271759532,20
+selective,CC,qwen3-4b,instance,full,acc_conf,0.75,0.9684390343318322,0.007615396289207176,20
+selective,CC,qwen3-4b,instance,full,lift,0.75,-0.0002902871171937216,0.009659362689709992,20
+selective,CC,qwen3-4b,question,full,acc_cas,0.75,0.9547540506238207,0.0034370859044178578,20
+selective,CC,qwen3-4b,question,full,acc_conf,0.75,0.961240965641557,0.004475223747862464,20
+selective,CC,qwen3-4b,question,full,lift,0.75,-0.006486915017736456,0.004380284694026408,20
+selective,CC,qwen3-4b,instance,full,acc_cas,0.5,0.980330928274738,0.010773362411353304,20
+selective,CC,qwen3-4b,instance,full,acc_conf,0.5,0.9684390343318322,0.007615396289207176,20
+selective,CC,qwen3-4b,instance,full,lift,0.5,0.011891893942905634,0.012009241819388977,20
+selective,CC,qwen3-4b,question,full,acc_cas,0.5,0.9471658878002682,0.005982936788492715,20
+selective,CC,qwen3-4b,question,full,acc_conf,0.5,0.961240965641557,0.004475223747862464,20
+selective,CC,qwen3-4b,question,full,lift,0.5,-0.014075077841288924,0.004763122132103792,20
+selective,CC,qwen3-4b,instance,full,acc_cas,0.25,0.9842485465915836,0.015836916992983972,20
+selective,CC,qwen3-4b,instance,full,acc_conf,0.25,0.9684390343318322,0.007615396289207176,20
+selective,CC,qwen3-4b,instance,full,lift,0.25,0.015809512259751253,0.016743637924877916,20
+selective,CC,qwen3-4b,question,full,acc_cas,0.25,0.9389354524880481,0.013225328176226438,20
+selective,CC,qwen3-4b,question,full,acc_conf,0.25,0.961240965641557,0.004475223747862464,20
+selective,CC,qwen3-4b,question,full,lift,0.25,-0.02230551315350901,0.012032893603081971,20
+selective,CC,qwen3-8b,instance,full,acc_cas,0.75,0.9862672492396609,0.005666603525417411,20
+selective,CC,qwen3-8b,instance,full,acc_conf,0.75,0.9867421145921884,0.007527512719773981,20
+selective,CC,qwen3-8b,instance,full,lift,0.75,-0.0004748653525273483,0.007578314323412571,20
+selective,CC,qwen3-8b,question,full,acc_cas,0.75,0.9737649391888962,0.009121510648918604,20
+selective,CC,qwen3-8b,question,full,acc_conf,0.75,0.9789880261643512,0.008448770571877803,20
+selective,CC,qwen3-8b,question,full,lift,0.75,-0.005223086975455015,0.004272099382774035,20
+selective,CC,qwen3-8b,instance,full,acc_cas,0.5,0.992862880978481,0.007345641070024335,20
+selective,CC,qwen3-8b,instance,full,acc_conf,0.5,0.9867421145921884,0.007527512719773981,20
+selective,CC,qwen3-8b,instance,full,lift,0.5,0.006120766386292586,0.006496207064381305,20
+selective,CC,qwen3-8b,question,full,acc_cas,0.5,0.9760159408154152,0.01050733594839941,20
+selective,CC,qwen3-8b,question,full,acc_conf,0.5,0.9796092449674069,0.007874407696145391,20
+selective,CC,qwen3-8b,question,full,lift,0.5,-0.003593304151991439,0.003828543617804924,20
+selective,CC,qwen3-8b,instance,full,acc_cas,0.25,0.9947697477253928,0.009798850091231413,20
+selective,CC,qwen3-8b,instance,full,acc_conf,0.25,0.9867421145921884,0.007527512719773981,20
+selective,CC,qwen3-8b,instance,full,lift,0.25,0.00802763313320457,0.010142173243339653,20
+selective,CC,qwen3-8b,question,full,acc_cas,0.25,0.977104520895297,0.019885098752284926,20
+selective,CC,qwen3-8b,question,full,acc_conf,0.25,0.9796092449674069,0.007874407696145391,20
+selective,CC,qwen3-8b,question,full,lift,0.25,-0.0025047240721098097,0.01494533534847662,20
+selective,CC,qwen3.5-9b,instance,full,acc_cas,0.75,0.9935115209979909,0.006972560299977809,20
+selective,CC,qwen3.5-9b,instance,full,acc_conf,0.75,0.9933086885105192,0.0066985675684052524,20
+selective,CC,qwen3.5-9b,instance,full,lift,0.75,0.00020283248747170467,0.0015348592098043427,20
+selective,CC,qwen3.5-9b,question,full,acc_cas,0.75,0.9922682962009477,0.006104433073720873,20
+selective,CC,qwen3.5-9b,question,full,acc_conf,0.75,1.0,0.0,20
+selective,CC,qwen3.5-9b,question,full,lift,0.75,-0.007731703799052464,0.006104433073720873,20
+selective,CC,qwen3.5-9b,instance,full,acc_cas,0.5,0.996048076021381,0.005566366881561848,20
+selective,CC,qwen3.5-9b,instance,full,acc_conf,0.5,0.9972965569417257,0.004835881298056859,20
+selective,CC,qwen3.5-9b,instance,full,lift,0.5,-0.0012484809203448133,0.005101171269914587,20
+selective,CC,qwen3.5-9b,question,full,acc_cas,0.5,1.0,0.0,20
+selective,CC,qwen3.5-9b,question,full,acc_conf,0.5,1.0,0.0,20
+selective,CC,qwen3.5-9b,question,full,lift,0.5,0.0,0.0,20
+selective,CC,qwen3.5-9b,instance,full,acc_cas,0.25,1.0,0.0,20
+selective,CC,qwen3.5-9b,instance,full,acc_conf,0.25,0.9983192090395481,0.005173568373689994,20
+selective,CC,qwen3.5-9b,instance,full,lift,0.25,0.0016807909604519776,0.0051735683736899955,20
+selective,CC,qwen3.5-9b,question,full,acc_cas,0.25,1.0,0.0,20
+selective,CC,qwen3.5-9b,question,full,acc_conf,0.25,1.0,0.0,20
+selective,CC,qwen3.5-9b,question,full,lift,0.25,0.0,0.0,20
+selective,CC,6-model mean,instance,full,acc_cas,0.75,0.9669191731566731,0.0026737325916372377,20
+selective,CC,6-model mean,instance,full,acc_conf,0.75,0.9633671964123052,0.003613865321248412,20
+selective,CC,6-model mean,instance,full,lift,0.75,0.0035519767443679046,0.0037053822052976293,20
+selective,CC,6-model mean,question,full,acc_cas,0.75,0.9495060748464894,0.005637003003960918,20
+selective,CC,6-model mean,question,full,acc_conf,0.75,0.9643268365414022,0.00496161945048697,20
+selective,CC,6-model mean,question,full,lift,0.75,-0.014820761694912709,0.004744768493397684,20
+selective,CC,6-model mean,instance,full,acc_cas,0.5,0.984478257016231,0.004288915401967385,20
+selective,CC,6-model mean,instance,full,acc_conf,0.5,0.9746709236402789,0.005489841730114486,20
+selective,CC,6-model mean,instance,full,lift,0.5,0.00980733337595244,0.00508119931528427,20
+selective,CC,6-model mean,question,full,acc_cas,0.5,0.9693933564205782,0.006527115145575876,20
+selective,CC,6-model mean,question,full,acc_conf,0.5,0.9761782268063897,0.0036403490217095857,20
+selective,CC,6-model mean,question,full,lift,0.5,-0.006784870385811373,0.0046899791317419484,20
+selective,CC,6-model mean,instance,full,acc_cas,0.25,0.9909834220328199,0.004980418052711615,20
+selective,CC,6-model mean,instance,full,acc_conf,0.25,0.9836730926241003,0.006422575525193678,20
+selective,CC,6-model mean,instance,full,lift,0.25,0.007310329408719378,0.0068141922594065485,20
+selective,CC,6-model mean,question,full,acc_cas,0.25,0.9784313839214415,0.006681986413660367,20
+selective,CC,6-model mean,question,full,acc_conf,0.25,0.9798144539920839,0.005252510117710209,20
+selective,CC,6-model mean,question,full,lift,0.25,-0.0013830700706426854,0.006635954171452491,20
+selective,IC,llama3.1-8b,instance,full,acc_cas,0.75,0.3885221895190634,0.026686915158510842,20
+selective,IC,llama3.1-8b,instance,full,acc_conf,0.75,0.32221864530412186,0.01991326621304291,20
+selective,IC,llama3.1-8b,instance,full,lift,0.75,0.06630354421494158,0.02901188035048836,20
+selective,IC,llama3.1-8b,question,full,acc_cas,0.75,0.3257156357253652,0.01832810663411078,20
+selective,IC,llama3.1-8b,question,full,acc_conf,0.75,0.30406650518198575,0.022274283538022546,20
+selective,IC,llama3.1-8b,question,full,lift,0.75,0.02164913054337941,0.022681300501295628,20
+selective,IC,llama3.1-8b,instance,full,acc_cas,0.5,0.5250523951149317,0.04793755212540367,20
+selective,IC,llama3.1-8b,instance,full,acc_conf,0.5,0.28585251534751277,0.03207064516867098,20
+selective,IC,llama3.1-8b,instance,full,lift,0.5,0.23919987976741908,0.048100417716692795,20
+selective,IC,llama3.1-8b,question,full,acc_cas,0.5,0.33886439356137754,0.02620095829432573,20
+selective,IC,llama3.1-8b,question,full,acc_conf,0.5,0.28577873125712167,0.02736683334961373,20
+selective,IC,llama3.1-8b,question,full,lift,0.5,0.053085662304255876,0.0413125439138352,20
+selective,IC,llama3.1-8b,instance,full,acc_cas,0.25,0.6457808057069953,0.0531942996112274,20
+selective,IC,llama3.1-8b,instance,full,acc_conf,0.25,0.2779640828105845,0.051558117298608444,20
+selective,IC,llama3.1-8b,instance,full,lift,0.25,0.3678167228964107,0.07972632540677996,20
+selective,IC,llama3.1-8b,question,full,acc_cas,0.25,0.2926713135338548,0.06673916374835487,20
+selective,IC,llama3.1-8b,question,full,acc_conf,0.25,0.22612798461519135,0.05436617471231687,20
+selective,IC,llama3.1-8b,question,full,lift,0.25,0.06654332891866345,0.06761554778300538,20
+selective,IC,meditron3-8b,instance,full,acc_cas,0.75,0.5147474238420903,0.040099032336207686,20
+selective,IC,meditron3-8b,instance,full,acc_conf,0.75,0.4244078105812698,0.02997515742770487,20
+selective,IC,meditron3-8b,instance,full,lift,0.75,0.09033961326082049,0.03842826409651378,20
+selective,IC,meditron3-8b,question,full,acc_cas,0.75,0.3998972021903771,0.04793679205932919,20
+selective,IC,meditron3-8b,question,full,acc_conf,0.75,0.35010617544776007,0.03259530428436457,20
+selective,IC,meditron3-8b,question,full,lift,0.75,0.04979102674261706,0.03481126108476621,20
+selective,IC,meditron3-8b,instance,full,acc_cas,0.5,0.6056186898731415,0.04284047136066831,20
+selective,IC,meditron3-8b,instance,full,acc_conf,0.5,0.40895596804658396,0.034945590863599565,20
+selective,IC,meditron3-8b,instance,full,lift,0.5,0.19666272182655767,0.04360634496107276,20
+selective,IC,meditron3-8b,question,full,acc_cas,0.5,0.39800237772520586,0.04847053100410593,20
+selective,IC,meditron3-8b,question,full,acc_conf,0.5,0.34157353174653926,0.04301305985403178,20
+selective,IC,meditron3-8b,question,full,lift,0.5,0.0564288459786666,0.03811621317939043,20
+selective,IC,meditron3-8b,instance,full,acc_cas,0.25,0.7472191633259119,0.06403212753939672,20
+selective,IC,meditron3-8b,instance,full,acc_conf,0.25,0.35337635874475787,0.06698309376441482,20
+selective,IC,meditron3-8b,instance,full,lift,0.25,0.3938428045811539,0.09467880517452722,20
+selective,IC,meditron3-8b,question,full,acc_cas,0.25,0.44507553005487654,0.09298355551706218,20
+selective,IC,meditron3-8b,question,full,acc_conf,0.25,0.3164414649503354,0.07838248810407854,20
+selective,IC,meditron3-8b,question,full,lift,0.25,0.12863406510454106,0.07917037352836873,20
+selective,IC,phi4-14b,instance,full,acc_cas,0.75,0.5167113120742561,0.02061049960123652,20
+selective,IC,phi4-14b,instance,full,acc_conf,0.75,0.42449745103416137,0.01772341622306509,20
+selective,IC,phi4-14b,instance,full,lift,0.75,0.09221386104009478,0.028942175166181625,20
+selective,IC,phi4-14b,question,full,acc_cas,0.75,0.33347068550022585,0.062437737248082485,20
+selective,IC,phi4-14b,question,full,acc_conf,0.75,0.43050424259743475,0.02638128822071971,20
+selective,IC,phi4-14b,question,full,lift,0.75,-0.09703355709720889,0.06496709542391953,20
+selective,IC,phi4-14b,instance,full,acc_cas,0.5,0.6497828336897656,0.037490478122892544,20
+selective,IC,phi4-14b,instance,full,acc_conf,0.5,0.39956185837019786,0.030281679823180783,20
+selective,IC,phi4-14b,instance,full,lift,0.5,0.2502209753195678,0.04759256190925024,20
+selective,IC,phi4-14b,question,full,acc_cas,0.5,0.3235861543909172,0.07641024056070525,20
+selective,IC,phi4-14b,question,full,acc_conf,0.5,0.42596697217470386,0.03390307813160135,20
+selective,IC,phi4-14b,question,full,lift,0.5,-0.10238081778378663,0.08890903575377165,20
+selective,IC,phi4-14b,instance,full,acc_cas,0.25,0.7822837077456517,0.05489802470467218,20
+selective,IC,phi4-14b,instance,full,acc_conf,0.25,0.3785394161761766,0.04168212171793324,20
+selective,IC,phi4-14b,instance,full,lift,0.25,0.40374429156947506,0.06463546207131848,20
+selective,IC,phi4-14b,question,full,acc_cas,0.25,0.2850842157230923,0.09686436584337793,20
+selective,IC,phi4-14b,question,full,acc_conf,0.25,0.4276120140298298,0.03279704885184479,20
+selective,IC,phi4-14b,question,full,lift,0.25,-0.14252779830673754,0.10597504044953623,20
+selective,IC,qwen3-4b,instance,full,acc_cas,0.75,0.47186703368649585,0.01875015800370394,20
+selective,IC,qwen3-4b,instance,full,acc_conf,0.75,0.38569436229214693,0.01572161860008376,20
+selective,IC,qwen3-4b,instance,full,lift,0.75,0.08617267139434893,0.030309853232569087,20
+selective,IC,qwen3-4b,question,full,acc_cas,0.75,0.32191390024202693,0.04700357324988916,20
+selective,IC,qwen3-4b,question,full,acc_conf,0.75,0.4007664406025575,0.033623482566157555,20
+selective,IC,qwen3-4b,question,full,lift,0.75,-0.0788525403605305,0.04504535296995276,20
+selective,IC,qwen3-4b,instance,full,acc_cas,0.5,0.5947620431269183,0.033925228897585,20
+selective,IC,qwen3-4b,instance,full,acc_conf,0.5,0.38509313053473815,0.015970586702349295,20
+selective,IC,qwen3-4b,instance,full,lift,0.5,0.2096689125921803,0.042256511702933146,20
+selective,IC,qwen3-4b,question,full,acc_cas,0.5,0.3025439270463314,0.07987135159821268,20
+selective,IC,qwen3-4b,question,full,acc_conf,0.5,0.4007664406025575,0.033623482566157555,20
+selective,IC,qwen3-4b,question,full,lift,0.5,-0.09822251355622602,0.06395160936883447,20
+selective,IC,qwen3-4b,instance,full,acc_cas,0.25,0.7276282151532567,0.06323399891431374,20
+selective,IC,qwen3-4b,instance,full,acc_conf,0.25,0.38509313053473815,0.015970586702349295,20
+selective,IC,qwen3-4b,instance,full,lift,0.25,0.34253508461851856,0.06973964049726607,20
+selective,IC,qwen3-4b,question,full,acc_cas,0.25,0.33469091041173427,0.10748898818952718,20
+selective,IC,qwen3-4b,question,full,acc_conf,0.25,0.4007664406025575,0.033623482566157555,20
+selective,IC,qwen3-4b,question,full,lift,0.25,-0.06607553019082323,0.10603085968952042,20
+selective,IC,qwen3-8b,instance,full,acc_cas,0.75,0.6602271040981228,0.022209123699830344,20
+selective,IC,qwen3-8b,instance,full,acc_conf,0.75,0.5849524039559916,0.014750237849831541,20
+selective,IC,qwen3-8b,instance,full,lift,0.75,0.07527470014213129,0.024500093676126794,20
+selective,IC,qwen3-8b,question,full,acc_cas,0.75,0.6435611655893075,0.04174459836731759,20
+selective,IC,qwen3-8b,question,full,acc_conf,0.75,0.6067246490611452,0.016038635027901003,20
+selective,IC,qwen3-8b,question,full,lift,0.75,0.03683651652816243,0.04121493884435873,20
+selective,IC,qwen3-8b,instance,full,acc_cas,0.5,0.7804691866600978,0.02418207921649408,20
+selective,IC,qwen3-8b,instance,full,acc_conf,0.5,0.5944399913308367,0.027339013012246317,20
+selective,IC,qwen3-8b,instance,full,lift,0.5,0.18602919532926127,0.03958705872152626,20
+selective,IC,qwen3-8b,question,full,acc_cas,0.5,0.6855275735868073,0.06462218079993338,20
+selective,IC,qwen3-8b,question,full,acc_conf,0.5,0.643819998970885,0.028907736066439912,20
+selective,IC,qwen3-8b,question,full,lift,0.5,0.04170757461592233,0.0771868821973433,20
+selective,IC,qwen3-8b,instance,full,acc_cas,0.25,0.8729755411672011,0.0424859285996047,20
+selective,IC,qwen3-8b,instance,full,acc_conf,0.25,0.5967603061425623,0.0321604527411864,20
+selective,IC,qwen3-8b,instance,full,lift,0.25,0.27621523502463885,0.05631056833765854,20
+selective,IC,qwen3-8b,question,full,acc_cas,0.25,0.7433244786356964,0.09326875707086191,20
+selective,IC,qwen3-8b,question,full,acc_conf,0.25,0.6443944670559913,0.02976598401422952,20
+selective,IC,qwen3-8b,question,full,lift,0.25,0.09893001157970498,0.10160749862072699,20
+selective,IC,qwen3.5-9b,instance,full,acc_cas,0.75,0.4459195097115988,0.02289923721064672,20
+selective,IC,qwen3.5-9b,instance,full,acc_conf,0.75,0.3483313384564636,0.014854537712730756,20
+selective,IC,qwen3.5-9b,instance,full,lift,0.75,0.09758817125513528,0.026778062291871147,20
+selective,IC,qwen3.5-9b,question,full,acc_cas,0.75,0.38972770643100385,0.02114469221317547,20
+selective,IC,qwen3.5-9b,question,full,acc_conf,0.75,0.3118371575568498,0.013934372820689392,20
+selective,IC,qwen3.5-9b,question,full,lift,0.75,0.077890548874154,0.017040025446462628,20
+selective,IC,qwen3.5-9b,instance,full,acc_cas,0.5,0.5500884078875596,0.03975632893126887,20
+selective,IC,qwen3.5-9b,instance,full,acc_conf,0.5,0.37369865760005405,0.027293266789837393,20
+selective,IC,qwen3.5-9b,instance,full,lift,0.5,0.17638975028750567,0.03978174110127173,20
+selective,IC,qwen3.5-9b,question,full,acc_cas,0.5,0.430273453760866,0.03369807591919912,20
+selective,IC,qwen3.5-9b,question,full,acc_conf,0.5,0.2979863778113202,0.025078786027684822,20
+selective,IC,qwen3.5-9b,question,full,lift,0.5,0.13228707594954578,0.04280943727868385,20
+selective,IC,qwen3.5-9b,instance,full,acc_cas,0.25,0.6628659671924783,0.06125110761202536,20
+selective,IC,qwen3.5-9b,instance,full,acc_conf,0.25,0.4592039301376472,0.04203291207221724,20
+selective,IC,qwen3.5-9b,instance,full,lift,0.25,0.20366203705483107,0.07083531711346507,20
+selective,IC,qwen3.5-9b,question,full,acc_cas,0.25,0.4076699400965202,0.0427898421267222,20
+selective,IC,qwen3.5-9b,question,full,acc_conf,0.25,0.3192931244463495,0.03784997057219553,20
+selective,IC,qwen3.5-9b,question,full,lift,0.25,0.08837681565017066,0.05654996959267823,20
+selective,IC,6-model mean,instance,full,acc_cas,0.75,0.49966576215527125,0.011502964195388132,20
+selective,IC,6-model mean,instance,full,acc_conf,0.75,0.4150170019373592,0.008047518961955364,20
+selective,IC,6-model mean,instance,full,lift,0.75,0.08464876021791205,0.01452504470459725,20
+selective,IC,6-model mean,question,full,acc_cas,0.75,0.40238104927971774,0.019240226432373993,20
+selective,IC,6-model mean,question,full,acc_conf,0.75,0.4006675284079555,0.011124196080440995,20
+selective,IC,6-model mean,question,full,lift,0.75,0.0017135208717622547,0.015334424535322931,20
+selective,IC,6-model mean,instance,full,acc_cas,0.5,0.6176289260587359,0.011876948845863254,20
+selective,IC,6-model mean,instance,full,acc_conf,0.5,0.40793368687165393,0.014532693082483715,20
+selective,IC,6-model mean,instance,full,lift,0.5,0.20969523918708194,0.018436332679818784,20
+selective,IC,6-model mean,question,full,acc_cas,0.5,0.41313298001191756,0.02366311026636822,20
+selective,IC,6-model mean,question,full,acc_conf,0.5,0.39931534209385455,0.013747669863259185,20
+selective,IC,6-model mean,question,full,lift,0.5,0.013817637918063003,0.023988390540094783,20
+selective,IC,6-model mean,instance,full,acc_cas,0.25,0.7397922333819158,0.021894735506960854,20
+selective,IC,6-model mean,instance,full,acc_conf,0.25,0.4084895374244111,0.020615037352096674,20
+selective,IC,6-model mean,instance,full,lift,0.25,0.33130269595750467,0.027668222621030678,20
+selective,IC,6-model mean,question,full,acc_cas,0.25,0.41808606474262905,0.04021952811285004,20
+selective,IC,6-model mean,question,full,acc_conf,0.25,0.38910591595004246,0.019260341276049937,20
+selective,IC,6-model mean,question,full,lift,0.25,0.028980148792586556,0.0316321531014902,20
+selective,CIC,llama3.1-8b,instance,full,acc_cas,0.75,0.7694709401965742,0.031107580949154993,20
+selective,CIC,llama3.1-8b,instance,full,acc_conf,0.75,0.7663814965835626,0.020461941102776514,20
+selective,CIC,llama3.1-8b,instance,full,lift,0.75,0.003089443613011661,0.026687133270409658,20
+selective,CIC,llama3.1-8b,question,full,acc_cas,0.75,0.7093024471489388,0.024099511037161073,20
+selective,CIC,llama3.1-8b,question,full,acc_conf,0.75,0.7690582973197173,0.02193167195032193,20
+selective,CIC,llama3.1-8b,question,full,lift,0.75,-0.05975585017077869,0.02228514246968878,20
+selective,CIC,llama3.1-8b,instance,full,acc_cas,0.5,0.8599190381229184,0.021780268150280425,20
+selective,CIC,llama3.1-8b,instance,full,acc_conf,0.5,0.8372462488964494,0.02845218593133973,20
+selective,CIC,llama3.1-8b,instance,full,lift,0.5,0.02267278922646892,0.02983974722866565,20
+selective,CIC,llama3.1-8b,question,full,acc_cas,0.5,0.7677270075600088,0.03540837481340805,20
+selective,CIC,llama3.1-8b,question,full,acc_conf,0.5,0.8193354971500707,0.03747242650371948,20
+selective,CIC,llama3.1-8b,question,full,lift,0.5,-0.051608489590061854,0.024171276979184673,20
+selective,CIC,llama3.1-8b,instance,full,acc_cas,0.25,0.9565784209072467,0.023994509613090305,20
+selective,CIC,llama3.1-8b,instance,full,acc_conf,0.25,0.8897759402773376,0.03720202703499369,20
+selective,CIC,llama3.1-8b,instance,full,lift,0.25,0.06680248062990872,0.0345968508754716,20
+selective,CIC,llama3.1-8b,question,full,acc_cas,0.25,0.8473450390780297,0.09210806699582767,20
+selective,CIC,llama3.1-8b,question,full,acc_conf,0.25,0.8923615472364614,0.054539248681557746,20
+selective,CIC,llama3.1-8b,question,full,lift,0.25,-0.04501650815843196,0.09156129061787721,20
+selective,CIC,meditron3-8b,instance,full,acc_cas,0.75,0.8746152678197081,0.025595593018316383,20
+selective,CIC,meditron3-8b,instance,full,acc_conf,0.75,0.8583490780043098,0.02020952516523837,20
+selective,CIC,meditron3-8b,instance,full,lift,0.75,0.016266189815398503,0.017402228683258844,20
+selective,CIC,meditron3-8b,question,full,acc_cas,0.75,0.7408913412401136,0.03427928117502346,20
+selective,CIC,meditron3-8b,question,full,acc_conf,0.75,0.7509061867252161,0.029923734825168916,20
+selective,CIC,meditron3-8b,question,full,lift,0.75,-0.010014845485102664,0.01612625854521626,20
+selective,CIC,meditron3-8b,instance,full,acc_cas,0.5,0.949641809123811,0.016415888819369357,20
+selective,CIC,meditron3-8b,instance,full,acc_conf,0.5,0.9137979426250988,0.01267693289305327,20
+selective,CIC,meditron3-8b,instance,full,lift,0.5,0.035843866498712164,0.018172560805816917,20
+selective,CIC,meditron3-8b,question,full,acc_cas,0.5,0.9060987108637406,0.04690851740379686,20
+selective,CIC,meditron3-8b,question,full,acc_conf,0.5,0.8967319797631609,0.044692152894319874,20
+selective,CIC,meditron3-8b,question,full,lift,0.5,0.009366731100579678,0.01843950180544142,20
+selective,CIC,meditron3-8b,instance,full,acc_cas,0.25,0.9809464706698627,0.019898691300565822,20
+selective,CIC,meditron3-8b,instance,full,acc_conf,0.25,0.9622995388899056,0.02620900058376537,20
+selective,CIC,meditron3-8b,instance,full,lift,0.25,0.01864693177995707,0.018996240011025862,20
+selective,CIC,meditron3-8b,question,full,acc_cas,0.25,0.9594211559715443,0.03591043413600222,20
+selective,CIC,meditron3-8b,question,full,acc_conf,0.25,0.949889615059506,0.028470368962341182,20
+selective,CIC,meditron3-8b,question,full,lift,0.25,0.009531540912038056,0.01884089979816205,20
+selective,CIC,phi4-14b,instance,full,acc_cas,0.75,0.9421515812549238,0.012342816172098968,20
+selective,CIC,phi4-14b,instance,full,acc_conf,0.75,0.9216525077322963,0.018218224851633668,20
+selective,CIC,phi4-14b,instance,full,lift,0.75,0.020499073522627552,0.01643999346501679,20
+selective,CIC,phi4-14b,question,full,acc_cas,0.75,0.9269623423202218,0.02467701279384838,20
+selective,CIC,phi4-14b,question,full,acc_conf,0.75,0.956461104790246,0.015950265344071443,20
+selective,CIC,phi4-14b,question,full,lift,0.75,-0.029498762470024288,0.022861842252240708,20
+selective,CIC,phi4-14b,instance,full,acc_cas,0.5,0.9911832778226188,0.009890225091931711,20
+selective,CIC,phi4-14b,instance,full,acc_conf,0.5,0.9604415858561902,0.0183843963470515,20
+selective,CIC,phi4-14b,instance,full,lift,0.5,0.030741691966428834,0.015004436355315107,20
+selective,CIC,phi4-14b,question,full,acc_cas,0.5,0.9872750778215623,0.01575046974495075,20
+selective,CIC,phi4-14b,question,full,acc_conf,0.5,0.9885427205980868,0.014270822481662903,20
+selective,CIC,phi4-14b,question,full,lift,0.5,-0.0012676427765243193,0.01213709351382758,20
+selective,CIC,phi4-14b,instance,full,acc_cas,0.25,0.9990196078431373,0.004384447014705479,20
+selective,CIC,phi4-14b,instance,full,acc_conf,0.25,0.9665508071971836,0.014349763690572136,20
+selective,CIC,phi4-14b,instance,full,lift,0.25,0.032468800645953796,0.015707634416343024,20
+selective,CIC,phi4-14b,question,full,acc_cas,0.25,0.992012987012987,0.019871013422060713,20
+selective,CIC,phi4-14b,question,full,acc_conf,0.25,0.9971218487394958,0.009966582521736943,20
+selective,CIC,phi4-14b,question,full,lift,0.25,-0.00510886172650879,0.018104215119619967,20
+selective,CIC,qwen3-4b,instance,full,acc_cas,0.75,0.9177024532653464,0.011781796014493348,20
+selective,CIC,qwen3-4b,instance,full,acc_conf,0.75,0.9089215211620413,0.010345535930467992,20
+selective,CIC,qwen3-4b,instance,full,lift,0.75,0.008780932103304884,0.015277020776801535,20
+selective,CIC,qwen3-4b,question,full,acc_cas,0.75,0.8829834558309855,0.020282711521494152,20
+selective,CIC,qwen3-4b,question,full,acc_conf,0.75,0.9155859456420335,0.013661516592810227,20
+selective,CIC,qwen3-4b,question,full,lift,0.75,-0.03260248981104809,0.013550515803132965,20
+selective,CIC,qwen3-4b,instance,full,acc_cas,0.5,0.9482459505788035,0.017313765368217986,20
+selective,CIC,qwen3-4b,instance,full,acc_conf,0.5,0.9089215211620413,0.010345535930467992,20
+selective,CIC,qwen3-4b,instance,full,lift,0.5,0.03932442941676217,0.018108988316533053,20
+selective,CIC,qwen3-4b,question,full,acc_cas,0.5,0.8728057417454064,0.03414379700206629,20
+selective,CIC,qwen3-4b,question,full,acc_conf,0.5,0.9166978677831528,0.01540464824036354,20
+selective,CIC,qwen3-4b,question,full,lift,0.5,-0.04389212603774661,0.025179802084876395,20
+selective,CIC,qwen3-4b,instance,full,acc_cas,0.25,0.9685617102687688,0.020868577770114666,20
+selective,CIC,qwen3-4b,instance,full,acc_conf,0.25,0.9089215211620413,0.010345535930467992,20
+selective,CIC,qwen3-4b,instance,full,lift,0.25,0.059640189106727526,0.019163704282371748,20
+selective,CIC,qwen3-4b,question,full,acc_cas,0.25,0.8607635235172248,0.0649693594295836,20
+selective,CIC,qwen3-4b,question,full,acc_conf,0.25,0.9166978677831528,0.01540464824036354,20
+selective,CIC,qwen3-4b,question,full,lift,0.25,-0.05593434426592812,0.05583032834310658,20
+selective,CIC,qwen3-8b,instance,full,acc_cas,0.75,0.9855995708619506,0.007607614084498923,20
+selective,CIC,qwen3-8b,instance,full,acc_conf,0.75,0.9661324142655289,0.010958934485174826,20
+selective,CIC,qwen3-8b,instance,full,lift,0.75,0.019467156596421654,0.010334031278929024,20
+selective,CIC,qwen3-8b,question,full,acc_cas,0.75,0.9448298131838546,0.023842537440124656,20
+selective,CIC,qwen3-8b,question,full,acc_conf,0.75,0.9562945846941104,0.0232494472448342,20
+selective,CIC,qwen3-8b,question,full,lift,0.75,-0.011464771510255833,0.007796213402305549,20
+selective,CIC,qwen3-8b,instance,full,acc_cas,0.5,0.9936878156049491,0.0072377118640337594,20
+selective,CIC,qwen3-8b,instance,full,acc_conf,0.5,0.9727795350910095,0.01008606288140089,20
+selective,CIC,qwen3-8b,instance,full,lift,0.5,0.02090828051393978,0.011215524889849934,20
+selective,CIC,qwen3-8b,question,full,acc_cas,0.5,0.9688211392451501,0.02575544578472468,20
+selective,CIC,qwen3-8b,question,full,acc_conf,0.5,0.9782807051346778,0.014198791030897403,20
+selective,CIC,qwen3-8b,question,full,lift,0.5,-0.009459565889527666,0.020893908838144577,20
+selective,CIC,qwen3-8b,instance,full,acc_cas,0.25,0.9942892708923035,0.009038686414119349,20
+selective,CIC,qwen3-8b,instance,full,acc_conf,0.25,0.9727795350910095,0.01008606288140089,20
+selective,CIC,qwen3-8b,instance,full,lift,0.25,0.021509735801293978,0.012559119725095394,20
+selective,CIC,qwen3-8b,question,full,acc_cas,0.25,0.985958302536561,0.01008257635612642,20
+selective,CIC,qwen3-8b,question,full,acc_conf,0.25,0.9782807051346778,0.014198791030897403,20
+selective,CIC,qwen3-8b,question,full,lift,0.25,0.007677597401883091,0.012722688768113112,20
+selective,CIC,qwen3.5-9b,instance,full,acc_cas,0.75,0.9183889177309323,0.011910372073078298,20
+selective,CIC,qwen3.5-9b,instance,full,acc_conf,0.75,0.9003941193303578,0.008784750599574304,20
+selective,CIC,qwen3.5-9b,instance,full,lift,0.75,0.017994798400574597,0.012453559296263815,20
+selective,CIC,qwen3.5-9b,question,full,acc_cas,0.75,0.8786366547838454,0.014272389100074428,20
+selective,CIC,qwen3.5-9b,question,full,acc_conf,0.75,0.9082748834669635,0.01091758124074172,20
+selective,CIC,qwen3.5-9b,question,full,lift,0.75,-0.02963822868311817,0.021366864187455124,20
+selective,CIC,qwen3.5-9b,instance,full,acc_cas,0.5,0.9572798654879057,0.017627060287146824,20
+selective,CIC,qwen3.5-9b,instance,full,acc_conf,0.5,0.9467824767577817,0.017989113563610024,20
+selective,CIC,qwen3.5-9b,instance,full,lift,0.5,0.010497388730123819,0.021250487827634768,20
+selective,CIC,qwen3.5-9b,question,full,acc_cas,0.5,0.9446161494865442,0.026321633502333755,20
+selective,CIC,qwen3.5-9b,question,full,acc_conf,0.5,0.9418618004475453,0.024594286633692185,20
+selective,CIC,qwen3.5-9b,question,full,lift,0.5,0.0027543490389989487,0.02517324312500872,20
+selective,CIC,qwen3.5-9b,instance,full,acc_cas,0.25,0.9986842105263157,0.0058843894144731245,20
+selective,CIC,qwen3.5-9b,instance,full,acc_conf,0.25,0.9866574067303745,0.017932687240276177,20
+selective,CIC,qwen3.5-9b,instance,full,lift,0.25,0.012026803795941409,0.014577716177697478,20
+selective,CIC,qwen3.5-9b,question,full,acc_cas,0.25,0.9427237003049695,0.034677414548833725,20
+selective,CIC,qwen3.5-9b,question,full,acc_conf,0.25,0.9553041382889689,0.034179223584307535,20
+selective,CIC,qwen3.5-9b,question,full,lift,0.25,-0.01258043798399896,0.025624434778598403,20
+selective,CIC,6-model mean,instance,full,acc_cas,0.75,0.9013214551882391,0.008190096066679933,20
+selective,CIC,6-model mean,instance,full,acc_conf,0.75,0.8869718561796829,0.007191537564658871,20
+selective,CIC,6-model mean,instance,full,lift,0.75,0.014349599008556474,0.0066976673650648265,20
+selective,CIC,6-model mean,question,full,acc_cas,0.75,0.8472676757513267,0.007747684753343878,20
+selective,CIC,6-model mean,question,full,acc_conf,0.75,0.8760968337730478,0.009147213055652163,20
+selective,CIC,6-model mean,question,full,lift,0.75,-0.028829158021721285,0.00787285629112249,20
+selective,CIC,6-model mean,instance,full,acc_cas,0.5,0.9499929594568345,0.006959506444951183,20
+selective,CIC,6-model mean,instance,full,acc_conf,0.5,0.9233282183980952,0.006807286414511611,20
+selective,CIC,6-model mean,instance,full,lift,0.5,0.026664741058739283,0.008502822306994545,20
+selective,CIC,6-model mean,question,full,acc_cas,0.5,0.9078906377870688,0.008677134822608807,20
+selective,CIC,6-model mean,question,full,acc_conf,0.5,0.9235750951461158,0.009412000753790716,20
+selective,CIC,6-model mean,question,full,lift,0.5,-0.01568445735904697,0.007693281100407573,20
+selective,CIC,6-model mean,instance,full,acc_cas,0.25,0.9830132818512723,0.006399565729959342,20
+selective,CIC,6-model mean,instance,full,acc_conf,0.25,0.9478307915579751,0.007170639697946504,20
+selective,CIC,6-model mean,instance,full,lift,0.25,0.035182490293297085,0.006179642522399505,20
+selective,CIC,6-model mean,question,full,acc_cas,0.25,0.9313707847368861,0.019726996745597077,20
+selective,CIC,6-model mean,question,full,acc_conf,0.25,0.9482759537070438,0.014281412613660924,20
+selective,CIC,6-model mean,question,full,lift,0.25,-0.01690516897015778,0.01852308954898391,20
+selective,ICC,llama3.1-8b,instance,full,acc_cas,0.75,0.6962370048069425,0.025196117698216752,20
+selective,ICC,llama3.1-8b,instance,full,acc_conf,0.75,0.6587855824087915,0.01611655123249155,20
+selective,ICC,llama3.1-8b,instance,full,lift,0.75,0.037451422398150906,0.023793415851994525,20
+selective,ICC,llama3.1-8b,question,full,acc_cas,0.75,0.6080901890378019,0.04920484585700769,20
+selective,ICC,llama3.1-8b,question,full,acc_conf,0.75,0.6669778881979432,0.024606093573864684,20
+selective,ICC,llama3.1-8b,question,full,lift,0.75,-0.05888769916014129,0.05585821974573042,20
+selective,ICC,llama3.1-8b,instance,full,acc_cas,0.5,0.7536002861069704,0.035035341210132506,20
+selective,ICC,llama3.1-8b,instance,full,acc_conf,0.5,0.6809908267440157,0.0196286512856544,20
+selective,ICC,llama3.1-8b,instance,full,lift,0.5,0.07260945936295467,0.035375651812787505,20
+selective,ICC,llama3.1-8b,question,full,acc_cas,0.5,0.6347244315843679,0.05540720336622598,20
+selective,ICC,llama3.1-8b,question,full,acc_conf,0.5,0.7314032032333675,0.02956314955151094,20
+selective,ICC,llama3.1-8b,question,full,lift,0.5,-0.09667877164899945,0.0554481971739119,20
+selective,ICC,llama3.1-8b,instance,full,acc_cas,0.25,0.8578160969540972,0.04632613024060431,20
+selective,ICC,llama3.1-8b,instance,full,acc_conf,0.25,0.7338902739564731,0.05786484434889418,20
+selective,ICC,llama3.1-8b,instance,full,lift,0.25,0.12392582299762404,0.061263707673517236,20
+selective,ICC,llama3.1-8b,question,full,acc_cas,0.25,0.6946555458669099,0.07953039631416622,20
+selective,ICC,llama3.1-8b,question,full,acc_conf,0.25,0.8152726294228607,0.04134774575913742,20
+selective,ICC,llama3.1-8b,question,full,lift,0.25,-0.12061708355595065,0.09185517529319573,20
+selective,ICC,meditron3-8b,instance,full,acc_cas,0.75,0.802759828365272,0.026664766383067612,20
+selective,ICC,meditron3-8b,instance,full,acc_conf,0.75,0.7544149755340619,0.024579213522121904,20
+selective,ICC,meditron3-8b,instance,full,lift,0.75,0.0483448528312101,0.02004836460717602,20
+selective,ICC,meditron3-8b,question,full,acc_cas,0.75,0.7751306819886449,0.033911958121141575,20
+selective,ICC,meditron3-8b,question,full,acc_conf,0.75,0.7978135902398241,0.016027330376357455,20
+selective,ICC,meditron3-8b,question,full,lift,0.75,-0.022682908251179378,0.03263179985229413,20
+selective,ICC,meditron3-8b,instance,full,acc_cas,0.5,0.8986146077442665,0.03348005151613375,20
+selective,ICC,meditron3-8b,instance,full,acc_conf,0.5,0.7993723967390529,0.012432497553537342,20
+selective,ICC,meditron3-8b,instance,full,lift,0.5,0.09924221100521362,0.03836994259219071,20
+selective,ICC,meditron3-8b,question,full,acc_cas,0.5,0.8292880368700694,0.03650376199078244,20
+selective,ICC,meditron3-8b,question,full,acc_conf,0.5,0.830163413240976,0.014205225765514072,20
+selective,ICC,meditron3-8b,question,full,lift,0.5,-0.0008753763709066775,0.03792721226583984,20
+selective,ICC,meditron3-8b,instance,full,acc_cas,0.25,0.9704018916860058,0.028515885331725287,20
+selective,ICC,meditron3-8b,instance,full,acc_conf,0.25,0.85312240098055,0.03731918431878809,20
+selective,ICC,meditron3-8b,instance,full,lift,0.25,0.11727949070545587,0.055438311025166054,20
+selective,ICC,meditron3-8b,question,full,acc_cas,0.25,0.8707916085686034,0.06264516476176088,20
+selective,ICC,meditron3-8b,question,full,acc_conf,0.25,0.8576868474215278,0.05757637966707957,20
+selective,ICC,meditron3-8b,question,full,lift,0.25,0.013104761147075433,0.09046795755233732,20
+selective,ICC,phi4-14b,instance,full,acc_cas,0.75,0.7466191499079499,0.02958038160351025,20
+selective,ICC,phi4-14b,instance,full,acc_conf,0.75,0.6825855880387057,0.014712915620952663,20
+selective,ICC,phi4-14b,instance,full,lift,0.75,0.0640335618692442,0.03261141553112335,20
+selective,ICC,phi4-14b,question,full,acc_cas,0.75,0.6699143619416332,0.02474574012393532,20
+selective,ICC,phi4-14b,question,full,acc_conf,0.75,0.6778845412204598,0.016560615898012027,20
+selective,ICC,phi4-14b,question,full,lift,0.75,-0.007970179278826494,0.022035634503647056,20
+selective,ICC,phi4-14b,instance,full,acc_cas,0.5,0.8159886319119221,0.03995272382543648,20
+selective,ICC,phi4-14b,instance,full,acc_conf,0.5,0.6851645701941074,0.03115313493022401,20
+selective,ICC,phi4-14b,instance,full,lift,0.5,0.13082406171781447,0.050166449393086496,20
+selective,ICC,phi4-14b,question,full,acc_cas,0.5,0.7065104516767992,0.04053212077004595,20
+selective,ICC,phi4-14b,question,full,acc_conf,0.5,0.7096677506546623,0.02435009888505711,20
+selective,ICC,phi4-14b,question,full,lift,0.5,-0.0031572989778629766,0.053794841267619985,20
+selective,ICC,phi4-14b,instance,full,acc_cas,0.25,0.8885213677568325,0.0494116481693356,20
+selective,ICC,phi4-14b,instance,full,acc_conf,0.25,0.7451091675313783,0.04490609712305056,20
+selective,ICC,phi4-14b,instance,full,lift,0.25,0.1434122002254542,0.05490216128977868,20
+selective,ICC,phi4-14b,question,full,acc_cas,0.25,0.7523733508862963,0.030694534414042133,20
+selective,ICC,phi4-14b,question,full,acc_conf,0.25,0.7335698295149065,0.04177852443051614,20
+selective,ICC,phi4-14b,question,full,lift,0.25,0.018803521371390037,0.05677441403727955,20
+selective,ICC,qwen3-4b,instance,full,acc_cas,0.75,0.8115398519213046,0.02028306498454059,20
+selective,ICC,qwen3-4b,instance,full,acc_conf,0.75,0.7877305271501029,0.018182804322679942,20
+selective,ICC,qwen3-4b,instance,full,lift,0.75,0.023809324771201616,0.02499581211024775,20
+selective,ICC,qwen3-4b,question,full,acc_cas,0.75,0.7416908749438125,0.021689324315842855,20
+selective,ICC,qwen3-4b,question,full,acc_conf,0.75,0.7713864267390314,0.024419684630569836,20
+selective,ICC,qwen3-4b,question,full,lift,0.75,-0.029695551795218777,0.0221274868972711,20
+selective,ICC,qwen3-4b,instance,full,acc_cas,0.5,0.8961118750198791,0.029541912471281146,20
+selective,ICC,qwen3-4b,instance,full,acc_conf,0.5,0.7916007222436302,0.021452717179045244,20
+selective,ICC,qwen3-4b,instance,full,lift,0.5,0.10451115277624892,0.03750847051383699,20
+selective,ICC,qwen3-4b,question,full,acc_cas,0.5,0.7876753012569468,0.026696831611456695,20
+selective,ICC,qwen3-4b,question,full,acc_conf,0.5,0.796400451002799,0.025185051241251664,20
+selective,ICC,qwen3-4b,question,full,lift,0.5,-0.008725149745851956,0.024372008261529108,20
+selective,ICC,qwen3-4b,instance,full,acc_cas,0.25,0.950796753921485,0.0261132938993603,20
+selective,ICC,qwen3-4b,instance,full,acc_conf,0.25,0.7916007222436302,0.021452717179045244,20
+selective,ICC,qwen3-4b,instance,full,lift,0.25,0.15919603167785468,0.03521728471456833,20
+selective,ICC,qwen3-4b,question,full,acc_cas,0.25,0.8144053327458576,0.05244636785805647,20
+selective,ICC,qwen3-4b,question,full,acc_conf,0.25,0.796400451002799,0.025185051241251664,20
+selective,ICC,qwen3-4b,question,full,lift,0.25,0.01800488174305869,0.05154038970427316,20
+selective,ICC,qwen3-8b,instance,full,acc_cas,0.75,0.8748592721997245,0.01825051943481804,20
+selective,ICC,qwen3-8b,instance,full,acc_conf,0.75,0.8099286143038903,0.01854363657085406,20
+selective,ICC,qwen3-8b,instance,full,lift,0.75,0.06493065789583427,0.020808022557087715,20
+selective,ICC,qwen3-8b,question,full,acc_cas,0.75,0.774348520579186,0.026134479781307753,20
+selective,ICC,qwen3-8b,question,full,acc_conf,0.75,0.8033009433912286,0.015602728234591063,20
+selective,ICC,qwen3-8b,question,full,lift,0.75,-0.028952422812042466,0.0208218334557288,20
+selective,ICC,qwen3-8b,instance,full,acc_cas,0.5,0.9473391173248775,0.019707510094021684,20
+selective,ICC,qwen3-8b,instance,full,acc_conf,0.5,0.8444080546583189,0.02190411555972634,20
+selective,ICC,qwen3-8b,instance,full,lift,0.5,0.10293106266655885,0.02775889126287671,20
+selective,ICC,qwen3-8b,question,full,acc_cas,0.5,0.8449372362739938,0.040917852316987725,20
+selective,ICC,qwen3-8b,question,full,acc_conf,0.5,0.8310005666604777,0.013273553494487058,20
+selective,ICC,qwen3-8b,question,full,lift,0.5,0.01393666961351614,0.04204236440045269,20
+selective,ICC,qwen3-8b,instance,full,acc_cas,0.25,0.9784060214362565,0.016746535244886417,20
+selective,ICC,qwen3-8b,instance,full,acc_conf,0.25,0.8456092558595201,0.023672347996997994,20
+selective,ICC,qwen3-8b,instance,full,lift,0.25,0.13279676557673645,0.026695877554460297,20
+selective,ICC,qwen3-8b,question,full,acc_cas,0.25,0.9462692863477029,0.040305476158422365,20
+selective,ICC,qwen3-8b,question,full,acc_conf,0.25,0.8428505229407708,0.017697707349673637,20
+selective,ICC,qwen3-8b,question,full,lift,0.25,0.10341876340693223,0.044451351320876596,20
+selective,ICC,qwen3.5-9b,instance,full,acc_cas,0.75,0.8907647869043991,0.017414207428209507,20
+selective,ICC,qwen3.5-9b,instance,full,acc_conf,0.75,0.8941136974923823,0.012945873197505748,20
+selective,ICC,qwen3.5-9b,instance,full,lift,0.75,-0.0033489105879833114,0.01387803629853903,20
+selective,ICC,qwen3.5-9b,question,full,acc_cas,0.75,0.8536749179467256,0.01817274146385064,20
+selective,ICC,qwen3.5-9b,question,full,acc_conf,0.75,0.8921634869992309,0.019544743024712763,20
+selective,ICC,qwen3.5-9b,question,full,lift,0.75,-0.03848856905250526,0.023267801718039185,20
+selective,ICC,qwen3.5-9b,instance,full,acc_cas,0.5,0.9624582034041149,0.01797095504840532,20
+selective,ICC,qwen3.5-9b,instance,full,acc_conf,0.5,0.9513933617034389,0.019749085714964375,20
+selective,ICC,qwen3.5-9b,instance,full,lift,0.5,0.01106484170067613,0.011688634508255706,20
+selective,ICC,qwen3.5-9b,question,full,acc_cas,0.5,0.9372871080794422,0.023457880894132983,20
+selective,ICC,qwen3.5-9b,question,full,acc_conf,0.5,0.9508069625551234,0.01831863762513013,20
+selective,ICC,qwen3.5-9b,question,full,lift,0.5,-0.013519854475681214,0.0226522030453856,20
+selective,ICC,qwen3.5-9b,instance,full,acc_cas,0.25,0.9932790309106098,0.012970211743952501,20
+selective,ICC,qwen3.5-9b,instance,full,acc_conf,0.25,0.9787083806278603,0.021289879446349223,20
+selective,ICC,qwen3.5-9b,instance,full,lift,0.25,0.014570650282749559,0.01801680237116899,20
+selective,ICC,qwen3.5-9b,question,full,acc_cas,0.25,0.9470604513809381,0.0496661876516132,20
+selective,ICC,qwen3.5-9b,question,full,acc_conf,0.25,0.9541271694191286,0.04166741169182847,20
+selective,ICC,qwen3.5-9b,question,full,lift,0.25,-0.007066718038190501,0.029492850319930822,20
+selective,ICC,6-model mean,instance,full,acc_cas,0.75,0.8037966490175986,0.009145884473801416,20
+selective,ICC,6-model mean,instance,full,acc_conf,0.75,0.7645931641546558,0.005544183510344784,20
+selective,ICC,6-model mean,instance,full,lift,0.75,0.039203484862942964,0.008516299715632628,20
+selective,ICC,6-model mean,question,full,acc_cas,0.75,0.7371415910729674,0.012984142264065779,20
+selective,ICC,6-model mean,question,full,acc_conf,0.75,0.7682544794646198,0.009323465228608366,20
+selective,ICC,6-model mean,question,full,lift,0.75,-0.03111288839165228,0.014471840835850566,20
+selective,ICC,6-model mean,instance,full,acc_cas,0.5,0.8790187869186719,0.011959507638009745,20
+selective,ICC,6-model mean,instance,full,acc_conf,0.5,0.7921549887137607,0.007518128401767327,20
+selective,ICC,6-model mean,instance,full,lift,0.5,0.08686379820491111,0.013421850977895574,20
+selective,ICC,6-model mean,question,full,acc_cas,0.5,0.7900704276236032,0.011887878621357848,20
+selective,ICC,6-model mean,question,full,acc_conf,0.5,0.8082403912245676,0.010241966147357038,20
+selective,ICC,6-model mean,question,full,lift,0.5,-0.01816996360096436,0.013941006320351989,20
+selective,ICC,6-model mean,instance,full,acc_cas,0.25,0.939870193777548,0.013206744333893579,20
+selective,ICC,6-model mean,instance,full,acc_conf,0.25,0.8246733668665686,0.01628702050895889,20
+selective,ICC,6-model mean,instance,full,lift,0.25,0.11519682691097913,0.020950858693662394,20
+selective,ICC,6-model mean,question,full,acc_cas,0.25,0.8375925959660515,0.024528747613753846,20
+selective,ICC,6-model mean,question,full,acc_conf,0.25,0.8333179082869988,0.01639527058537054,20
+selective,ICC,6-model mean,question,full,lift,0.25,0.004274687679052541,0.028531427024820828,20
+coverage,NC,6-model mean,instance,full,cov_cas,0.75,0.759963768115942,0.01500800333329596,20
+coverage,NC,6-model mean,instance,full,cov_conf,0.75,0.7841032608695653,0.023335716518074926,20
+coverage,NC,6-model mean,question,full,cov_cas,0.75,0.7870720109954055,0.046798571082536405,20
+coverage,NC,6-model mean,question,full,cov_conf,0.75,0.8466416339116304,0.03688706807265008,20
+coverage,NC,6-model mean,instance,full,cov_cas,0.5,0.520606884057971,0.016820263105131055,20
+coverage,NC,6-model mean,instance,full,cov_conf,0.5,0.5622735507246377,0.01869746247939237,20
+coverage,NC,6-model mean,question,full,cov_cas,0.5,0.40707045946313347,0.05256565765570685,20
+coverage,NC,6-model mean,question,full,cov_conf,0.5,0.48186389521292644,0.06042933729470923,20
+coverage,NC,6-model mean,instance,full,cov_cas,0.25,0.27898550724637683,0.01906142567291162,20
+coverage,NC,6-model mean,instance,full,cov_conf,0.25,0.3845108695652174,0.014395591062583904,20
+coverage,NC,6-model mean,question,full,cov_cas,0.25,0.20711600278497128,0.05769895708982726,20
+coverage,NC,6-model mean,question,full,cov_conf,0.25,0.3103426940337023,0.059738063033879386,20
+coverage,CC,6-model mean,instance,full,cov_cas,0.75,0.7540760869565217,0.013876273856220686,20
+coverage,CC,6-model mean,instance,full,cov_conf,0.75,0.7942934782608695,0.012890221236864148,20
+coverage,CC,6-model mean,question,full,cov_cas,0.75,0.7389177669268615,0.01858115731188943,20
+coverage,CC,6-model mean,question,full,cov_conf,0.75,0.7635504719192191,0.016767120988984315,20
+coverage,CC,6-model mean,instance,full,cov_cas,0.5,0.5082427536231884,0.013505348611865772,20
+coverage,CC,6-model mean,instance,full,cov_conf,0.5,0.6571557971014493,0.012835163263496858,20
+coverage,CC,6-model mean,question,full,cov_cas,0.5,0.5081719489673759,0.024011108684157366,20
+coverage,CC,6-model mean,question,full,cov_conf,0.5,0.6341204104769209,0.01893571254173961,20
+coverage,CC,6-model mean,instance,full,cov_cas,0.25,0.2738677536231884,0.011276221359480344,20
+coverage,CC,6-model mean,instance,full,cov_conf,0.25,0.5445199275362319,0.012489960344338791,20
+coverage,CC,6-model mean,question,full,cov_cas,0.25,0.26994607999573506,0.030904974113430718,20
+coverage,CC,6-model mean,question,full,cov_conf,0.25,0.5108402618041383,0.012413710312144735,20
+coverage,IC,6-model mean,instance,full,cov_cas,0.75,0.7498641304347826,0.014703590705240514,20
+coverage,IC,6-model mean,instance,full,cov_conf,0.75,0.7601449275362319,0.014716287189945729,20
+coverage,IC,6-model mean,question,full,cov_cas,0.75,0.7019868888083338,0.036422784514077065,20
+coverage,IC,6-model mean,question,full,cov_conf,0.75,0.7569330760258429,0.025251170041526244,20
+coverage,IC,6-model mean,instance,full,cov_cas,0.5,0.4987771739130434,0.01633682617761786,20
+coverage,IC,6-model mean,instance,full,cov_conf,0.5,0.5540760869565219,0.01622230182934769,20
+coverage,IC,6-model mean,question,full,cov_cas,0.5,0.4934377221326022,0.03298611138525109,20
+coverage,IC,6-model mean,question,full,cov_conf,0.5,0.6250155740164586,0.024054609597992556,20
+coverage,IC,6-model mean,instance,full,cov_cas,0.25,0.2511322463768116,0.014142516080622286,20
+coverage,IC,6-model mean,instance,full,cov_conf,0.25,0.40665760869565215,0.012386501911941135,20
+coverage,IC,6-model mean,question,full,cov_cas,0.25,0.23613106779100965,0.025178272405723096,20
+coverage,IC,6-model mean,question,full,cov_conf,0.25,0.45247714837697417,0.02371477312065141,20
+coverage,CIC,6-model mean,instance,full,cov_cas,0.75,0.7431612318840581,0.014404512424741804,20
+coverage,CIC,6-model mean,instance,full,cov_conf,0.75,0.7638586956521738,0.011382279072172541,20
+coverage,CIC,6-model mean,question,full,cov_cas,0.75,0.6910266951452361,0.021071075688227876,20
+coverage,CIC,6-model mean,question,full,cov_conf,0.75,0.7105491396785262,0.0219842198049876,20
+coverage,CIC,6-model mean,instance,full,cov_cas,0.5,0.498052536231884,0.01598140582401267,20
+coverage,CIC,6-model mean,instance,full,cov_conf,0.5,0.5953351449275363,0.013220898372115037,20
+coverage,CIC,6-model mean,question,full,cov_cas,0.5,0.43284017699349625,0.02271909887551567,20
+coverage,CIC,6-model mean,question,full,cov_conf,0.5,0.5155584894230733,0.019065870407897204,20
+coverage,CIC,6-model mean,instance,full,cov_cas,0.25,0.2620018115942029,0.017652038465679573,20
+coverage,CIC,6-model mean,instance,full,cov_conf,0.25,0.4642210144927536,0.015195297880647218,20
+coverage,CIC,6-model mean,question,full,cov_cas,0.25,0.20665165120872625,0.01854151083755504,20
+coverage,CIC,6-model mean,question,full,cov_conf,0.25,0.39114614138687825,0.01453736249372004,20
+coverage,ICC,6-model mean,instance,full,cov_cas,0.75,0.7461956521739129,0.010516612517173927,20
+coverage,ICC,6-model mean,instance,full,cov_conf,0.75,0.754981884057971,0.01131149354136138,20
+coverage,ICC,6-model mean,question,full,cov_cas,0.75,0.7755550969259849,0.03507622943381341,20
+coverage,ICC,6-model mean,question,full,cov_conf,0.75,0.7819454401873854,0.034780420062007614,20
+coverage,ICC,6-model mean,instance,full,cov_cas,0.5,0.504981884057971,0.009846055938376985,20
+coverage,ICC,6-model mean,instance,full,cov_conf,0.5,0.5627264492753623,0.010455974982441319,20
+coverage,ICC,6-model mean,question,full,cov_cas,0.5,0.5300970613561522,0.047349788592310246,20
+coverage,ICC,6-model mean,question,full,cov_conf,0.5,0.5630944844719229,0.03752971737292596,20
+coverage,ICC,6-model mean,instance,full,cov_cas,0.25,0.26068840579710145,0.014413877657035027,20
+coverage,ICC,6-model mean,instance,full,cov_conf,0.25,0.40176630434782606,0.01666965894854663,20
+coverage,ICC,6-model mean,question,full,cov_cas,0.25,0.2724323895174792,0.03773793457764491,20
+coverage,ICC,6-model mean,question,full,cov_conf,0.25,0.37493186094655523,0.025469403380906405,20
+coverage,NC,llama3.1-8b,instance,full,cov_cas,0.75,0.7679347826086957,0.01400667507199621,20
+coverage,NC,meditron3-8b,instance,full,cov_cas,0.75,0.7519021739130435,0.03900289888942778,20
+coverage,NC,phi4-14b,instance,full,cov_cas,0.75,0.7557065217391303,0.02452634325133406,20
+coverage,NC,qwen3-4b,instance,full,cov_cas,0.75,0.7630434782608695,0.015612714053469727,20
+coverage,NC,qwen3-8b,instance,full,cov_cas,0.75,0.7608695652173912,0.027712062573873833,20
+coverage,NC,qwen3.5-9b,instance,full,cov_cas,0.75,0.7603260869565217,0.03372885350335646,20
+coverage,NC,llama3.1-8b,instance,full,cov_conf,0.75,0.8116847826086957,0.03835987262593325,20
+coverage,NC,meditron3-8b,instance,full,cov_conf,0.75,0.7608695652173914,0.036986796053191336,20
+coverage,NC,phi4-14b,instance,full,cov_conf,0.75,0.7720108695652173,0.04589517299009416,20
+coverage,NC,qwen3-4b,instance,full,cov_conf,0.75,0.8138586956521738,0.03647361675147446,20
+coverage,NC,qwen3-8b,instance,full,cov_conf,0.75,0.775,0.034884362034524385,20
+coverage,NC,qwen3.5-9b,instance,full,cov_conf,0.75,0.7711956521739131,0.03321799183565845,20
+coverage,NC,llama3.1-8b,question,full,cov_cas,0.75,0.8586956521739131,0.14311895930930926,20
+coverage,NC,meditron3-8b,question,full,cov_cas,0.75,0.771697033898305,0.10897169653236032,20
+coverage,NC,phi4-14b,question,full,cov_cas,0.75,0.7904891304347825,0.08962362503692721,20
+coverage,NC,qwen3-4b,question,full,cov_cas,0.75,0.7785326086956522,0.051100800256814745,20
+coverage,NC,qwen3-8b,question,full,cov_cas,0.75,0.779267640769779,0.09725864313375562,20
+coverage,NC,qwen3.5-9b,question,full,cov_cas,0.75,0.74375,0.028306149885581916,20
+coverage,NC,llama3.1-8b,question,full,cov_conf,0.75,0.9546195652173912,0.05331615190096723,20
+coverage,NC,meditron3-8b,question,full,cov_conf,0.75,0.8209002311248075,0.09959685804764115,20
+coverage,NC,phi4-14b,question,full,cov_conf,0.75,0.8339673913043478,0.09934735978239062,20
+coverage,NC,qwen3-4b,question,full,cov_conf,0.75,0.848641304347826,0.021471102277518042,20
+coverage,NC,qwen3-8b,question,full,cov_conf,0.75,0.8779713114754099,0.0812407781699446,20
+coverage,NC,qwen3.5-9b,question,full,cov_conf,0.75,0.74375,0.028306149885581916,20
+coverage,NC,llama3.1-8b,instance,full,cov_cas,0.5,0.5065217391304346,0.02990300374330898,20
+coverage,NC,meditron3-8b,instance,full,cov_cas,0.5,0.5065217391304347,0.0400384105698901,20
+coverage,NC,phi4-14b,instance,full,cov_cas,0.5,0.5173913043478262,0.03498226450599171,20
+coverage,NC,qwen3-4b,instance,full,cov_cas,0.5,0.5611413043478262,0.04597639446363572,20
+coverage,NC,qwen3-8b,instance,full,cov_cas,0.5,0.5201086956521739,0.030443975401464086,20
+coverage,NC,qwen3.5-9b,instance,full,cov_cas,0.5,0.5119565217391304,0.040693116840972154,20
+coverage,NC,llama3.1-8b,instance,full,cov_conf,0.5,0.5184782608695652,0.036453365768242166,20
+coverage,NC,meditron3-8b,instance,full,cov_conf,0.5,0.5171195652173913,0.05120412946570679,20
+coverage,NC,phi4-14b,instance,full,cov_conf,0.5,0.5279891304347826,0.036277026606888176,20
+coverage,NC,qwen3-4b,instance,full,cov_conf,0.5,0.7336956521739131,0.0206386201459353,20
+coverage,NC,qwen3-8b,instance,full,cov_conf,0.5,0.5451086956521739,0.046721831719741425,20
+coverage,NC,qwen3.5-9b,instance,full,cov_conf,0.5,0.5312499999999999,0.04209302884452175,20
+coverage,NC,llama3.1-8b,question,full,cov_cas,0.5,0.31766304347826085,0.16441523436595762,20
+coverage,NC,meditron3-8b,question,full,cov_cas,0.5,0.2635627247046738,0.11805820934981669,20
+coverage,NC,phi4-14b,question,full,cov_cas,0.5,0.19293478260869565,0.15573333891133517,20
+coverage,NC,qwen3-4b,question,full,cov_cas,0.5,0.6603260869565217,0.08052402433852938,20
+coverage,NC,qwen3-8b,question,full,cov_cas,0.5,0.6860611190306487,0.08234348994312028,20
+coverage,NC,qwen3.5-9b,question,full,cov_cas,0.5,0.321875,0.03490176533764747,20
+coverage,NC,llama3.1-8b,question,full,cov_conf,0.5,0.34945652173913044,0.17675119089904437,20
+coverage,NC,meditron3-8b,question,full,cov_conf,0.5,0.2649783641499743,0.11784636360692749,20
+coverage,NC,phi4-14b,question,full,cov_conf,0.5,0.24891304347826085,0.20179000729489857,20
+coverage,NC,qwen3-4b,question,full,cov_conf,0.5,0.8453804347826086,0.01252733058321446,20
+coverage,NC,qwen3-8b,question,full,cov_conf,0.5,0.8605800071275838,0.09331017630800974,20
+coverage,NC,qwen3.5-9b,question,full,cov_conf,0.5,0.321875,0.03490176533764747,20
+coverage,NC,llama3.1-8b,instance,full,cov_cas,0.25,0.27065217391304347,0.03171937568978677,20
+coverage,NC,meditron3-8b,instance,full,cov_cas,0.25,0.25326086956521743,0.027452802272295105,20
+coverage,NC,phi4-14b,instance,full,cov_cas,0.25,0.2972826086956522,0.06166679215268577,20
+coverage,NC,qwen3-4b,instance,full,cov_cas,0.25,0.297554347826087,0.043006414190516,20
+coverage,NC,qwen3-8b,instance,full,cov_cas,0.25,0.29429347826086955,0.037291314005925405,20
+coverage,NC,qwen3.5-9b,instance,full,cov_cas,0.25,0.2608695652173913,0.033316124964773305,20
+coverage,NC,llama3.1-8b,instance,full,cov_conf,0.25,0.2866847826086957,0.03335692856238577,20
+coverage,NC,meditron3-8b,instance,full,cov_conf,0.25,0.25923913043478264,0.033227350334741335,20
+coverage,NC,phi4-14b,instance,full,cov_conf,0.25,0.37472826086956523,0.039249239618948106,20
+coverage,NC,qwen3-4b,instance,full,cov_conf,0.25,0.7336956521739131,0.0206386201459353,20
+coverage,NC,qwen3-8b,instance,full,cov_conf,0.25,0.3896739130434782,0.030900128293654735,20
+coverage,NC,qwen3.5-9b,instance,full,cov_conf,0.25,0.2630434782608696,0.0323406219679016,20
+coverage,NC,llama3.1-8b,question,full,cov_cas,0.25,0.1826086956521739,0.1192840463476293,20
+coverage,NC,meditron3-8b,question,full,cov_cas,0.25,0.1473198510529019,0.08438705808125231,20
+coverage,NC,phi4-14b,question,full,cov_cas,0.25,0.05951086956521738,0.04919746318705253,20
+coverage,NC,qwen3-4b,question,full,cov_cas,0.25,0.5103260869565217,0.15945614931969568,20
+coverage,NC,qwen3-8b,question,full,cov_cas,0.25,0.2421492634830126,0.21178260785440747,20
+coverage,NC,qwen3.5-9b,question,full,cov_cas,0.25,0.10078125,0.06266596659247585,20
+coverage,NC,llama3.1-8b,question,full,cov_conf,0.25,0.21250000000000005,0.1256870977572184,20
+coverage,NC,meditron3-8b,question,full,cov_conf,0.25,0.14845621468926554,0.0846662034733225,20
+coverage,NC,phi4-14b,question,full,cov_conf,0.25,0.13559782608695653,0.04204129251806365,20
+coverage,NC,qwen3-4b,question,full,cov_conf,0.25,0.7997282608695653,0.14116428324894206,20
+coverage,NC,qwen3-8b,question,full,cov_conf,0.25,0.46316969588976004,0.2216867505374319,20
+coverage,NC,qwen3.5-9b,question,full,cov_conf,0.25,0.10260416666666668,0.06507620013361574,20
+coverage,CC,llama3.1-8b,instance,full,cov_cas,0.75,0.7464673913043478,0.035672043006721735,20
+coverage,CC,meditron3-8b,instance,full,cov_cas,0.75,0.7342391304347826,0.03481745251310809,20
+coverage,CC,phi4-14b,instance,full,cov_cas,0.75,0.7529891304347827,0.028837789835125506,20
+coverage,CC,qwen3-4b,instance,full,cov_cas,0.75,0.7625,0.037284018026481326,20
+coverage,CC,qwen3-8b,instance,full,cov_cas,0.75,0.7684782608695652,0.03912725641808388,20
+coverage,CC,qwen3.5-9b,instance,full,cov_cas,0.75,0.7597826086956521,0.035379953650146824,20
+coverage,CC,llama3.1-8b,instance,full,cov_conf,0.75,0.7478260869565218,0.034839769964610065,20
+coverage,CC,meditron3-8b,instance,full,cov_conf,0.75,0.7361413043478262,0.03554981084113826,20
+coverage,CC,phi4-14b,instance,full,cov_conf,0.75,0.7573369565217392,0.027103742351706983,20
+coverage,CC,qwen3-4b,instance,full,cov_conf,0.75,0.9282608695652174,0.015830254436578515,20
+coverage,CC,qwen3-8b,instance,full,cov_conf,0.75,0.8211956521739131,0.02391174325568544,20
+coverage,CC,qwen3.5-9b,instance,full,cov_conf,0.75,0.7749999999999999,0.03248450799038176,20
+coverage,CC,llama3.1-8b,question,full,cov_cas,0.75,0.7132310830699828,0.04689686701486909,20
+coverage,CC,meditron3-8b,question,full,cov_cas,0.75,0.809249815030886,0.03378186925519105,20
+coverage,CC,phi4-14b,question,full,cov_cas,0.75,0.5944202488437141,0.050052503959211986,20
+coverage,CC,qwen3-4b,question,full,cov_cas,0.75,0.8150195045366108,0.039955333559509344,20
+coverage,CC,qwen3-8b,question,full,cov_cas,0.75,0.861640297906062,0.05051323927565823,20
+coverage,CC,qwen3.5-9b,question,full,cov_cas,0.75,0.639945652173913,0.059112507167531636,20
+coverage,CC,llama3.1-8b,question,full,cov_conf,0.75,0.7134970405167913,0.047162446389879036,20
+coverage,CC,meditron3-8b,question,full,cov_conf,0.75,0.8128107847498123,0.03349713177462203,20
+coverage,CC,phi4-14b,question,full,cov_conf,0.75,0.6174505440837437,0.040895563485959296,20
+coverage,CC,qwen3-4b,question,full,cov_conf,0.75,0.908446788734565,0.014425363819949662,20
+coverage,CC,qwen3-8b,question,full,cov_conf,0.75,0.8744781082130112,0.03528823948204933,20
+coverage,CC,qwen3.5-9b,question,full,cov_conf,0.75,0.6546195652173912,0.06053137807425995,20
+coverage,CC,llama3.1-8b,instance,full,cov_cas,0.5,0.5070652173913044,0.031150660432941336,20
+coverage,CC,meditron3-8b,instance,full,cov_cas,0.5,0.49157608695652166,0.03936788336667419,20
+coverage,CC,phi4-14b,instance,full,cov_cas,0.5,0.5078804347826086,0.044728693578628256,20
+coverage,CC,qwen3-4b,instance,full,cov_cas,0.5,0.5239130434782608,0.036792948003439505,20
+coverage,CC,qwen3-8b,instance,full,cov_cas,0.5,0.5293478260869564,0.035590237544260224,20
+coverage,CC,qwen3.5-9b,instance,full,cov_cas,0.5,0.48967391304347824,0.039147116962694656,20
+coverage,CC,llama3.1-8b,instance,full,cov_conf,0.5,0.5095108695652174,0.03173285062165485,20
+coverage,CC,meditron3-8b,instance,full,cov_conf,0.5,0.49266304347826084,0.039438898296427306,20
+coverage,CC,phi4-14b,instance,full,cov_conf,0.5,0.6872282608695652,0.03832743812443989,20
+coverage,CC,qwen3-4b,instance,full,cov_conf,0.5,0.9282608695652174,0.015830254436578515,20
+coverage,CC,qwen3-8b,instance,full,cov_conf,0.5,0.8211956521739131,0.02391174325568544,20
+coverage,CC,qwen3.5-9b,instance,full,cov_conf,0.5,0.5040760869565217,0.0430425464499376,20
+coverage,CC,llama3.1-8b,question,full,cov_cas,0.5,0.4665466613275866,0.047356386891584314,20
+coverage,CC,meditron3-8b,question,full,cov_cas,0.5,0.5343778821525796,0.037571848770017326,20
+coverage,CC,phi4-14b,question,full,cov_cas,0.5,0.3199774125342737,0.043912755764980306,20
+coverage,CC,qwen3-4b,question,full,cov_cas,0.5,0.6365549851348141,0.0747367203372473,20
+coverage,CC,qwen3-8b,question,full,cov_cas,0.5,0.6622269265680443,0.09040338903340518,20
+coverage,CC,qwen3.5-9b,question,full,cov_cas,0.5,0.42934782608695654,0.04777144788169145,20
+coverage,CC,llama3.1-8b,question,full,cov_conf,0.5,0.4687236190507448,0.04737184689222469,20
+coverage,CC,meditron3-8b,question,full,cov_conf,0.5,0.5376671290587998,0.03726943165139672,20
+coverage,CC,phi4-14b,question,full,cov_conf,0.5,0.593357669625934,0.02443648489420189,20
+coverage,CC,qwen3-4b,question,full,cov_conf,0.5,0.908446788734565,0.014425363819949662,20
+coverage,CC,qwen3-8b,question,full,cov_conf,0.5,0.8275055172610484,0.01712055736815742,20
+coverage,CC,qwen3.5-9b,question,full,cov_conf,0.5,0.46902173913043477,0.06075248219723259,20
+coverage,CC,llama3.1-8b,instance,full,cov_cas,0.25,0.2652173913043478,0.03956974349850224,20
+coverage,CC,meditron3-8b,instance,full,cov_cas,0.25,0.25788043478260864,0.03224795696297276,20
+coverage,CC,phi4-14b,instance,full,cov_cas,0.25,0.28125,0.03454739368903828,20
+coverage,CC,qwen3-4b,instance,full,cov_cas,0.25,0.2967391304347826,0.04479554810732644,20
+coverage,CC,qwen3-8b,instance,full,cov_cas,0.25,0.28559782608695655,0.03156584738482837,20
+coverage,CC,qwen3.5-9b,instance,full,cov_cas,0.25,0.25652173913043474,0.03137442892815904,20
+coverage,CC,llama3.1-8b,instance,full,cov_conf,0.25,0.27309782608695654,0.03894705792563259,20
+coverage,CC,meditron3-8b,instance,full,cov_conf,0.25,0.25951086956521735,0.03358914110185319,20
+coverage,CC,phi4-14b,instance,full,cov_conf,0.25,0.6872282608695652,0.03832743812443989,20
+coverage,CC,qwen3-4b,instance,full,cov_conf,0.25,0.9282608695652174,0.015830254436578515,20
+coverage,CC,qwen3-8b,instance,full,cov_conf,0.25,0.8211956521739131,0.02391174325568544,20
+coverage,CC,qwen3.5-9b,instance,full,cov_conf,0.25,0.2978260869565217,0.032350234279591904,20
+coverage,CC,llama3.1-8b,question,full,cov_cas,0.25,0.2793196391123677,0.0400457266871801,20
+coverage,CC,meditron3-8b,question,full,cov_cas,0.25,0.26567556030102735,0.023609343994111322,20
+coverage,CC,phi4-14b,question,full,cov_cas,0.25,0.15222273392099792,0.06025023467418574,20
+coverage,CC,qwen3-4b,question,full,cov_cas,0.25,0.40199576358254197,0.06386719691921812,20
+coverage,CC,qwen3-8b,question,full,cov_cas,0.25,0.3818758265357365,0.12908862359932136,20
+coverage,CC,qwen3.5-9b,question,full,cov_cas,0.25,0.1385869565217391,0.03637224908405438,20
+coverage,CC,llama3.1-8b,question,full,cov_conf,0.25,0.2906619140676344,0.03587629355837044,20
+coverage,CC,meditron3-8b,question,full,cov_conf,0.25,0.2717001159182574,0.025013006549459777,20
+coverage,CC,phi4-14b,question,full,cov_conf,0.25,0.593357669625934,0.02443648489420189,20
+coverage,CC,qwen3-4b,question,full,cov_conf,0.25,0.908446788734565,0.014425363819949662,20
+coverage,CC,qwen3-8b,question,full,cov_conf,0.25,0.8275055172610484,0.01712055736815742,20
+coverage,CC,qwen3.5-9b,question,full,cov_conf,0.25,0.1733695652173913,0.044289485788253646,20
+coverage,IC,llama3.1-8b,instance,full,cov_cas,0.75,0.7491847826086957,0.037705881954633015,20
+coverage,IC,meditron3-8b,instance,full,cov_cas,0.75,0.7519021739130434,0.040258150846519715,20
+coverage,IC,phi4-14b,instance,full,cov_cas,0.75,0.7529891304347825,0.039994706333128224,20
+coverage,IC,qwen3-4b,instance,full,cov_cas,0.75,0.7499999999999999,0.044885687061631645,20
+coverage,IC,qwen3-8b,instance,full,cov_cas,0.75,0.7565217391304349,0.043140853266655114,20
+coverage,IC,qwen3.5-9b,instance,full,cov_cas,0.75,0.7385869565217391,0.03114067784642224,20
+coverage,IC,llama3.1-8b,instance,full,cov_conf,0.75,0.7502717391304348,0.038327438124439894,20
+coverage,IC,meditron3-8b,instance,full,cov_conf,0.75,0.7570652173913045,0.042395704753126554,20
+coverage,IC,phi4-14b,instance,full,cov_conf,0.75,0.7535326086956522,0.0406424672389525,20
+coverage,IC,qwen3-4b,instance,full,cov_conf,0.75,0.7804347826086957,0.032770384794660115,20
+coverage,IC,qwen3-8b,instance,full,cov_conf,0.75,0.7581521739130435,0.04233699507669583,20
+coverage,IC,qwen3.5-9b,instance,full,cov_conf,0.75,0.7614130434782609,0.03926606927867052,20
+coverage,IC,llama3.1-8b,question,full,cov_cas,0.75,0.8155338201876836,0.08165268359934708,20
+coverage,IC,meditron3-8b,question,full,cov_cas,0.75,0.786431190769884,0.08203182143036,20
+coverage,IC,phi4-14b,question,full,cov_cas,0.75,0.6079009351188484,0.10391560272481705,20
+coverage,IC,qwen3-4b,question,full,cov_cas,0.75,0.4775875175410185,0.10023938106480589,20
+coverage,IC,qwen3-8b,question,full,cov_cas,0.75,0.7010087096343263,0.0518819863713691,20
+coverage,IC,qwen3.5-9b,question,full,cov_cas,0.75,0.8234591595982433,0.04125547990915855,20
+coverage,IC,llama3.1-8b,question,full,cov_conf,0.75,0.8174274203016676,0.082025024335254,20
+coverage,IC,meditron3-8b,question,full,cov_conf,0.75,0.789440640420677,0.08257125964944716,20
+coverage,IC,phi4-14b,question,full,cov_conf,0.75,0.6117026892627901,0.10066501241156252,20
+coverage,IC,qwen3-4b,question,full,cov_conf,0.75,0.7747721789532154,0.025468479349658842,20
+coverage,IC,qwen3-8b,question,full,cov_conf,0.75,0.7097299139711095,0.04731865419912959,20
+coverage,IC,qwen3.5-9b,question,full,cov_conf,0.75,0.8385256132455992,0.04097352782247244,20
+coverage,IC,llama3.1-8b,instance,full,cov_cas,0.5,0.49864130434782605,0.03187947989981515,20
+coverage,IC,meditron3-8b,instance,full,cov_cas,0.5,0.4980978260869565,0.03429447780386831,20
+coverage,IC,phi4-14b,instance,full,cov_cas,0.5,0.5095108695652173,0.03643097000581539,20
+coverage,IC,qwen3-4b,instance,full,cov_cas,0.5,0.5122282608695652,0.042679847366255255,20
+coverage,IC,qwen3-8b,instance,full,cov_cas,0.5,0.4945652173913042,0.05278060684059861,20
+coverage,IC,qwen3.5-9b,instance,full,cov_cas,0.5,0.4796195652173914,0.05073442683682401,20
+coverage,IC,llama3.1-8b,instance,full,cov_conf,0.5,0.49945652173913047,0.031635948704327545,20
+coverage,IC,meditron3-8b,instance,full,cov_conf,0.5,0.5021739130434784,0.03365964711041475,20
+coverage,IC,phi4-14b,instance,full,cov_conf,0.5,0.5149456521739129,0.034048815451471925,20
+coverage,IC,qwen3-4b,instance,full,cov_conf,0.5,0.7633152173913043,0.03347788009828336,20
+coverage,IC,qwen3-8b,instance,full,cov_conf,0.5,0.5491847826086955,0.03865055834180563,20
+coverage,IC,qwen3.5-9b,instance,full,cov_conf,0.5,0.4953804347826087,0.04852294863899375,20
+coverage,IC,llama3.1-8b,question,full,cov_cas,0.5,0.6719970771433962,0.10209360426498795,20
+coverage,IC,meditron3-8b,question,full,cov_cas,0.5,0.583955040210565,0.0695330176911131,20
+coverage,IC,phi4-14b,question,full,cov_cas,0.5,0.3697591068936078,0.10124447256448924,20
+coverage,IC,qwen3-4b,question,full,cov_cas,0.5,0.24103470244455272,0.06303324976185232,20
+coverage,IC,qwen3-8b,question,full,cov_cas,0.5,0.45548582446324914,0.050554052503951875,20
+coverage,IC,qwen3.5-9b,question,full,cov_cas,0.5,0.6383945816402419,0.08087784590458728,20
+coverage,IC,llama3.1-8b,question,full,cov_conf,0.5,0.6746290734457769,0.10124973923075944,20
+coverage,IC,meditron3-8b,question,full,cov_conf,0.5,0.5910640056089183,0.0707802556953988,20
+coverage,IC,phi4-14b,question,full,cov_conf,0.5,0.4766107943524932,0.044212687095165196,20
+coverage,IC,qwen3-4b,question,full,cov_conf,0.5,0.7747721789532154,0.025468479349658842,20
+coverage,IC,qwen3-8b,question,full,cov_conf,0.5,0.5683123292676149,0.026020245183058552,20
+coverage,IC,qwen3.5-9b,question,full,cov_conf,0.5,0.6647050624707326,0.08229088721477987,20
+coverage,IC,llama3.1-8b,instance,full,cov_cas,0.25,0.25869565217391305,0.03096546164590134,20
+coverage,IC,meditron3-8b,instance,full,cov_cas,0.25,0.23967391304347826,0.04286248728941382,20
+coverage,IC,phi4-14b,instance,full,cov_cas,0.25,0.25,0.027991143759096268,20
+coverage,IC,qwen3-4b,instance,full,cov_cas,0.25,0.25869565217391305,0.03365964711041475,20
+coverage,IC,qwen3-8b,instance,full,cov_cas,0.25,0.2649456521739131,0.034816336265010954,20
+coverage,IC,qwen3.5-9b,instance,full,cov_cas,0.25,0.2347826086956522,0.036076133581464116,20
+coverage,IC,llama3.1-8b,instance,full,cov_conf,0.25,0.2630434782608696,0.02968385471469821,20
+coverage,IC,meditron3-8b,instance,full,cov_conf,0.25,0.24184782608695654,0.04448561289061114,20
+coverage,IC,phi4-14b,instance,full,cov_conf,0.25,0.3853260869565217,0.030074071988832066,20
+coverage,IC,qwen3-4b,instance,full,cov_conf,0.25,0.7633152173913043,0.03347788009828336,20
+coverage,IC,qwen3-8b,instance,full,cov_conf,0.25,0.5394021739130433,0.03436692941230168,20
+coverage,IC,qwen3.5-9b,instance,full,cov_conf,0.25,0.2470108695652174,0.03479847142577946,20
+coverage,IC,llama3.1-8b,question,full,cov_cas,0.25,0.33497449118093875,0.13572754992933247,20
+coverage,IC,meditron3-8b,question,full,cov_cas,0.25,0.25467947600359725,0.05200794724867383,20
+coverage,IC,phi4-14b,question,full,cov_cas,0.25,0.20200595486284167,0.05986351580913681,20
+coverage,IC,qwen3-4b,question,full,cov_cas,0.25,0.08749895687679812,0.0312546482799315,20
+coverage,IC,qwen3-8b,question,full,cov_cas,0.25,0.23475787864089925,0.04401119689050524,20
+coverage,IC,qwen3.5-9b,question,full,cov_cas,0.25,0.3028696491809829,0.06570902130006254,20
+coverage,IC,llama3.1-8b,question,full,cov_conf,0.25,0.3368362365937735,0.1374377905892679,20
+coverage,IC,meditron3-8b,question,full,cov_conf,0.25,0.25847035450445244,0.052050407214015805,20
+coverage,IC,phi4-14b,question,full,cov_conf,0.25,0.46074430803501,0.03831702251810873,20
+coverage,IC,qwen3-4b,question,full,cov_conf,0.25,0.7747721789532154,0.025468479349658842,20
+coverage,IC,qwen3-8b,question,full,cov_conf,0.25,0.5666363516139836,0.027700017484094144,20
+coverage,IC,qwen3.5-9b,question,full,cov_conf,0.25,0.31740346056141056,0.06646909935635098,20
+coverage,CIC,llama3.1-8b,instance,full,cov_cas,0.75,0.7472826086956521,0.03403168971539742,20
+coverage,CIC,meditron3-8b,instance,full,cov_cas,0.75,0.7271739130434783,0.04248727621225353,20
+coverage,CIC,phi4-14b,instance,full,cov_cas,0.75,0.7336956521739131,0.036179405167481804,20
+coverage,CIC,qwen3-4b,instance,full,cov_cas,0.75,0.7614130434782609,0.03178302503742054,20
+coverage,CIC,qwen3-8b,instance,full,cov_cas,0.75,0.7467391304347827,0.03388978548828167,20
+coverage,CIC,qwen3.5-9b,instance,full,cov_cas,0.75,0.742663043478261,0.03199629951678604,20
+coverage,CIC,llama3.1-8b,instance,full,cov_conf,0.75,0.7483695652173912,0.034781714805447436,20
+coverage,CIC,meditron3-8b,instance,full,cov_conf,0.75,0.7317934782608696,0.04265798735507283,20
+coverage,CIC,phi4-14b,instance,full,cov_conf,0.75,0.7345108695652174,0.03644803469203996,20
+coverage,CIC,qwen3-4b,instance,full,cov_conf,0.75,0.8429347826086955,0.0287527602460873,20
+coverage,CIC,qwen3-8b,instance,full,cov_conf,0.75,0.7673913043478261,0.027801673357702932,20
+coverage,CIC,qwen3.5-9b,instance,full,cov_conf,0.75,0.7581521739130436,0.03324605942988075,20
+coverage,CIC,llama3.1-8b,question,full,cov_cas,0.75,0.6959551016028207,0.05569814009534908,20
+coverage,CIC,meditron3-8b,question,full,cov_cas,0.75,0.7310799955258471,0.0400769488930614,20
+coverage,CIC,phi4-14b,question,full,cov_cas,0.75,0.5439387364913024,0.06050966777531211,20
+coverage,CIC,qwen3-4b,question,full,cov_cas,0.75,0.6981908172185817,0.06632766782663406,20
+coverage,CIC,qwen3-8b,question,full,cov_cas,0.75,0.8438377791677713,0.053167410911099215,20
+coverage,CIC,qwen3.5-9b,question,full,cov_cas,0.75,0.6331577408650932,0.04467425539091253,20
+coverage,CIC,llama3.1-8b,question,full,cov_conf,0.75,0.6965015660079809,0.05579471083234214,20
+coverage,CIC,meditron3-8b,question,full,cov_conf,0.75,0.7368638785082443,0.03980029526125631,20
+coverage,CIC,phi4-14b,question,full,cov_conf,0.75,0.5447539699357233,0.05955455812249864,20
+coverage,CIC,qwen3-4b,question,full,cov_conf,0.75,0.7812910351513046,0.05165252496882197,20
+coverage,CIC,qwen3-8b,question,full,cov_conf,0.75,0.8474341280817999,0.05031939705702265,20
+coverage,CIC,qwen3.5-9b,question,full,cov_conf,0.75,0.6564502603861039,0.04281838844161041,20
+coverage,CIC,llama3.1-8b,instance,full,cov_cas,0.5,0.5010869565217391,0.03371502358949545,20
+coverage,CIC,meditron3-8b,instance,full,cov_cas,0.5,0.4698369565217392,0.03775532420757769,20
+coverage,CIC,phi4-14b,instance,full,cov_cas,0.5,0.4875,0.04433158606942125,20
+coverage,CIC,qwen3-4b,instance,full,cov_cas,0.5,0.5288043478260871,0.03618370175382406,20
+coverage,CIC,qwen3-8b,instance,full,cov_cas,0.5,0.5144021739130434,0.04273081056946137,20
+coverage,CIC,qwen3.5-9b,instance,full,cov_cas,0.5,0.4866847826086955,0.0424094530768505,20
+coverage,CIC,llama3.1-8b,instance,full,cov_conf,0.5,0.502445652173913,0.03452938970439348,20
+coverage,CIC,meditron3-8b,instance,full,cov_conf,0.5,0.4736413043478261,0.037499170885935906,20
+coverage,CIC,phi4-14b,instance,full,cov_conf,0.5,0.5084239130434781,0.038001570575861926,20
+coverage,CIC,qwen3-4b,instance,full,cov_conf,0.5,0.8429347826086955,0.0287527602460873,20
+coverage,CIC,qwen3-8b,instance,full,cov_conf,0.5,0.7442934782608694,0.036328413555775506,20
+coverage,CIC,qwen3.5-9b,instance,full,cov_conf,0.5,0.5002717391304347,0.04524702398813767,20
+coverage,CIC,llama3.1-8b,question,full,cov_cas,0.5,0.44338445403071347,0.05702158658221338,20
+coverage,CIC,meditron3-8b,question,full,cov_cas,0.5,0.40999291269106425,0.04497089268836483,20
+coverage,CIC,phi4-14b,question,full,cov_cas,0.5,0.31029182157924134,0.06570899095174668,20
+coverage,CIC,qwen3-4b,question,full,cov_cas,0.5,0.4256659455300624,0.08551792761302174,20
+coverage,CIC,qwen3-8b,question,full,cov_cas,0.5,0.6564223491843056,0.0590304716138244,20
+coverage,CIC,qwen3.5-9b,question,full,cov_cas,0.5,0.3512835789455898,0.06776839741763273,20
+coverage,CIC,llama3.1-8b,question,full,cov_conf,0.5,0.4455703113867419,0.05772861598373082,20
+coverage,CIC,meditron3-8b,question,full,cov_conf,0.5,0.41218248946933567,0.045203773568123856,20
+coverage,CIC,phi4-14b,question,full,cov_conf,0.5,0.35270867446206006,0.05067689370335136,20
+coverage,CIC,qwen3-4b,question,full,cov_conf,0.5,0.7776998749303101,0.05066816381733581,20
+coverage,CIC,qwen3-8b,question,full,cov_conf,0.5,0.7400738912443159,0.056990866240789105,20
+coverage,CIC,qwen3.5-9b,question,full,cov_conf,0.5,0.3651156950456759,0.07187932850943796,20
+coverage,CIC,llama3.1-8b,instance,full,cov_cas,0.25,0.25923913043478264,0.0322780721681338,20
+coverage,CIC,meditron3-8b,instance,full,cov_cas,0.25,0.22717391304347828,0.026718145846612334,20
+coverage,CIC,phi4-14b,instance,full,cov_cas,0.25,0.25706521739130433,0.03437710567351636,20
+coverage,CIC,qwen3-4b,instance,full,cov_cas,0.25,0.29130434782608694,0.05010311722821724,20
+coverage,CIC,qwen3-8b,instance,full,cov_cas,0.25,0.2807065217391304,0.03130870766423324,20
+coverage,CIC,qwen3.5-9b,instance,full,cov_cas,0.25,0.25652173913043474,0.038291931431243466,20
+coverage,CIC,llama3.1-8b,instance,full,cov_conf,0.25,0.260054347826087,0.032141726974049496,20
+coverage,CIC,meditron3-8b,instance,full,cov_conf,0.25,0.23070652173913048,0.027738695989510533,20
+coverage,CIC,phi4-14b,instance,full,cov_conf,0.25,0.4442934782608696,0.030737451768158675,20
+coverage,CIC,qwen3-4b,instance,full,cov_conf,0.25,0.8429347826086955,0.0287527602460873,20
+coverage,CIC,qwen3-8b,instance,full,cov_conf,0.25,0.7442934782608694,0.036328413555775506,20
+coverage,CIC,qwen3.5-9b,instance,full,cov_conf,0.25,0.26304347826086955,0.03750435254812068,20
+coverage,CIC,llama3.1-8b,question,full,cov_cas,0.25,0.20380387229614189,0.04518778819176128,20
+coverage,CIC,meditron3-8b,question,full,cov_cas,0.25,0.17617591051688936,0.02471566287572146,20
+coverage,CIC,phi4-14b,question,full,cov_cas,0.25,0.14494962532025968,0.05585908690324322,20
+coverage,CIC,qwen3-4b,question,full,cov_cas,0.25,0.17873006938225736,0.0582882053475364,20
+coverage,CIC,qwen3-8b,question,full,cov_cas,0.25,0.4235492961953546,0.05984607499420538,20
+coverage,CIC,qwen3.5-9b,question,full,cov_cas,0.25,0.1127011335414547,0.047338376620604736,20
+coverage,CIC,llama3.1-8b,question,full,cov_conf,0.25,0.20735584987074956,0.04225818945372874,20
+coverage,CIC,meditron3-8b,question,full,cov_conf,0.25,0.1783673956462905,0.024733209307030737,20
+coverage,CIC,phi4-14b,question,full,cov_conf,0.25,0.323614431430718,0.03390216547167564,20
+coverage,CIC,qwen3-4b,question,full,cov_conf,0.25,0.7776998749303101,0.05066816381733581,20
+coverage,CIC,qwen3-8b,question,full,cov_conf,0.25,0.7400738912443159,0.056990866240789105,20
+coverage,CIC,qwen3.5-9b,question,full,cov_conf,0.25,0.11976540519888541,0.048817737717203886,20
+coverage,ICC,llama3.1-8b,instance,full,cov_cas,0.75,0.7543478260869565,0.035071029592882004,20
+coverage,ICC,meditron3-8b,instance,full,cov_cas,0.75,0.7480978260869566,0.02882700632915434,20
+coverage,ICC,phi4-14b,instance,full,cov_cas,0.75,0.7394021739130434,0.03804245667147475,20
+coverage,ICC,qwen3-4b,instance,full,cov_cas,0.75,0.7489130434782609,0.028245463147892638,20
+coverage,ICC,qwen3-8b,instance,full,cov_cas,0.75,0.7445652173913044,0.028649849028716052,20
+coverage,ICC,qwen3.5-9b,instance,full,cov_cas,0.75,0.7418478260869565,0.04038249245583507,20
+coverage,ICC,llama3.1-8b,instance,full,cov_conf,0.75,0.7570652173913044,0.03496003801889748,20
+coverage,ICC,meditron3-8b,instance,full,cov_conf,0.75,0.7510869565217391,0.028245463147892655,20
+coverage,ICC,phi4-14b,instance,full,cov_conf,0.75,0.7407608695652175,0.03907557176071799,20
+coverage,ICC,qwen3-4b,instance,full,cov_conf,0.75,0.7744565217391305,0.022888657838458004,20
+coverage,ICC,qwen3-8b,instance,full,cov_conf,0.75,0.7467391304347827,0.027110910947233342,20
+coverage,ICC,qwen3.5-9b,instance,full,cov_conf,0.75,0.7597826086956521,0.04374915608151763,20
+coverage,ICC,llama3.1-8b,question,full,cov_cas,0.75,0.7767057411830566,0.09539473110473602,20
+coverage,ICC,meditron3-8b,question,full,cov_cas,0.75,0.7572805705965232,0.05067813414054764,20
+coverage,ICC,phi4-14b,question,full,cov_cas,0.75,0.870144591571344,0.0830887829354583,20
+coverage,ICC,qwen3-4b,question,full,cov_cas,0.75,0.8291680640119153,0.06559678888942592,20
+coverage,ICC,qwen3-8b,question,full,cov_cas,0.75,0.7612069327801312,0.0698991227511117,20
+coverage,ICC,qwen3.5-9b,question,full,cov_cas,0.75,0.6588246814129387,0.08351439025871472,20
+coverage,ICC,llama3.1-8b,question,full,cov_conf,0.75,0.777522443487642,0.09588940448891302,20
+coverage,ICC,meditron3-8b,question,full,cov_conf,0.75,0.763265335530915,0.04900209115616382,20
+coverage,ICC,phi4-14b,question,full,cov_conf,0.75,0.8715592365253709,0.08254372868370968,20
+coverage,ICC,qwen3-4b,question,full,cov_conf,0.75,0.8348565834862909,0.05893896077715884,20
+coverage,ICC,qwen3-8b,question,full,cov_conf,0.75,0.7631349785640089,0.0689532084543605,20
+coverage,ICC,qwen3.5-9b,question,full,cov_conf,0.75,0.6813340635300853,0.08767019732168718,20
+coverage,ICC,llama3.1-8b,instance,full,cov_cas,0.5,0.5192934782608696,0.04794928354686279,20
+coverage,ICC,meditron3-8b,instance,full,cov_cas,0.5,0.4953804347826087,0.04588839804478802,20
+coverage,ICC,phi4-14b,instance,full,cov_cas,0.5,0.5070652173913045,0.043837900454595666,20
+coverage,ICC,qwen3-4b,instance,full,cov_cas,0.5,0.5032608695652174,0.036750671822634536,20
+coverage,ICC,qwen3-8b,instance,full,cov_cas,0.5,0.5097826086956523,0.03641923339580606,20
+coverage,ICC,qwen3.5-9b,instance,full,cov_cas,0.5,0.49510869565217386,0.04694754236545087,20
+coverage,ICC,llama3.1-8b,instance,full,cov_conf,0.5,0.5214673913043478,0.04865732161526635,20
+coverage,ICC,meditron3-8b,instance,full,cov_conf,0.5,0.4997282608695651,0.04794928354686278,20
+coverage,ICC,phi4-14b,instance,full,cov_conf,0.5,0.5084239130434783,0.04226257371247412,20
+coverage,ICC,qwen3-4b,instance,full,cov_conf,0.5,0.7307065217391305,0.029265872095760627,20
+coverage,ICC,qwen3-8b,instance,full,cov_conf,0.5,0.6051630434782609,0.03155599614096365,20
+coverage,ICC,qwen3.5-9b,instance,full,cov_conf,0.5,0.5108695652173912,0.05046175204115271,20
+coverage,ICC,llama3.1-8b,question,full,cov_cas,0.5,0.5051667500344544,0.10617176057771553,20
+coverage,ICC,meditron3-8b,question,full,cov_cas,0.5,0.5595233769642458,0.03841232157477675,20
+coverage,ICC,phi4-14b,question,full,cov_cas,0.5,0.6322835513304729,0.13767221957142248,20
+coverage,ICC,qwen3-4b,question,full,cov_cas,0.5,0.576574478971955,0.09081582256760787,20
+coverage,ICC,qwen3-8b,question,full,cov_cas,0.5,0.5546171106892304,0.05771985490219823,20
+coverage,ICC,qwen3.5-9b,question,full,cov_cas,0.5,0.3524171001465544,0.06658560455878865,20
+coverage,ICC,llama3.1-8b,question,full,cov_conf,0.5,0.5076112510890225,0.10597411395895125,20
+coverage,ICC,meditron3-8b,question,full,cov_conf,0.5,0.5636152522504629,0.03616052692777839,20
+coverage,ICC,phi4-14b,question,full,cov_conf,0.5,0.6328753501888964,0.1384478089861721,20
+coverage,ICC,qwen3-4b,question,full,cov_conf,0.5,0.7090359776566657,0.03415163558014688,20
+coverage,ICC,qwen3-8b,question,full,cov_conf,0.5,0.5932532739428271,0.0513075953025842,20
+coverage,ICC,qwen3.5-9b,question,full,cov_conf,0.5,0.3721758017036628,0.06473409878119801,20
+coverage,ICC,llama3.1-8b,instance,full,cov_cas,0.25,0.2733695652173913,0.03294543898713023,20
+coverage,ICC,meditron3-8b,instance,full,cov_cas,0.25,0.24864130434782608,0.027080790094090437,20
+coverage,ICC,phi4-14b,instance,full,cov_cas,0.25,0.25652173913043474,0.030672899820601188,20
+coverage,ICC,qwen3-4b,instance,full,cov_cas,0.25,0.2654891304347826,0.02839230788348408,20
+coverage,ICC,qwen3-8b,instance,full,cov_cas,0.25,0.2747282608695652,0.02600309508758365,20
+coverage,ICC,qwen3.5-9b,instance,full,cov_cas,0.25,0.24538043478260868,0.04002578980317842,20
+coverage,ICC,llama3.1-8b,instance,full,cov_conf,0.25,0.2766304347826087,0.03284146517199436,20
+coverage,ICC,meditron3-8b,instance,full,cov_conf,0.25,0.2516304347826087,0.029245945714955316,20
+coverage,ICC,phi4-14b,instance,full,cov_conf,0.25,0.29347826086956513,0.030489897790528714,20
+coverage,ICC,qwen3-4b,instance,full,cov_conf,0.25,0.7307065217391305,0.029265872095760627,20
+coverage,ICC,qwen3-8b,instance,full,cov_conf,0.25,0.6019021739130435,0.03495003148818002,20
+coverage,ICC,qwen3.5-9b,instance,full,cov_conf,0.25,0.25625,0.039635494391770006,20
+coverage,ICC,llama3.1-8b,question,full,cov_cas,0.25,0.28170991257361416,0.08940247328153046,20
+coverage,ICC,meditron3-8b,question,full,cov_cas,0.25,0.2777992128681851,0.023236025854832434,20
+coverage,ICC,phi4-14b,question,full,cov_cas,0.25,0.32344116509493687,0.08861846471906207,20
+coverage,ICC,qwen3-4b,question,full,cov_cas,0.25,0.32902567112165626,0.09503900412103586,20
+coverage,ICC,qwen3-8b,question,full,cov_cas,0.25,0.31687703347407814,0.04445826184964656,20
+coverage,ICC,qwen3.5-9b,question,full,cov_cas,0.25,0.10574134197240459,0.036868554769288006,20
+coverage,ICC,llama3.1-8b,question,full,cov_conf,0.25,0.2836122146583594,0.0891590165583671,20
+coverage,ICC,meditron3-8b,question,full,cov_conf,0.25,0.28107542229183824,0.022287886818391684,20
+coverage,ICC,phi4-14b,question,full,cov_conf,0.25,0.3378662463262757,0.07855107960413041,20
+coverage,ICC,qwen3-4b,question,full,cov_conf,0.25,0.7090359776566657,0.03415163558014688,20
+coverage,ICC,qwen3-8b,question,full,cov_conf,0.25,0.5246986080319651,0.0366253794816471,20
+coverage,ICC,qwen3.5-9b,question,full,cov_conf,0.25,0.11330269671422681,0.03885920805879481,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xacc_cas,0.75,0.9355072463768115,0.02314307162705988,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xacc_cas,0.75,0.9684782608695652,0.014159985919886934,20
+selective_exact_topk,NC,phi4-14b,instance,full,xacc_cas,0.75,1.0,0.0,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xacc_cas,0.75,0.997463768115942,0.005889331165849625,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xacc_cas,0.75,0.9974637681159422,0.004254659047915943,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xacc_cas,0.75,0.9992753623188406,0.003240678228260554,20
+selective_exact_topk,NC,6-model mean,instance,full,xacc_cas,0.75,0.9830314009661836,0.005131073861412561,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xacc_conf,0.75,0.7692028985507248,0.0026546923806704697,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xacc_conf,0.75,0.897463768115942,0.014353834583149098,20
+selective_exact_topk,NC,phi4-14b,instance,full,xacc_conf,0.75,0.8934782608695653,0.016640944566023906,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xacc_conf,0.75,0.8688405797101451,0.018347113907391712,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xacc_conf,0.75,0.8282608695652174,0.012011005466371348,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xacc_conf,0.75,0.9731884057971018,0.007471706397404652,20
+selective_exact_topk,NC,6-model mean,instance,full,xacc_conf,0.75,0.8717391304347826,0.005437959915373788,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xlift,0.75,0.166304347826087,0.022485902335570972,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xlift,0.75,0.07101449275362316,0.005042408506800446,20
+selective_exact_topk,NC,phi4-14b,instance,full,xlift,0.75,0.10652173913043479,0.016640944566023906,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xlift,0.75,0.12862318840579706,0.020879918399823547,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xlift,0.75,0.16920289855072462,0.013764100743360319,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xlift,0.75,0.02608695652173914,0.007208137089200609,20
+selective_exact_topk,NC,6-model mean,instance,full,xlift,0.75,0.11129227053140096,0.006023053855934889,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xacc_cas,0.75,0.8677536231884059,0.07493405717086962,20
+selective_exact_topk,NC,meditron3-8b,question,full,xacc_cas,0.75,0.9188997493734334,0.07674647403310354,20
+selective_exact_topk,NC,phi4-14b,question,full,xacc_cas,0.75,0.9673913043478259,0.020697122122372447,20
+selective_exact_topk,NC,qwen3-4b,question,full,xacc_cas,0.75,0.7724637681159419,0.014184361882017165,20
+selective_exact_topk,NC,qwen3-8b,question,full,xacc_cas,0.75,0.8622923939490109,0.04668717637426727,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xacc_cas,0.75,0.865625,0.018887571978517117,20
+selective_exact_topk,NC,6-model mean,question,full,xacc_cas,0.75,0.8757376398291031,0.02613242620545544,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xacc_conf,0.75,0.7666666666666667,0.002973850295898965,20
+selective_exact_topk,NC,meditron3-8b,question,full,xacc_conf,0.75,0.9211810207336522,0.07695671013500754,20
+selective_exact_topk,NC,phi4-14b,question,full,xacc_conf,0.75,0.8315217391304348,0.03862250504931683,20
+selective_exact_topk,NC,qwen3-4b,question,full,xacc_conf,0.75,0.8478260869565218,1.1390647892519134e-16,20
+selective_exact_topk,NC,qwen3-8b,question,full,xacc_conf,0.75,0.8499471067386015,0.0481249436323487,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xacc_conf,0.75,0.875,0.0,20
+selective_exact_topk,NC,6-model mean,question,full,xacc_conf,0.75,0.8486904367043128,0.01477373350418184,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xlift,0.75,0.10108695652173913,0.0747716023215733,20
+selective_exact_topk,NC,meditron3-8b,question,full,xlift,0.75,-0.0022812713602187395,0.012549921764156253,20
+selective_exact_topk,NC,phi4-14b,question,full,xlift,0.75,0.13586956521739127,0.052878693910602965,20
+selective_exact_topk,NC,qwen3-4b,question,full,xlift,0.75,-0.07536231884057969,0.014184361882017165,20
+selective_exact_topk,NC,qwen3-8b,question,full,xlift,0.75,0.012345287210409377,0.0655221445676233,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xlift,0.75,-0.009375000000000005,0.01888757197851711,20
+selective_exact_topk,NC,6-model mean,question,full,xlift,0.75,0.02704720312479022,0.01676610180391688,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xacc_cas,0.5,0.9983695652173914,0.00729152601358628,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xacc_cas,0.5,0.9619565217391305,0.023525040268823905,20
+selective_exact_topk,NC,phi4-14b,instance,full,xacc_cas,0.5,1.0,0.0,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xacc_cas,0.5,1.0,0.0,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xacc_cas,0.5,0.996195652173913,0.006381988571873922,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xacc_cas,0.5,1.0,0.0,20
+selective_exact_topk,NC,6-model mean,instance,full,xacc_cas,0.5,0.9927536231884059,0.0038091121959264234,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xacc_conf,0.5,0.7826086956521738,0.024432673345609397,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xacc_conf,0.5,0.8679347826086957,0.015075754716121853,20
+selective_exact_topk,NC,phi4-14b,instance,full,xacc_conf,0.5,0.9391304347826088,0.019761285563537335,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xacc_conf,0.5,0.8673913043478262,0.031065706199625096,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xacc_conf,0.5,0.8396739130434783,0.02515374078650473,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xacc_conf,0.5,0.9619565217391303,0.0119591218308735,20
+selective_exact_topk,NC,6-model mean,instance,full,xacc_conf,0.5,0.8764492753623188,0.009828057827362317,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xlift,0.5,0.2157608695652174,0.026921020026583576,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xlift,0.5,0.0940217391304348,0.01465748296213899,20
+selective_exact_topk,NC,phi4-14b,instance,full,xlift,0.5,0.060869565217391286,0.01976128556353733,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xlift,0.5,0.13260869565217392,0.031065706199625096,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xlift,0.5,0.15652173913043477,0.026248546065073704,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xlift,0.5,0.03804347826086956,0.0119591218308735,20
+selective_exact_topk,NC,6-model mean,instance,full,xlift,0.5,0.11630434782608694,0.009359954643364135,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xacc_cas,0.5,0.8228260869565217,0.11079775122918799,20
+selective_exact_topk,NC,meditron3-8b,question,full,xacc_cas,0.5,0.8873636363636361,0.11873349339272617,20
+selective_exact_topk,NC,phi4-14b,question,full,xacc_cas,0.5,0.9847826086956522,0.023232461962241144,20
+selective_exact_topk,NC,qwen3-4b,question,full,xacc_cas,0.5,0.986413043478261,0.02198799203773182,20
+selective_exact_topk,NC,qwen3-8b,question,full,xacc_cas,0.5,0.9070652173913045,0.09083697257454591,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xacc_cas,0.5,0.8125,0.0,20
+selective_exact_topk,NC,6-model mean,question,full,xacc_cas,0.5,0.9001584321475626,0.043219481445815174,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xacc_conf,0.5,0.6603260869565217,0.03343257455073478,20
+selective_exact_topk,NC,meditron3-8b,question,full,xacc_conf,0.5,0.8839545454545454,0.11674942589645117,20
+selective_exact_topk,NC,phi4-14b,question,full,xacc_conf,0.5,0.8076086956521739,0.13826155318398128,20
+selective_exact_topk,NC,qwen3-4b,question,full,xacc_conf,0.5,0.7717391304347827,1.1390647892519134e-16,20
+selective_exact_topk,NC,qwen3-8b,question,full,xacc_conf,0.5,0.7967391304347825,0.07009771879370671,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xacc_conf,0.5,0.8125,0.0,20
+selective_exact_topk,NC,6-model mean,question,full,xacc_conf,0.5,0.7888112648221344,0.030324604570342344,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xlift,0.5,0.16249999999999998,0.11364449234229232,20
+selective_exact_topk,NC,meditron3-8b,question,full,xlift,0.5,0.003409090909090917,0.005342753931609413,20
+selective_exact_topk,NC,phi4-14b,question,full,xlift,0.5,0.17717391304347826,0.150286596502978,20
+selective_exact_topk,NC,qwen3-4b,question,full,xlift,0.5,0.21467391304347827,0.02198799203773182,20
+selective_exact_topk,NC,qwen3-8b,question,full,xlift,0.5,0.11032608695652173,0.08143779049082715,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xlift,0.5,0.0,0.0,20
+selective_exact_topk,NC,6-model mean,question,full,xlift,0.5,0.1113471673254282,0.03817571182348448,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xacc_cas,0.25,0.9978260869565216,0.009722034684781689,20
+selective_exact_topk,NC,phi4-14b,instance,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xacc_cas,0.25,0.9978260869565216,0.009722034684781689,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,NC,6-model mean,instance,full,xacc_cas,0.25,0.9992753623188406,0.002230387721924258,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xacc_conf,0.25,0.8956521739130434,0.037053983748990896,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xacc_conf,0.25,0.9630434782608697,0.03804756434414874,20
+selective_exact_topk,NC,phi4-14b,instance,full,xacc_conf,0.25,0.9402173913043477,0.03373346221465807,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xacc_conf,0.25,0.868478260869565,0.047036862366144454,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xacc_conf,0.25,0.8413043478260869,0.036033016399114055,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xacc_conf,0.25,1.0,0.0,20
+selective_exact_topk,NC,6-model mean,instance,full,xacc_conf,0.25,0.9181159420289855,0.012627925751404522,20
+selective_exact_topk,NC,llama3.1-8b,instance,full,xlift,0.25,0.10434782608695654,0.037053983748990896,20
+selective_exact_topk,NC,meditron3-8b,instance,full,xlift,0.25,0.03478260869565218,0.0348397699646101,20
+selective_exact_topk,NC,phi4-14b,instance,full,xlift,0.25,0.05978260869565216,0.03373346221465807,20
+selective_exact_topk,NC,qwen3-4b,instance,full,xlift,0.25,0.1315217391304348,0.047036862366144454,20
+selective_exact_topk,NC,qwen3-8b,instance,full,xlift,0.25,0.1565217391304348,0.03637652289278587,20
+selective_exact_topk,NC,qwen3.5-9b,instance,full,xlift,0.25,0.0,0.0,20
+selective_exact_topk,NC,6-model mean,instance,full,xlift,0.25,0.08115942028985507,0.011837175669113137,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xacc_cas,0.25,0.7173913043478259,0.18714003020833753,20
+selective_exact_topk,NC,meditron3-8b,question,full,xacc_cas,0.25,0.8769545454545454,0.1641346149166351,20
+selective_exact_topk,NC,phi4-14b,question,full,xacc_cas,0.25,0.9717391304347827,0.047366210054635025,20
+selective_exact_topk,NC,qwen3-4b,question,full,xacc_cas,0.25,0.9869565217391303,0.020441841129635954,20
+selective_exact_topk,NC,qwen3-8b,question,full,xacc_cas,0.25,0.8358695652173912,0.1777991173116568,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xacc_cas,0.25,0.8906250000000002,0.11247055332617989,20
+selective_exact_topk,NC,6-model mean,question,full,xacc_cas,0.25,0.8799226778656127,0.07305057568016299,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xacc_conf,0.25,0.7184782608695652,0.23871140736539495,20
+selective_exact_topk,NC,meditron3-8b,question,full,xacc_conf,0.25,0.8724090909090909,0.16312847150824383,20
+selective_exact_topk,NC,phi4-14b,question,full,xacc_conf,0.25,0.9804347826086957,0.028995040385015224,20
+selective_exact_topk,NC,qwen3-4b,question,full,xacc_conf,0.25,0.8141304347826086,0.0973417964227744,20
+selective_exact_topk,NC,qwen3-8b,question,full,xacc_conf,0.25,0.882608695652174,0.15199400938087287,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xacc_conf,0.25,0.8906250000000002,0.11247055332617989,20
+selective_exact_topk,NC,6-model mean,question,full,xacc_conf,0.25,0.8597810441370223,0.0602951401545297,20
+selective_exact_topk,NC,llama3.1-8b,question,full,xlift,0.25,-0.001086956521739138,0.21641370578256416,20
+selective_exact_topk,NC,meditron3-8b,question,full,xlift,0.25,0.004545454545454547,0.009327075928046859,20
+selective_exact_topk,NC,phi4-14b,question,full,xlift,0.25,-0.008695652173913049,0.039522571127074704,20
+selective_exact_topk,NC,qwen3-4b,question,full,xlift,0.25,0.17282608695652174,0.10590819428803186,20
+selective_exact_topk,NC,qwen3-8b,question,full,xlift,0.25,-0.04673913043478261,0.18449971614931604,20
+selective_exact_topk,NC,qwen3.5-9b,question,full,xlift,0.25,0.0,0.0,20
+selective_exact_topk,NC,6-model mean,question,full,xlift,0.25,0.020141633728590246,0.049354764466933425,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xacc_cas,0.75,0.89963768115942,0.01599308791764466,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xacc_cas,0.75,0.9677536231884059,0.011145741366236514,20
+selective_exact_topk,CC,phi4-14b,instance,full,xacc_cas,0.75,0.9822463768115941,0.009828057827362322,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xacc_cas,0.75,0.9688405797101451,0.008828128932285916,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xacc_cas,0.75,0.9873188405797103,0.006164466008865202,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xacc_cas,0.75,0.9931159420289856,0.007236835824162701,20
+selective_exact_topk,CC,6-model mean,instance,full,xacc_cas,0.75,0.9664855072463769,0.0033219782863537378,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xacc_conf,0.75,0.9054347826086957,0.0138042001749893,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xacc_conf,0.75,0.9536231884057969,0.005463311847282988,20
+selective_exact_topk,CC,phi4-14b,instance,full,xacc_conf,0.75,0.976086956521739,0.009433482518300815,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xacc_conf,0.75,0.9702898550724637,0.009075117257439324,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xacc_conf,0.75,0.9869565217391305,0.0064813564565211175,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xacc_conf,0.75,0.9934782608695653,0.007013811895268008,20
+selective_exact_topk,CC,6-model mean,instance,full,xacc_conf,0.75,0.9643115942028986,0.0038883992913676855,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xlift,0.75,-0.005797101449275355,0.019754291655845798,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xlift,0.75,0.014130434782608692,0.00954271212334135,20
+selective_exact_topk,CC,phi4-14b,instance,full,xlift,0.75,0.006159420289855083,0.010050503144081263,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xlift,0.75,-0.001449275362318847,0.011895401183596015,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xlift,0.75,0.00036231884057968955,0.006844298850640061,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xlift,0.75,-0.0003623188405797062,0.0016203391141302649,20
+selective_exact_topk,CC,6-model mean,instance,full,xlift,0.75,0.002173913043478259,0.004408843808531227,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xacc_cas,0.75,0.8496837054137403,0.023983769539930953,20
+selective_exact_topk,CC,meditron3-8b,question,full,xacc_cas,0.75,0.9718467059943621,0.007920908588447463,20
+selective_exact_topk,CC,phi4-14b,question,full,xacc_cas,0.75,0.940189601366072,0.030570339547550607,20
+selective_exact_topk,CC,qwen3-4b,question,full,xacc_cas,0.75,0.9523871984608444,0.0035338062359807835,20
+selective_exact_topk,CC,qwen3-8b,question,full,xacc_cas,0.75,0.9756543895571962,0.010199240917026446,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xacc_cas,0.75,0.971376811594203,0.010105349407466801,20
+selective_exact_topk,CC,6-model mean,question,full,xacc_cas,0.75,0.9435230687310698,0.007824521801104602,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xacc_conf,0.75,0.8924098159331978,0.017913544158563655,20
+selective_exact_topk,CC,meditron3-8b,question,full,xacc_conf,0.75,0.9809895784718202,0.008336722047191079,20
+selective_exact_topk,CC,phi4-14b,question,full,xacc_conf,0.75,0.9541340605311195,0.017432966518095894,20
+selective_exact_topk,CC,qwen3-4b,question,full,xacc_conf,0.75,0.9538312606024355,0.005850833708752932,20
+selective_exact_topk,CC,qwen3-8b,question,full,xacc_conf,0.75,0.9774560463901422,0.008717659502032134,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xacc_conf,0.75,0.9989130434782609,0.0026546923806704706,20
+selective_exact_topk,CC,6-model mean,question,full,xacc_conf,0.75,0.9596223009011625,0.005811632794237521,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xlift,0.75,-0.04272611051945756,0.01872028764446063,20
+selective_exact_topk,CC,meditron3-8b,question,full,xlift,0.75,-0.009142872477458135,0.007079303784640105,20
+selective_exact_topk,CC,phi4-14b,question,full,xlift,0.75,-0.013944459165047385,0.015198466377072721,20
+selective_exact_topk,CC,qwen3-4b,question,full,xlift,0.75,-0.0014440621415910849,0.006001751979023534,20
+selective_exact_topk,CC,qwen3-8b,question,full,xlift,0.75,-0.0018016568329459414,0.003202228751971395,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xlift,0.75,-0.02753623188405797,0.010926623694565993,20
+selective_exact_topk,CC,6-model mean,question,full,xlift,0.75,-0.01609923217009301,0.004908569768820246,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xacc_cas,0.5,0.9641304347826086,0.017312464317772707,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xacc_cas,0.5,0.9777173913043479,0.011946115713017052,20
+selective_exact_topk,CC,phi4-14b,instance,full,xacc_cas,0.5,0.9967391304347826,0.005110460282409014,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xacc_cas,0.5,0.982608695652174,0.00892155088769698,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xacc_cas,0.5,0.9934782608695653,0.007397359210638275,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xacc_cas,0.5,0.9956521739130435,0.005463311847283009,20
+selective_exact_topk,CC,6-model mean,instance,full,xacc_cas,0.5,0.9850543478260871,0.003980953990140944,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xacc_conf,0.5,0.9472826086956522,0.022929372945357587,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xacc_conf,0.5,0.9641304347826084,0.011207559596106921,20
+selective_exact_topk,CC,phi4-14b,instance,full,xacc_conf,0.5,0.9842391304347826,0.012945378618616964,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xacc_conf,0.5,0.9663043478260869,0.0144975201925076,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xacc_conf,0.5,0.9847826086956524,0.011907012119677526,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xacc_conf,0.5,0.9967391304347826,0.005110460282409014,20
+selective_exact_topk,CC,6-model mean,instance,full,xacc_conf,0.5,0.9739130434782608,0.006313962875702239,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xlift,0.5,0.016847826086956508,0.021874578040758798,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xlift,0.5,0.01358695652173913,0.011082019809960245,20
+selective_exact_topk,CC,phi4-14b,instance,full,xlift,0.5,0.0125,0.013324116719676631,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xlift,0.5,0.01630434782608694,0.01815404079247416,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xlift,0.5,0.008695652173913031,0.011481623527965314,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xlift,0.5,-0.0010869565217391352,0.004861017342390869,20
+selective_exact_topk,CC,6-model mean,instance,full,xlift,0.5,0.011141304347826078,0.00625555943943709,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xacc_cas,0.5,0.9213264291783639,0.021226503884085236,20
+selective_exact_topk,CC,meditron3-8b,question,full,xacc_cas,0.5,0.9896075542814671,0.0024484213719469304,20
+selective_exact_topk,CC,phi4-14b,question,full,xacc_cas,0.5,0.9694577644577645,0.02662016737305705,20
+selective_exact_topk,CC,qwen3-4b,question,full,xacc_cas,0.5,0.9396739130434781,0.0096417522643806,20
+selective_exact_topk,CC,qwen3-8b,question,full,xacc_cas,0.5,0.9755687651848615,0.01598070769820059,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xacc_cas,0.5,1.0,0.0,20
+selective_exact_topk,CC,6-model mean,question,full,xacc_cas,0.5,0.9659390710243226,0.006666220667999668,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xacc_conf,0.5,0.9549461115083361,0.015449237754480177,20
+selective_exact_topk,CC,meditron3-8b,question,full,xacc_conf,0.5,0.9983574879227053,0.0040117903056426955,20
+selective_exact_topk,CC,phi4-14b,question,full,xacc_conf,0.5,0.959051504051504,0.011283670327120493,20
+selective_exact_topk,CC,qwen3-4b,question,full,xacc_conf,0.5,0.958695652173913,0.01092662369456596,20
+selective_exact_topk,CC,qwen3-8b,question,full,xacc_conf,0.5,0.9874925028717814,0.010779240402868515,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xacc_conf,0.5,1.0,0.0,20
+selective_exact_topk,CC,6-model mean,question,full,xacc_conf,0.5,0.9764238764213735,0.0045912589328491165,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xlift,0.5,-0.03361968232997231,0.01743918786202594,20
+selective_exact_topk,CC,meditron3-8b,question,full,xlift,0.5,-0.008749933641238005,0.0044896411570086794,20
+selective_exact_topk,CC,phi4-14b,question,full,xlift,0.5,0.010406260406260404,0.01952987211447269,20
+selective_exact_topk,CC,qwen3-4b,question,full,xlift,0.5,-0.019021739130434766,0.011629606035615631,20
+selective_exact_topk,CC,qwen3-8b,question,full,xlift,0.5,-0.011923737686919922,0.013974250155319506,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xlift,0.5,0.0,0.0,20
+selective_exact_topk,CC,6-model mean,question,full,xlift,0.5,-0.010484805397050765,0.004658562389245019,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xacc_cas,0.25,0.9858695652173912,0.016199126529795525,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xacc_cas,0.25,0.9880434782608696,0.014920276981592592,20
+selective_exact_topk,CC,phi4-14b,instance,full,xacc_cas,0.25,0.9945652173913043,0.0096578621373765,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xacc_cas,0.25,0.982608695652174,0.01811975551014109,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xacc_cas,0.25,0.9945652173913043,0.01195912183087349,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,CC,6-model mean,instance,full,xacc_cas,0.25,0.9909420289855072,0.0051909449232708455,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xacc_conf,0.25,0.9869565217391305,0.016389935541848945,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xacc_conf,0.25,0.9869565217391305,0.014794718421276524,20
+selective_exact_topk,CC,phi4-14b,instance,full,xacc_conf,0.25,0.982608695652174,0.019444069369563378,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xacc_conf,0.25,0.9706521739130436,0.027565823755864232,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xacc_conf,0.25,0.9858695652173912,0.016199126529795525,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xacc_conf,0.25,0.9989130434782609,0.004861017342390844,20
+selective_exact_topk,CC,6-model mean,instance,full,xacc_conf,0.25,0.9853260869565219,0.008911865127716533,20
+selective_exact_topk,CC,llama3.1-8b,instance,full,xlift,0.25,-0.0010869565217391298,0.02171050747248814,20
+selective_exact_topk,CC,meditron3-8b,instance,full,xlift,0.25,0.0010869565217391298,0.0048610173423908444,20
+selective_exact_topk,CC,phi4-14b,instance,full,xlift,0.25,0.011956521739130426,0.02171050747248814,20
+selective_exact_topk,CC,qwen3-4b,instance,full,xlift,0.25,0.011956521739130432,0.031125697963644235,20
+selective_exact_topk,CC,qwen3-8b,instance,full,xlift,0.25,0.008695652173913038,0.017843101775393975,20
+selective_exact_topk,CC,qwen3.5-9b,instance,full,xlift,0.25,0.0010869565217391298,0.0048610173423908444,20
+selective_exact_topk,CC,6-model mean,instance,full,xlift,0.25,0.005615942028985505,0.010144587005290534,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xacc_cas,0.25,0.964829587002575,0.02302339727572305,20
+selective_exact_topk,CC,meditron3-8b,question,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,CC,phi4-14b,question,full,xacc_cas,0.25,0.9752290249433105,0.036460363112224614,20
+selective_exact_topk,CC,qwen3-4b,question,full,xacc_cas,0.25,0.9717391304347827,0.03315709720730099,20
+selective_exact_topk,CC,qwen3-8b,question,full,xacc_cas,0.25,0.9816604995374654,0.02244893854116603,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xacc_cas,0.25,1.0,0.0,20
+selective_exact_topk,CC,6-model mean,question,full,xacc_cas,0.25,0.982243040319689,0.00966294265954146,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xacc_conf,0.25,0.9797571488831565,0.014304995053680037,20
+selective_exact_topk,CC,meditron3-8b,question,full,xacc_conf,0.25,1.0,0.0,20
+selective_exact_topk,CC,phi4-14b,question,full,xacc_conf,0.25,0.9955555555555555,0.00911980757409027,20
+selective_exact_topk,CC,qwen3-4b,question,full,xacc_conf,0.25,0.9836956521739133,0.015572834769812574,20
+selective_exact_topk,CC,qwen3-8b,question,full,xacc_conf,0.25,0.9913737280296022,0.010840417008886997,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xacc_conf,0.25,1.0,0.0,20
+selective_exact_topk,CC,6-model mean,question,full,xacc_conf,0.25,0.9917303474403714,0.004235536185587444,20
+selective_exact_topk,CC,llama3.1-8b,question,full,xlift,0.25,-0.014927561880581553,0.01951295500697179,20
+selective_exact_topk,CC,meditron3-8b,question,full,xlift,0.25,0.0,0.0,20
+selective_exact_topk,CC,phi4-14b,question,full,xlift,0.25,-0.020326530612244896,0.037899563957932376,20
+selective_exact_topk,CC,qwen3-4b,question,full,xlift,0.25,-0.011956521739130439,0.029484173482086942,20
+selective_exact_topk,CC,qwen3-8b,question,full,xlift,0.25,-0.009713228492136895,0.02487704397125915,20
+selective_exact_topk,CC,qwen3.5-9b,question,full,xlift,0.25,0.0,0.0,20
+selective_exact_topk,CC,6-model mean,question,full,xlift,0.25,-0.009487307120682296,0.008596473188771289,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xacc_cas,0.75,0.3884057971014493,0.027857533718138584,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xacc_cas,0.75,0.5152173913043478,0.030824571586821656,20
+selective_exact_topk,IC,phi4-14b,instance,full,xacc_cas,0.75,0.5192028985507247,0.022706057839815705,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xacc_cas,0.75,0.4713768115942029,0.017030811204208195,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xacc_cas,0.75,0.6673913043478261,0.025310506081989835,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xacc_cas,0.75,0.4405797101449275,0.02797632971002526,20
+selective_exact_topk,IC,6-model mean,instance,full,xacc_cas,0.75,0.5003623188405798,0.011710027237830371,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xacc_conf,0.75,0.3231884057971015,0.0223533864415808,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xacc_conf,0.75,0.4257246376811595,0.027705828840227563,20
+selective_exact_topk,IC,phi4-14b,instance,full,xacc_conf,0.75,0.42608695652173906,0.015163720689292672,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xacc_conf,0.75,0.38586956521739135,0.01709559816645759,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xacc_conf,0.75,0.5869565217391304,0.016624328541345063,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xacc_conf,0.75,0.34601449275362317,0.01218802530989687,20
+selective_exact_topk,IC,6-model mean,instance,full,xacc_conf,0.75,0.41564009661835744,0.00801380581152479,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xlift,0.75,0.06521739130434782,0.02879418167532704,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xlift,0.75,0.08949275362318841,0.0262090329521029,20
+selective_exact_topk,IC,phi4-14b,instance,full,xlift,0.75,0.09311594202898552,0.028239347160737414,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xlift,0.75,0.0855072463768116,0.02461299072432424,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xlift,0.75,0.08043478260869563,0.027508115237065728,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xlift,0.75,0.09456521739130433,0.027565823755864242,20
+selective_exact_topk,IC,6-model mean,instance,full,xlift,0.75,0.08472222222222223,0.0138717434715709,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xacc_cas,0.75,0.32588215598860065,0.0248960764536736,20
+selective_exact_topk,IC,meditron3-8b,question,full,xacc_cas,0.75,0.3982314320199352,0.03598376927791164,20
+selective_exact_topk,IC,phi4-14b,question,full,xacc_cas,0.75,0.39873642991173586,0.025070167558269192,20
+selective_exact_topk,IC,qwen3-4b,question,full,xacc_cas,0.75,0.36138544347738605,0.033760302237575576,20
+selective_exact_topk,IC,qwen3-8b,question,full,xacc_cas,0.75,0.6308805173763253,0.030073669726422114,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xacc_cas,0.75,0.4080708836084407,0.021011842438840106,20
+selective_exact_topk,IC,6-model mean,question,full,xacc_cas,0.75,0.420531143730404,0.011329852459153529,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xacc_conf,0.75,0.2859955675991626,0.01961509058893645,20
+selective_exact_topk,IC,meditron3-8b,question,full,xacc_conf,0.75,0.3488730274107496,0.02990357795216026,20
+selective_exact_topk,IC,phi4-14b,question,full,xacc_conf,0.75,0.4267805504096279,0.014916290447110762,20
+selective_exact_topk,IC,qwen3-4b,question,full,xacc_conf,0.75,0.4067294843583034,0.03060924047515829,20
+selective_exact_topk,IC,qwen3-8b,question,full,xacc_conf,0.75,0.5996820590992502,0.018115899978321172,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xacc_conf,0.75,0.30826106537752834,0.0184920444490742,20
+selective_exact_topk,IC,6-model mean,question,full,xacc_conf,0.75,0.39605362570910363,0.010672925018337377,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xlift,0.75,0.03988658838943805,0.033783960271680645,20
+selective_exact_topk,IC,meditron3-8b,question,full,xlift,0.75,0.049358404609185516,0.019895457628154513,20
+selective_exact_topk,IC,phi4-14b,question,full,xlift,0.75,-0.028044120497892178,0.0229608548714365,20
+selective_exact_topk,IC,qwen3-4b,question,full,xlift,0.75,-0.045344040880917404,0.03622187421296442,20
+selective_exact_topk,IC,qwen3-8b,question,full,xlift,0.75,0.03119845827707527,0.034902789357885954,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xlift,0.75,0.0998098182309123,0.020304460531512795,20
+selective_exact_topk,IC,6-model mean,question,full,xlift,0.75,0.024477518021300264,0.010869314142585114,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xacc_cas,0.5,0.5260869565217391,0.04163722303964912,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xacc_cas,0.5,0.607608695652174,0.05072599976377622,20
+selective_exact_topk,IC,phi4-14b,instance,full,xacc_cas,0.5,0.6521739130434783,0.025914763507794328,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xacc_cas,0.5,0.6059782608695653,0.027963360979288313,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xacc_cas,0.5,0.7755434782608697,0.026689037933137233,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xacc_cas,0.5,0.546195652173913,0.03611489503265349,20
+selective_exact_topk,IC,6-model mean,instance,full,xacc_cas,0.5,0.6189311594202899,0.010013915825179059,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xacc_conf,0.5,0.28369565217391307,0.03210906322365056,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xacc_conf,0.5,0.41358695652173905,0.03202665136059959,20
+selective_exact_topk,IC,phi4-14b,instance,full,xacc_conf,0.5,0.39565217391304347,0.03062217562544859,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xacc_conf,0.5,0.39076086956521733,0.03372885350335645,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xacc_conf,0.5,0.5945652173913043,0.0323406219679016,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xacc_conf,0.5,0.3739130434782608,0.028300447554902387,20
+selective_exact_topk,IC,6-model mean,instance,full,xacc_conf,0.5,0.408695652173913,0.014257239713419348,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xlift,0.5,0.24239130434782608,0.03766978940117667,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xlift,0.5,0.1940217391304348,0.04588246914702129,20
+selective_exact_topk,IC,phi4-14b,instance,full,xlift,0.5,0.2565217391304348,0.03885614520122291,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xlift,0.5,0.21521739130434786,0.04106579310384054,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xlift,0.5,0.1809782608695652,0.04040558356176618,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xlift,0.5,0.17228260869565218,0.03703300068838699,20
+selective_exact_topk,IC,6-model mean,instance,full,xlift,0.5,0.2102355072463768,0.016346405201814903,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xacc_cas,0.5,0.3229545583481618,0.05779207051077783,20
+selective_exact_topk,IC,meditron3-8b,question,full,xacc_cas,0.5,0.404925933055204,0.04714701711763528,20
+selective_exact_topk,IC,phi4-14b,question,full,xacc_cas,0.5,0.3296332107127541,0.0617747668434925,20
+selective_exact_topk,IC,qwen3-4b,question,full,xacc_cas,0.5,0.3221278621808072,0.04922814154075323,20
+selective_exact_topk,IC,qwen3-8b,question,full,xacc_cas,0.5,0.6883835430225244,0.05932622465909018,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xacc_cas,0.5,0.3993750133514439,0.043021867550579226,20
+selective_exact_topk,IC,6-model mean,question,full,xacc_cas,0.5,0.4112333534451492,0.023488895540745635,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xacc_conf,0.5,0.2611457085880003,0.02387392989695078,20
+selective_exact_topk,IC,meditron3-8b,question,full,xacc_conf,0.5,0.34080219681843027,0.05255814393240197,20
+selective_exact_topk,IC,phi4-14b,question,full,xacc_conf,0.5,0.4239473330063811,0.03691756842475421,20
+selective_exact_topk,IC,qwen3-4b,question,full,xacc_conf,0.5,0.4212820429712818,0.07132123434875438,20
+selective_exact_topk,IC,qwen3-8b,question,full,xacc_conf,0.5,0.6616888453125618,0.03411681540344303,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xacc_conf,0.5,0.30693408844455716,0.02696109757919021,20
+selective_exact_topk,IC,6-model mean,question,full,xacc_conf,0.5,0.4026333691902021,0.01888697059919233,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xlift,0.5,0.061808849760161544,0.06445211743453762,20
+selective_exact_topk,IC,meditron3-8b,question,full,xlift,0.5,0.06412373623677374,0.04596685968633742,20
+selective_exact_topk,IC,phi4-14b,question,full,xlift,0.5,-0.09431412229362705,0.07483837272971143,20
+selective_exact_topk,IC,qwen3-4b,question,full,xlift,0.5,-0.09915418079047454,0.08328981643333795,20
+selective_exact_topk,IC,qwen3-8b,question,full,xlift,0.5,0.02669469770996268,0.06178180733235972,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xlift,0.5,0.09244092490688678,0.055698707037069355,20
+selective_exact_topk,IC,6-model mean,question,full,xlift,0.5,0.00859998425494719,0.02871916514436271,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xacc_cas,0.25,0.6619565217391304,0.05157696255462855,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xacc_cas,0.25,0.7380434782608696,0.061679395474396125,20
+selective_exact_topk,IC,phi4-14b,instance,full,xacc_cas,0.25,0.768478260869565,0.046930982969371066,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xacc_cas,0.25,0.7358695652173913,0.057850513586283715,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xacc_cas,0.25,0.8793478260869565,0.04200892495817617,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xacc_cas,0.25,0.65,0.060220468491954705,20
+selective_exact_topk,IC,6-model mean,instance,full,xacc_cas,0.25,0.7389492753623188,0.0189719573053744,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xacc_conf,0.25,0.28478260869565214,0.04284434904337737,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xacc_conf,0.25,0.35543478260869565,0.061598689655760826,20
+selective_exact_topk,IC,phi4-14b,instance,full,xacc_conf,0.25,0.37934782608695655,0.06782542685825595,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xacc_conf,0.25,0.3760869565217391,0.06071408714682148,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xacc_conf,0.25,0.5847826086956522,0.0736027948235002,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xacc_conf,0.25,0.4554347826086957,0.032684884297274425,20
+selective_exact_topk,IC,6-model mean,instance,full,xacc_conf,0.25,0.4059782608695651,0.022287608041801747,20
+selective_exact_topk,IC,llama3.1-8b,instance,full,xlift,0.25,0.37717391304347825,0.06078573829036319,20
+selective_exact_topk,IC,meditron3-8b,instance,full,xlift,0.25,0.3826086956521739,0.0777122904024458,20
+selective_exact_topk,IC,phi4-14b,instance,full,xlift,0.25,0.38913043478260867,0.06687444819741903,20
+selective_exact_topk,IC,qwen3-4b,instance,full,xlift,0.25,0.35978260869565215,0.08990288705921479,20
+selective_exact_topk,IC,qwen3-8b,instance,full,xlift,0.25,0.2945652173913043,0.06004467212403229,20
+selective_exact_topk,IC,qwen3.5-9b,instance,full,xlift,0.25,0.1945652173913044,0.06634231947181383,20
+selective_exact_topk,IC,6-model mean,instance,full,xlift,0.25,0.3329710144927536,0.031496412666807895,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xacc_cas,0.25,0.3006965831787261,0.09773079188160691,20
+selective_exact_topk,IC,meditron3-8b,question,full,xacc_cas,0.25,0.4402636447733581,0.0880494977302587,20
+selective_exact_topk,IC,phi4-14b,question,full,xacc_cas,0.25,0.293994822181108,0.07932688286282569,20
+selective_exact_topk,IC,qwen3-4b,question,full,xacc_cas,0.25,0.2913916337285902,0.052562335383693516,20
+selective_exact_topk,IC,qwen3-8b,question,full,xacc_cas,0.25,0.7393568323076715,0.10107797245610475,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xacc_cas,0.25,0.43476797213292856,0.05798622505537087,20
+selective_exact_topk,IC,6-model mean,question,full,xacc_cas,0.25,0.4167452480503971,0.03602555750561906,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xacc_conf,0.25,0.2254039115646258,0.06735357808272475,20
+selective_exact_topk,IC,meditron3-8b,question,full,xacc_conf,0.25,0.3116651248843663,0.0848425555260266,20
+selective_exact_topk,IC,phi4-14b,question,full,xacc_conf,0.25,0.6377180979545689,0.09183566459406872,20
+selective_exact_topk,IC,qwen3-4b,question,full,xacc_conf,0.25,0.1498328392621871,0.05306602606160933,20
+selective_exact_topk,IC,qwen3-8b,question,full,xacc_conf,0.25,0.7200087865858646,0.13656705086122486,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xacc_conf,0.25,0.33767123187261616,0.056521461049561655,20
+selective_exact_topk,IC,6-model mean,question,full,xacc_conf,0.25,0.3970499986873715,0.030935788981162206,20
+selective_exact_topk,IC,llama3.1-8b,question,full,xlift,0.25,0.07529267161410018,0.11956416900612524,20
+selective_exact_topk,IC,meditron3-8b,question,full,xlift,0.25,0.12859851988899168,0.06952283874313184,20
+selective_exact_topk,IC,phi4-14b,question,full,xlift,0.25,-0.34372327577346085,0.1508930225123265,20
+selective_exact_topk,IC,qwen3-4b,question,full,xlift,0.25,0.14155879446640318,0.08380725501730435,20
+selective_exact_topk,IC,qwen3-8b,question,full,xlift,0.25,0.0193480457218068,0.19723689799702362,20
+selective_exact_topk,IC,qwen3.5-9b,question,full,xlift,0.25,0.09709674026031237,0.050584432081201204,20
+selective_exact_topk,IC,6-model mean,question,full,xlift,0.25,0.01969524936302557,0.04141459480666376,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xacc_cas,0.75,0.7684782608695652,0.027059893004117937,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xacc_cas,0.75,0.8626811594202899,0.023448555003601584,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xacc_cas,0.75,0.9329710144927537,0.012850294118101785,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xacc_cas,0.75,0.9202898550724639,0.01244050833737612,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xacc_cas,0.75,0.9847826086956524,0.007397359210638261,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xacc_cas,0.75,0.911231884057971,0.019081803754523282,20
+selective_exact_topk,CIC,6-model mean,instance,full,xacc_cas,0.75,0.8967391304347826,0.007036759693558936,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xacc_conf,0.75,0.7670289855072463,0.01633504187688341,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xacc_conf,0.75,0.851086956521739,0.01873097851561715,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xacc_conf,0.75,0.9188405797101449,0.015876016159570044,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xacc_conf,0.75,0.9068840579710147,0.012720599016096469,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xacc_conf,0.75,0.9670289855072465,0.011145741366236516,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xacc_conf,0.75,0.9021739130434782,0.01011218427426609,20
+selective_exact_topk,CIC,6-model mean,instance,full,xacc_conf,0.75,0.8855072463768117,0.006861102948730774,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xlift,0.75,0.001449275362318847,0.027477958332070163,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xlift,0.75,0.011594202898550732,0.016356176627444475,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xlift,0.75,0.014130434782608703,0.01916850683072487,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xlift,0.75,0.01340579710144928,0.018701446012399918,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xlift,0.75,0.017753623188405808,0.010638271411512891,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xlift,0.75,0.009057971014492756,0.015923815960563803,20
+selective_exact_topk,CIC,6-model mean,instance,full,xlift,0.75,0.011231884057971021,0.005930897318474937,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xacc_cas,0.75,0.7018308532239281,0.027190384265910906,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xacc_cas,0.75,0.7337463306237855,0.0384038076167096,20
+selective_exact_topk,CIC,phi4-14b,question,full,xacc_cas,0.75,0.8763203908469543,0.0085462465711173,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xacc_cas,0.75,0.8775187266323412,0.02291587282165884,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xacc_cas,0.75,0.9550893157697526,0.027112003231356162,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xacc_cas,0.75,0.85723870393144,0.017679408711049612,20
+selective_exact_topk,CIC,6-model mean,question,full,xacc_cas,0.75,0.8336240535047003,0.010354568323340509,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xacc_conf,0.75,0.758766724103583,0.018885335914420705,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xacc_conf,0.75,0.7435684445725571,0.037664213807376584,20
+selective_exact_topk,CIC,phi4-14b,question,full,xacc_conf,0.75,0.8977160575570011,0.008077629292300678,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xacc_conf,0.75,0.9162968640392007,0.017528141093249086,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xacc_conf,0.75,0.9733070600300009,0.021893883559636375,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xacc_conf,0.75,0.8851734929472845,0.00773494678582295,20
+selective_exact_topk,CIC,6-model mean,question,full,xacc_conf,0.75,0.8624714405416046,0.0088967480169845,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xlift,0.75,-0.056935870879655036,0.02508080746590735,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xlift,0.75,-0.009822113948771676,0.012473453711792919,20
+selective_exact_topk,CIC,phi4-14b,question,full,xlift,0.75,-0.021395666710046734,0.007233082769453304,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xlift,0.75,-0.0387781374068593,0.013860007172315109,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xlift,0.75,-0.01821774426024818,0.01672140360622439,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xlift,0.75,-0.02793478901584468,0.016924439490480975,20
+selective_exact_topk,CIC,6-model mean,question,full,xlift,0.75,-0.028847387036904266,0.005656760251308782,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xacc_cas,0.5,0.8592391304347826,0.02673559538314964,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xacc_cas,0.5,0.9451086956521738,0.0138728502669746,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xacc_cas,0.5,0.9891304347826088,0.011696251888021092,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xacc_cas,0.5,0.947282608695652,0.015482730822950676,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xacc_cas,0.5,0.9934782608695653,0.007397359210638275,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xacc_cas,0.5,0.9565217391304346,0.021451182218824562,20
+selective_exact_topk,CIC,6-model mean,instance,full,xacc_cas,0.5,0.9484601449275362,0.008090494695814214,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xacc_conf,0.5,0.8413043478260869,0.02958943684255306,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xacc_conf,0.5,0.9070652173913041,0.015158024111200178,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xacc_conf,0.5,0.9614130434782607,0.015158024111200161,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xacc_conf,0.5,0.9048913043478259,0.026828467900377833,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xacc_conf,0.5,0.9739130434782609,0.013839191866552462,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xacc_conf,0.5,0.9478260869565218,0.018526991874495448,20
+selective_exact_topk,CIC,6-model mean,instance,full,xacc_conf,0.5,0.9227355072463768,0.008880313448654389,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xlift,0.5,0.01793478260869565,0.029980883041124364,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xlift,0.5,0.03804347826086958,0.013884051601271848,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xlift,0.5,0.027717391304347815,0.01474208674104346,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xlift,0.5,0.042391304347826106,0.027520670861087563,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xlift,0.5,0.01956521739130434,0.012518020042661651,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xlift,0.5,0.008695652173913038,0.018188261446392937,20
+selective_exact_topk,CIC,6-model mean,instance,full,xlift,0.5,0.025724637681159422,0.007676948603308231,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xacc_cas,0.5,0.7543211413932969,0.027185356700756096,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xacc_cas,0.5,0.8648870624008864,0.041671287556963636,20
+selective_exact_topk,CIC,phi4-14b,question,full,xacc_cas,0.5,0.9402173913043479,0.021011862325179584,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xacc_cas,0.5,0.881990911154171,0.028336954135864165,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xacc_cas,0.5,0.9832491143297414,0.016642680380625902,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xacc_cas,0.5,0.9001684947799656,0.021324555601898616,20
+selective_exact_topk,CIC,6-model mean,question,full,xacc_cas,0.5,0.8874723525604015,0.007694429591768915,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xacc_conf,0.5,0.8092203240792509,0.026164823015831545,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xacc_conf,0.5,0.8742599051709534,0.03624706329896645,20
+selective_exact_topk,CIC,phi4-14b,question,full,xacc_conf,0.5,0.9679347826086955,0.010855253736244071,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xacc_conf,0.5,0.9237067156415281,0.040137330213754756,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xacc_conf,0.5,0.9790668569951884,0.014981717937210152,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xacc_conf,0.5,0.9392609356416017,0.014131546886124006,20
+selective_exact_topk,CIC,6-model mean,question,full,xacc_conf,0.5,0.9155749200228698,0.011180816473203774,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xlift,0.5,-0.054899182685954194,0.024329058475918087,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xlift,0.5,-0.00937284277006683,0.019398354063814228,20
+selective_exact_topk,CIC,phi4-14b,question,full,xlift,0.5,-0.027717391304347822,0.021874578040758808,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xlift,0.5,-0.04171580448735711,0.05439233625941492,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xlift,0.5,0.004182257334552969,0.027413881765402624,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xlift,0.5,-0.03909244086163606,0.02132612557678172,20
+selective_exact_topk,CIC,6-model mean,question,full,xlift,0.5,-0.02810256746246817,0.011161746655558082,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xacc_cas,0.25,0.9554347826086957,0.02589075723723395,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xacc_cas,0.25,0.9793478260869566,0.01650336205470104,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xacc_cas,0.25,0.9978260869565216,0.006691163165772739,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xacc_cas,0.25,0.9684782608695655,0.01794734668438904,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xacc_cas,0.25,0.9945652173913044,0.009657862137376499,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xacc_cas,0.25,0.9967391304347826,0.01063827141151288,20
+selective_exact_topk,CIC,6-model mean,instance,full,xacc_cas,0.25,0.9820652173913045,0.007385674857726832,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xacc_conf,0.25,0.8956521739130435,0.033530079662371204,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xacc_conf,0.25,0.9619565217391303,0.027202502123498264,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xacc_conf,0.25,0.9630434782608697,0.023498592772807886,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xacc_conf,0.25,0.9119565217391303,0.04808283486914875,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xacc_conf,0.25,0.9771739130434784,0.02053289655192026,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xacc_conf,0.25,0.9858695652173914,0.019023782172074347,20
+selective_exact_topk,CIC,6-model mean,instance,full,xacc_conf,0.25,0.9492753623188406,0.012102693861649456,20
+selective_exact_topk,CIC,llama3.1-8b,instance,full,xlift,0.25,0.059782608695652203,0.03064247537950133,20
+selective_exact_topk,CIC,meditron3-8b,instance,full,xlift,0.25,0.017391304347826087,0.024022010932742713,20
+selective_exact_topk,CIC,phi4-14b,instance,full,xlift,0.25,0.03478260869565216,0.022745581033939005,20
+selective_exact_topk,CIC,qwen3-4b,instance,full,xlift,0.25,0.05652173913043481,0.04646492392448233,20
+selective_exact_topk,CIC,qwen3-8b,instance,full,xlift,0.25,0.017391304347826077,0.024022010932742702,20
+selective_exact_topk,CIC,qwen3.5-9b,instance,full,xlift,0.25,0.010869565217391297,0.016540998048971342,20
+selective_exact_topk,CIC,6-model mean,instance,full,xlift,0.25,0.03278985507246378,0.012186608015245893,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xacc_cas,0.25,0.8274283071230343,0.0701020436676101,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xacc_cas,0.25,0.9439494949494949,0.035182886598587225,20
+selective_exact_topk,CIC,phi4-14b,question,full,xacc_cas,0.25,0.9880434782608696,0.017947346684389045,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xacc_cas,0.25,0.8607313187377942,0.04433508693544562,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xacc_cas,0.25,0.9827383980881897,0.016349401969534744,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xacc_cas,0.25,0.943663274745606,0.03336552939186803,20
+selective_exact_topk,CIC,6-model mean,question,full,xacc_cas,0.25,0.924425711984165,0.013351758157588513,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xacc_conf,0.25,0.8827474560592042,0.048008361475850844,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xacc_conf,0.25,0.9483995840760546,0.04027606599251651,20
+selective_exact_topk,CIC,phi4-14b,question,full,xacc_conf,0.25,0.9956521739130434,0.015127225520401282,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xacc_conf,0.25,0.9118727515674788,0.06026731589878888,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xacc_conf,0.25,0.9635235507246376,0.027184692009984537,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xacc_conf,0.25,0.9425994449583719,0.030881868888879317,20
+selective_exact_topk,CIC,6-model mean,question,full,xacc_conf,0.25,0.9407991602164649,0.016435184673132593,20
+selective_exact_topk,CIC,llama3.1-8b,question,full,xlift,0.25,-0.0553191489361702,0.049982455103914594,20
+selective_exact_topk,CIC,meditron3-8b,question,full,xlift,0.25,-0.004450089126559698,0.013326006184777148,20
+selective_exact_topk,CIC,phi4-14b,question,full,xlift,0.25,-0.007608695652173908,0.019023782172074347,20
+selective_exact_topk,CIC,qwen3-4b,question,full,xlift,0.25,-0.05114143282968446,0.07774719913618686,20
+selective_exact_topk,CIC,qwen3-8b,question,full,xlift,0.25,0.01921484736355226,0.04208132892297612,20
+selective_exact_topk,CIC,qwen3.5-9b,question,full,xlift,0.25,0.0010638297872340274,0.030299636409435816,20
+selective_exact_topk,CIC,6-model mean,question,full,xlift,0.25,-0.016373448232300334,0.018262141748865826,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xacc_cas,0.75,0.6938405797101449,0.02563329147697879,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xacc_cas,0.75,0.8032608695652176,0.024800355852835375,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xacc_cas,0.75,0.7434782608695653,0.023674351338226266,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xacc_cas,0.75,0.8112318840579711,0.01797811798291058,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xacc_cas,0.75,0.8739130434782609,0.01765625786457182,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xacc_cas,0.75,0.8880434782608695,0.019736796043826152,20
+selective_exact_topk,ICC,6-model mean,instance,full,xacc_cas,0.75,0.8022946859903382,0.008107378977573227,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xacc_conf,0.75,0.661231884057971,0.015572834769812577,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xacc_conf,0.75,0.7554347826086957,0.02606098800697701,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xacc_conf,0.75,0.6836956521739129,0.014159985919886901,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xacc_conf,0.75,0.7894927536231884,0.017192320851542858,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xacc_conf,0.75,0.8105072463768117,0.016503362054701046,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xacc_conf,0.75,0.8960144927536231,0.01564366098979034,20
+selective_exact_topk,ICC,6-model mean,instance,full,xacc_conf,0.75,0.7660628019323672,0.005865820767940094,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xlift,0.75,0.03260869565217391,0.02297527914848059,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xlift,0.75,0.047826086956521754,0.021470498910914192,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xlift,0.75,0.059782608695652176,0.027904617605371492,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xlift,0.75,0.02173913043478261,0.023510350888516298,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xlift,0.75,0.06340579710144925,0.023140086002119756,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xlift,0.75,-0.007971014492753632,0.01741988498230503,20
+selective_exact_topk,ICC,6-model mean,instance,full,xlift,0.75,0.036231884057971016,0.010247924365022427,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xacc_cas,0.75,0.6095859969659461,0.04358029748507026,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xacc_cas,0.75,0.7703593345530217,0.03439160877933286,20
+selective_exact_topk,ICC,phi4-14b,question,full,xacc_cas,0.75,0.6819099389770271,0.029374999816251156,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xacc_cas,0.75,0.7573743555393172,0.026705496594003106,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xacc_cas,0.75,0.7753692375667111,0.0200870828948563,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xacc_cas,0.75,0.8262837181301551,0.026431402195734532,20
+selective_exact_topk,ICC,6-model mean,question,full,xacc_cas,0.75,0.7368137636220297,0.012497093899979462,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xacc_conf,0.75,0.6751258114681562,0.01980015997619173,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xacc_conf,0.75,0.8054986804635236,0.0164468180382002,20
+selective_exact_topk,ICC,phi4-14b,question,full,xacc_conf,0.75,0.7141657902369828,0.018306731484476667,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xacc_conf,0.75,0.7872691307930942,0.02156167387463781,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xacc_conf,0.75,0.8045493407497988,0.011981512765220198,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xacc_conf,0.75,0.8843767434656395,0.015041815479692182,20
+selective_exact_topk,ICC,6-model mean,question,full,xacc_conf,0.75,0.7784975828628657,0.008347672531881907,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xlift,0.75,-0.06553981450221028,0.03435837307952839,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xlift,0.75,-0.03513934591050178,0.031316448097559874,20
+selective_exact_topk,ICC,phi4-14b,question,full,xlift,0.75,-0.03225585125995585,0.025698699125142728,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xlift,0.75,-0.029894775253777074,0.02147936255809912,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xlift,0.75,-0.029180103183087697,0.019233456210042296,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xlift,0.75,-0.05809302533548451,0.024666166150568367,20
+selective_exact_topk,ICC,6-model mean,question,full,xlift,0.75,-0.0416838192408362,0.011907386415386868,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xacc_cas,0.5,0.7673913043478261,0.038047564344148715,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xacc_cas,0.5,0.8880434782608695,0.03175855961539962,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xacc_cas,0.5,0.8163043478260871,0.03559897241677958,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xacc_cas,0.5,0.8961956521739131,0.025054661166428904,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xacc_cas,0.5,0.9483695652173912,0.017938682746310233,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xacc_cas,0.5,0.9630434782608696,0.015127225520401277,20
+selective_exact_topk,ICC,6-model mean,instance,full,xacc_cas,0.5,0.879891304347826,0.012400177926417691,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xacc_conf,0.5,0.6842391304347826,0.02187457804075881,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xacc_conf,0.5,0.8016304347826088,0.014486793206064753,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xacc_conf,0.5,0.6880434782608696,0.03510647278494182,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xacc_conf,0.5,0.7961956521739131,0.032680127710725586,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xacc_conf,0.5,0.853804347826087,0.025788481277314264,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xacc_conf,0.5,0.9521739130434783,0.018459743043243174,20
+selective_exact_topk,ICC,6-model mean,instance,full,xacc_conf,0.5,0.7960144927536232,0.010119014524470258,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xlift,0.5,0.08315217391304348,0.038995923141905274,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xlift,0.5,0.08641304347826087,0.0362180560950577,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xlift,0.5,0.1282608695652174,0.04151757559965738,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xlift,0.5,0.09999999999999999,0.03856700905752247,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xlift,0.5,0.09456521739130433,0.03214777217468485,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xlift,0.5,0.010869565217391308,0.00997459712480702,20
+selective_exact_topk,ICC,6-model mean,instance,full,xlift,0.5,0.0838768115942029,0.013442853930741334,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xacc_cas,0.5,0.6372134886439891,0.07160453676162938,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xacc_cas,0.5,0.8295662049093323,0.03975656980533852,20
+selective_exact_topk,ICC,phi4-14b,question,full,xacc_cas,0.5,0.7398642066058276,0.03566200721822003,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xacc_cas,0.5,0.7913441346825201,0.03035912809511741,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xacc_cas,0.5,0.8697671889144225,0.031414600024493713,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xacc_cas,0.5,0.8948990302019905,0.034268636437607004,20
+selective_exact_topk,ICC,6-model mean,question,full,xacc_cas,0.5,0.7937757089930136,0.014551854988320399,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xacc_conf,0.5,0.7266641698100771,0.01990091091476874,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xacc_conf,0.5,0.8329163054708761,0.018419543187701327,20
+selective_exact_topk,ICC,phi4-14b,question,full,xacc_conf,0.5,0.7014912151526791,0.02336441238342159,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xacc_conf,0.5,0.7269196717690966,0.04251972527913858,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xacc_conf,0.5,0.8779468960322354,0.034242183312952645,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xacc_conf,0.5,0.9266755446218905,0.014660139715439603,20
+selective_exact_topk,ICC,6-model mean,question,full,xacc_conf,0.5,0.7987689671428091,0.014382593879531662,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xlift,0.5,-0.08945068116608805,0.06611289387027082,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xlift,0.5,-0.003350100561543895,0.03950489321012815,20
+selective_exact_topk,ICC,phi4-14b,question,full,xlift,0.5,0.03837299145314853,0.03922831438455444,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xlift,0.5,0.06442446291342334,0.04139016720055053,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xlift,0.5,-0.00817970711781294,0.044639946015446914,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xlift,0.5,-0.03177651441990018,0.03443452297263923,20
+selective_exact_topk,ICC,6-model mean,question,full,xlift,0.5,-0.004993258149795532,0.015286256796483235,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xacc_cas,0.25,0.8586956521739129,0.04543645229213907,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xacc_cas,0.25,0.9706521739130436,0.02471104525583763,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xacc_cas,0.25,0.892391304347826,0.04756272400896231,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xacc_cas,0.25,0.9543478260869567,0.028995040385015238,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xacc_cas,0.25,0.9793478260869566,0.017947346684389045,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xacc_cas,0.25,0.9923913043478262,0.012763977143747812,20
+selective_exact_topk,ICC,6-model mean,instance,full,xacc_cas,0.25,0.9413043478260871,0.011672599180522557,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xacc_conf,0.25,0.7510869565217392,0.050603265493042525,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xacc_conf,0.25,0.85,0.03300672410940207,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xacc_conf,0.25,0.7434782608695654,0.05624823812449807,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xacc_conf,0.25,0.7989130434782608,0.04397598407546363,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xacc_conf,0.25,0.8717391304347826,0.04619649346386992,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xacc_conf,0.25,0.9804347826086955,0.021041435685804053,20
+selective_exact_topk,ICC,6-model mean,instance,full,xacc_conf,0.25,0.8326086956521739,0.01544363436584311,20
+selective_exact_topk,ICC,llama3.1-8b,instance,full,xlift,0.25,0.1076086956521739,0.06248072033747023,20
+selective_exact_topk,ICC,meditron3-8b,instance,full,xlift,0.25,0.12065217391304353,0.049610461505181905,20
+selective_exact_topk,ICC,phi4-14b,instance,full,xlift,0.25,0.14891304347826081,0.05741894833846831,20
+selective_exact_topk,ICC,qwen3-4b,instance,full,xlift,0.25,0.15543478260869564,0.060375157851581825,20
+selective_exact_topk,ICC,qwen3-8b,instance,full,xlift,0.25,0.10760869565217397,0.050109322332857795,20
+selective_exact_topk,ICC,qwen3.5-9b,instance,full,xlift,0.25,0.011956521739130426,0.019283504528761226,20
+selective_exact_topk,ICC,6-model mean,instance,full,xlift,0.25,0.10869565217391304,0.020462110684570847,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xacc_cas,0.25,0.7124421831637373,0.08341933758042917,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xacc_cas,0.25,0.8860043426868126,0.05928912935749537,20
+selective_exact_topk,ICC,phi4-14b,question,full,xacc_cas,0.25,0.7264703513540722,0.03940247332688882,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xacc_cas,0.25,0.8105551058690512,0.06457444556939045,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xacc_cas,0.25,0.9628793146782442,0.037286316141591,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xacc_cas,0.25,0.9428769657724331,0.029679145934356395,20
+selective_exact_topk,ICC,6-model mean,question,full,xacc_cas,0.25,0.8402047105873918,0.020935767842573342,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xacc_conf,0.25,0.8166049953746531,0.04780364006886121,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xacc_conf,0.25,0.8545912349676226,0.06106552089935152,20
+selective_exact_topk,ICC,phi4-14b,question,full,xacc_conf,0.25,0.7114511392999765,0.03741369648089272,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xacc_conf,0.25,0.7460601680542707,0.08478640239697127,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xacc_conf,0.25,0.8489527934768784,0.04383411921364266,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xacc_conf,0.25,0.9579324699352453,0.017815234875786307,20
+selective_exact_topk,ICC,6-model mean,question,full,xacc_conf,0.25,0.8225988001847743,0.025702196561575925,20
+selective_exact_topk,ICC,llama3.1-8b,question,full,xlift,0.25,-0.1041628122109158,0.09006709960472749,20
+selective_exact_topk,ICC,meditron3-8b,question,full,xlift,0.25,0.03141310771919004,0.08907505258902201,20
+selective_exact_topk,ICC,phi4-14b,question,full,xlift,0.25,0.015019212054095782,0.046225041029247786,20
+selective_exact_topk,ICC,qwen3-4b,question,full,xlift,0.25,0.06449493781478054,0.07853217053133427,20
+selective_exact_topk,ICC,qwen3-8b,question,full,xlift,0.25,0.11392652120136593,0.06635411787332049,20
+selective_exact_topk,ICC,qwen3.5-9b,question,full,xlift,0.25,-0.015055504162812223,0.025279107128869077,20
+selective_exact_topk,ICC,6-model mean,question,full,xlift,0.25,0.01760591040261738,0.02870584514151753,20
+ablation_auroc,IC,llama3.1-8b,instance,unc,detector,,0.5663712601939395,0.03614615136597386,20
+ablation_auroc,IC,llama3.1-8b,question,unc,detector,,0.6057164657196173,0.022591645146519214,20
+ablation_auroc,IC,llama3.1-8b,instance,unc_docs,detector,,0.7206110021252035,0.04021775162381087,20
+ablation_auroc,IC,llama3.1-8b,question,unc_docs,detector,,0.5531500453851134,0.039716506145931474,20
+ablation_auroc,IC,llama3.1-8b,instance,question,detector,,0.7869041453656391,0.025493261952587696,20
+ablation_auroc,IC,llama3.1-8b,question,question,detector,,0.449652250244643,0.09354171797007194,20
+ablation_auroc,IC,meditron3-8b,instance,unc,detector,,0.520667911359814,0.03617714789051091,20
+ablation_auroc,IC,meditron3-8b,question,unc,detector,,0.5429326804670461,0.03327959819501321,20
+ablation_auroc,IC,meditron3-8b,instance,unc_docs,detector,,0.6719358547802007,0.037218098806504465,20
+ablation_auroc,IC,meditron3-8b,question,unc_docs,detector,,0.5757528819394795,0.04251511608962522,20
+ablation_auroc,IC,meditron3-8b,instance,question,detector,,0.7804387884187192,0.03372425095934903,20
+ablation_auroc,IC,meditron3-8b,question,question,detector,,0.5877132336755978,0.06374017666706329,20
+ablation_auroc,IC,phi4-14b,instance,unc,detector,,0.5164510945497744,0.03218919668791752,20
+ablation_auroc,IC,phi4-14b,question,unc,detector,,0.5338155475810535,0.03681146729259845,20
+ablation_auroc,IC,phi4-14b,instance,unc_docs,detector,,0.6984570444868943,0.032457099037182,20
+ablation_auroc,IC,phi4-14b,question,unc_docs,detector,,0.44278365054835583,0.09157114597093438,20
+ablation_auroc,IC,phi4-14b,instance,question,detector,,0.8012401482007844,0.0329410265446567,20
+ablation_auroc,IC,phi4-14b,question,question,detector,,0.5147370749961003,0.17579105367738693,20
+ablation_auroc,IC,qwen3-4b,instance,unc,detector,,0.5052003031149722,0.024383012060132814,20
+ablation_auroc,IC,qwen3-4b,question,unc,detector,,0.49467814977272234,0.05141679088923333,20
+ablation_auroc,IC,qwen3-4b,instance,unc_docs,detector,,0.7250125354256525,0.03152606183425041,20
+ablation_auroc,IC,qwen3-4b,question,unc_docs,detector,,0.40610744639006124,0.046383843636151896,20
+ablation_auroc,IC,qwen3-4b,instance,question,detector,,0.7727062084018724,0.03172083321808371,20
+ablation_auroc,IC,qwen3-4b,question,question,detector,,0.6794205057576042,0.12300131662963049,20
+ablation_auroc,IC,qwen3-8b,instance,unc,detector,,0.5387982983754818,0.039706171066965265,20
+ablation_auroc,IC,qwen3-8b,question,unc,detector,,0.6136284345309357,0.03297345931097075,20
+ablation_auroc,IC,qwen3-8b,instance,unc_docs,detector,,0.6820353498658959,0.022036174375815565,20
+ablation_auroc,IC,qwen3-8b,question,unc_docs,detector,,0.5995047546194117,0.06946930803841696,20
+ablation_auroc,IC,qwen3-8b,instance,question,detector,,0.8015198326947068,0.03395486892746586,20
+ablation_auroc,IC,qwen3-8b,question,question,detector,,0.7220763175682618,0.07622887205361936,20
+ablation_auroc,IC,qwen3.5-9b,instance,unc,detector,,0.579439232807727,0.032461824888301884,20
+ablation_auroc,IC,qwen3.5-9b,question,unc,detector,,0.5867642373048685,0.026544211306493818,20
+ablation_auroc,IC,qwen3.5-9b,instance,unc_docs,detector,,0.6983760087052427,0.03766834747072525,20
+ablation_auroc,IC,qwen3.5-9b,question,unc_docs,detector,,0.6186032526057966,0.028014372953140607,20
+ablation_auroc,IC,qwen3.5-9b,instance,question,detector,,0.736658045109575,0.0383474956673808,20
+ablation_auroc,IC,qwen3.5-9b,question,question,detector,,0.6077542215612047,0.046129777815515534,20
+ablation_auroc,IC,6-model mean,instance,unc,detector,,0.5378213500669514,0.014312898336677001,20
+ablation_auroc,IC,6-model mean,question,unc,detector,,0.5629225858960407,0.014703774805126642,20
+ablation_auroc,IC,6-model mean,instance,unc_docs,detector,,0.6994046325648482,0.013775342155225117,20
+ablation_auroc,IC,6-model mean,question,unc_docs,detector,,0.5326503385813698,0.024352445480517366,20
+ablation_auroc,IC,6-model mean,instance,question,detector,,0.7799111946985494,0.019119441730675833,20
+ablation_auroc,IC,6-model mean,question,question,detector,,0.5935589339672352,0.05028642395294081,20
+ablation_selective,IC,6-model mean,instance,unc,lift,0.75,0.01343205529460596,0.010668787482062273,20
+ablation_selective,IC,6-model mean,instance,unc,lift,0.5,0.03719919365971978,0.018420359568749503,20
+ablation_selective,IC,6-model mean,instance,unc,lift,0.25,0.08402004884816029,0.031990981224424946,20
+ablation_selective,IC,6-model mean,question,unc,lift,0.75,0.025922698453856273,0.010809436659938937,20
+ablation_selective,IC,6-model mean,question,unc,lift,0.5,0.06308649311985226,0.023750609458326535,20
+ablation_selective,IC,6-model mean,question,unc,lift,0.25,0.13657206378942102,0.03845912104695281,20
+ablation_selective,IC,6-model mean,instance,unc_docs,lift,0.75,0.07089425229542001,0.014650436519385572,20
+ablation_selective,IC,6-model mean,instance,unc_docs,lift,0.5,0.16958879742312233,0.020030835023848784,20
+ablation_selective,IC,6-model mean,instance,unc_docs,lift,0.25,0.27064210089937135,0.027800044452765283,20
+ablation_selective,IC,6-model mean,question,unc_docs,lift,0.75,0.017130500028284472,0.013660844855368531,20
+ablation_selective,IC,6-model mean,question,unc_docs,lift,0.5,0.03176618841721213,0.02304720878904724,20
+ablation_selective,IC,6-model mean,question,unc_docs,lift,0.25,0.02901175034781525,0.0430094246977835,20
+ablation_selective,IC,6-model mean,instance,question,lift,0.75,0.08871682090261872,0.015400857359512595,20
+ablation_selective,IC,6-model mean,instance,question,lift,0.5,0.2021192246447748,0.017140310812123655,20
+ablation_selective,IC,6-model mean,instance,question,lift,0.25,0.3821535520435583,0.017900209994061257,20
+ablation_selective,IC,6-model mean,question,question,lift,0.75,0.051127132113479634,0.028659974972697348,20
+ablation_selective,IC,6-model mean,question,question,lift,0.5,0.05726615947383858,0.060359752366935464,20
+ablation_selective,IC,6-model mean,question,question,lift,0.25,0.05503546336864691,0.08681267405428363,20
+ablation_auroc,ICC,llama3.1-8b,instance,unc,detector,,0.4848421911116401,0.040946887154608466,20
+ablation_auroc,ICC,llama3.1-8b,question,unc,detector,,0.48021978542260746,0.021469105747962323,20
+ablation_auroc,ICC,llama3.1-8b,instance,unc_docs,detector,,0.6260784462291082,0.033225016498380174,20
+ablation_auroc,ICC,llama3.1-8b,question,unc_docs,detector,,0.5034700866068025,0.04615368500825215,20
+ablation_auroc,ICC,llama3.1-8b,instance,question,detector,,0.7466042028875504,0.03942461190641125,20
+ablation_auroc,ICC,llama3.1-8b,question,question,detector,,0.3582693584057125,0.08371682953460981,20
+ablation_auroc,ICC,meditron3-8b,instance,unc,detector,,0.3825598497090474,0.03207867786053535,20
+ablation_auroc,ICC,meditron3-8b,question,unc,detector,,0.35379736256272604,0.017298745744782407,20
+ablation_auroc,ICC,meditron3-8b,instance,unc_docs,detector,,0.6347744026586892,0.045673943924875206,20
+ablation_auroc,ICC,meditron3-8b,question,unc_docs,detector,,0.41151844191219117,0.08879337664175038,20
+ablation_auroc,ICC,meditron3-8b,instance,question,detector,,0.7650906358372686,0.035416541031394244,20
+ablation_auroc,ICC,meditron3-8b,question,question,detector,,0.48193279793897403,0.1108112355237026,20
+ablation_auroc,ICC,phi4-14b,instance,unc,detector,,0.5089980442706137,0.03478010399257748,20
+ablation_auroc,ICC,phi4-14b,question,unc,detector,,0.42121199486933036,0.035249302416352754,20
+ablation_auroc,ICC,phi4-14b,instance,unc_docs,detector,,0.6716488633384089,0.046754869832904146,20
+ablation_auroc,ICC,phi4-14b,question,unc_docs,detector,,0.49707883709404044,0.042250051025379494,20
+ablation_auroc,ICC,phi4-14b,instance,question,detector,,0.7716381407873945,0.0293916166421584,20
+ablation_auroc,ICC,phi4-14b,question,question,detector,,0.4127109324531856,0.0614457030665305,20
+ablation_auroc,ICC,qwen3-4b,instance,unc,detector,,0.6719573103667819,0.04423871521915388,20
+ablation_auroc,ICC,qwen3-4b,question,unc,detector,,0.6921763569565689,0.03939363632902015,20
+ablation_auroc,ICC,qwen3-4b,instance,unc_docs,detector,,0.7003855155389711,0.031036591620627885,20
+ablation_auroc,ICC,qwen3-4b,question,unc_docs,detector,,0.6218386979372852,0.03663268819348629,20
+ablation_auroc,ICC,qwen3-4b,instance,question,detector,,0.7739792654761388,0.03975182539047228,20
+ablation_auroc,ICC,qwen3-4b,question,question,detector,,0.3463502462931113,0.10541847065250401,20
+ablation_auroc,ICC,qwen3-8b,instance,unc,detector,,0.6567451707048911,0.03556780036246033,20
+ablation_auroc,ICC,qwen3-8b,question,unc,detector,,0.6070990432007737,0.045999155749190036,20
+ablation_auroc,ICC,qwen3-8b,instance,unc_docs,detector,,0.7527194234878919,0.030802406783527858,20
+ablation_auroc,ICC,qwen3-8b,question,unc_docs,detector,,0.6423753486636898,0.05562946608620567,20
+ablation_auroc,ICC,qwen3-8b,instance,question,detector,,0.8575254154481691,0.027590324937973237,20
+ablation_auroc,ICC,qwen3-8b,question,question,detector,,0.6186819277374553,0.06371432133424998,20
+ablation_auroc,ICC,qwen3.5-9b,instance,unc,detector,,0.4938766828006722,0.038526359287945774,20
+ablation_auroc,ICC,qwen3.5-9b,question,unc,detector,,0.44006265251321447,0.04532454687474389,20
+ablation_auroc,ICC,qwen3.5-9b,instance,unc_docs,detector,,0.6536964755901797,0.041235112830572726,20
+ablation_auroc,ICC,qwen3.5-9b,question,unc_docs,detector,,0.5175447923112324,0.04816882404683559,20
+ablation_auroc,ICC,qwen3.5-9b,instance,question,detector,,0.6890331138786099,0.062427233030997745,20
+ablation_auroc,ICC,qwen3.5-9b,question,question,detector,,0.48155369531912634,0.08935883329509037,20
+ablation_auroc,ICC,6-model mean,instance,unc,detector,,0.5331632081606077,0.01420709777102024,20
+ablation_auroc,ICC,6-model mean,question,unc,detector,,0.49909453258753683,0.011867617432785256,20
+ablation_auroc,ICC,6-model mean,instance,unc_docs,detector,,0.6732171878072081,0.014210751604122619,20
+ablation_auroc,ICC,6-model mean,question,unc_docs,detector,,0.5323043674208737,0.019101856302250815,20
+ablation_auroc,ICC,6-model mean,instance,question,detector,,0.7673117957191886,0.01661283803070496,20
+ablation_auroc,ICC,6-model mean,question,question,detector,,0.4499164930245942,0.04438836416390782,20
+ablation_selective,ICC,6-model mean,instance,unc,lift,0.75,-0.02993420606507951,0.009356147792388553,20
+ablation_selective,ICC,6-model mean,instance,unc,lift,0.5,-0.034303022614766907,0.014430461471414148,20
+ablation_selective,ICC,6-model mean,instance,unc,lift,0.25,-0.00861259779956282,0.01999250980915879,20
+ablation_selective,ICC,6-model mean,question,unc,lift,0.75,-0.05368176412946257,0.00746017071578051,20
+ablation_selective,ICC,6-model mean,question,unc,lift,0.5,-0.04006364454122349,0.012450112749603568,20
+ablation_selective,ICC,6-model mean,question,unc,lift,0.25,-0.022721880347757316,0.01819610445155113,20
+ablation_selective,ICC,6-model mean,instance,unc_docs,lift,0.75,0.02017608329240618,0.010866513818068512,20
+ablation_selective,ICC,6-model mean,instance,unc_docs,lift,0.5,0.05917549627315592,0.01328951914794754,20
+ablation_selective,ICC,6-model mean,instance,unc_docs,lift,0.25,0.09163867748661567,0.017863619791651582,20
+ablation_selective,ICC,6-model mean,question,unc_docs,lift,0.75,-0.030067521101197953,0.00917176571818844,20
+ablation_selective,ICC,6-model mean,question,unc_docs,lift,0.5,-0.01911919223164495,0.01295860156500592,20
+ablation_selective,ICC,6-model mean,question,unc_docs,lift,0.25,6.357612675685041e-05,0.025673248769825224,20
+ablation_selective,ICC,6-model mean,instance,question,lift,0.75,0.04946990773839061,0.010000430408544023,20
+ablation_selective,ICC,6-model mean,instance,question,lift,0.5,0.09611527469003729,0.012247506067045302,20
+ablation_selective,ICC,6-model mean,instance,question,lift,0.25,0.12893602096912216,0.019644404021639084,20
+ablation_selective,ICC,6-model mean,question,question,lift,0.75,-0.046611815444881737,0.026524486859158338,20
+ablation_selective,ICC,6-model mean,question,question,lift,0.5,-0.08534463591350401,0.028846151034609517,20
+ablation_selective,ICC,6-model mean,question,question,lift,0.25,-0.07859792311582516,0.04884648554120553,20
